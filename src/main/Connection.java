@@ -11,7 +11,6 @@ public class Connection {
     public void setWeight(float weight){
         this.weight = weight;
     }
-    int a = 3;
 
 
 }
