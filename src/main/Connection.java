@@ -12,6 +12,7 @@ public class Connection {
         this.weight = weight;
         int a = 1;
     }
+    int hallo = 232;
 
 
 }
