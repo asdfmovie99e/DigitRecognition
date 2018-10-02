@@ -64,7 +64,9 @@ public class UbyteEncoder {
         for(int ip = 0; ip <= (pixelArray.length / (28*28)) - 1; ip++) {
             if((ip + 1) % 100 == 0 )
             {
-                System.out.println("Bild " + (ip + 1) + " von " + ((pixelArray.length / (28 * 28))) + ". " + ((int) ((ip + 1) * 100 / ((pixelArray.length / (28 * 28))))) + "% abgeschlossen.");
+                int percentage = ((int) ((ip + 1) * 100 / ((pixelArray.length / (28 * 28)))));
+                int timeRemaining;
+                System.out.println("Bild " + (ip + 1) + " von " + ((pixelArray.length / (28 * 28))) + ". " + percentage + "% abgeschlossen.");
             }
             BufferedImage bufferedImage = new BufferedImage(28, 28, BufferedImage.TYPE_INT_RGB); // hoehe auf 28x28 festgelegt, da nur mit dem mnist datensatz gearbeitet wird
             for (int iy = 0; iy <= 27; iy++) {
@@ -79,7 +81,8 @@ public class UbyteEncoder {
                 }
             }
             try {
-                File file = new File(mnistFolder.getAbsolutePath() + "\\images\\" + labelArray[ip] + "_" + (ip+1) + ".png");
+                new File(System.getenv("APPDATA") + "\\mnist\\images\\").mkdirs();
+                File file = new File(System.getenv("APPDATA") + "\\mnist\\images\\" + labelArray[ip] + "_" + (ip+1) + ".png");
                 ImageIO.write(bufferedImage, "png", file);
             } catch (IOException e) {
                 e.printStackTrace();
