@@ -5,7 +5,6 @@ class NetworkController {
     private InputNeuron[] inputNeurons = new InputNeuron[784];
     private HiddenNeuron[] hiddenNeurons = new HiddenNeuron[35]; // noch nicht sicher ob hier auch 784 gewählt werden sollte bzw was besser ist
     private OutputNeuron[] outputNeurons = new OutputNeuron[10];
-    private Connection[] connections = new Connection[27790];
 
     void initializeNetwork()
     {

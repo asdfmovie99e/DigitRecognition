@@ -1,5 +1,6 @@
 package main;
 
+import helper.MathHelper;
 import helper.UbyteEncoder;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -21,8 +22,9 @@ public class Main extends Application {
 
     public static void main(String[] args) {
         //launch(args);
-        UbyteEncoder encoder = new UbyteEncoder();
-        //encoder.decode();
+        MathHelper.start();
+        System.out.println(MathHelper.sigmoidApprox(1f));
+        UbyteEncoder.decode();
         NetworkController networkController = new NetworkController();
         networkController.initializeNetwork();
         System.exit(0);

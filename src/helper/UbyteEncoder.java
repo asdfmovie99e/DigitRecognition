@@ -12,25 +12,25 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.time.LocalDateTime;
 
 public class UbyteEncoder {
-    private File mnistFolder;
-    private int[] labelArray;
-    private byte[] byteArray;
-    private boolean[] pixelArray;
+    private static File mnistFolder = new File(Paths.get("").toAbsolutePath().toString() +"\\src\\mnist");
+    private static int[] labelArray;
+    private static byte[] byteArray;
+    private static boolean[] pixelArray;
 
-    public UbyteEncoder(){
-        mnistFolder = new File(Paths.get("").toAbsolutePath().toString() +"\\src\\mnist");
 
-    }
 
-    public void decode() {
+
+
+    public static void decode() {
         scanLabels();
         scanImages();
         createImages();
     }
 
-    private void scanLabels(){
+    private static void scanLabels(){
         byteArray = new byte[0];
         try {
             byteArray = Files.readAllBytes(new File(mnistFolder.getAbsolutePath() + "\\train-labels.idx1-ubyte").toPath());
@@ -44,7 +44,7 @@ public class UbyteEncoder {
         }
     }
 
-    private void scanImages(){
+    private static void scanImages(){
         byteArray = new byte[0];
         try{
             byteArray = Files.readAllBytes(new File(mnistFolder.getAbsolutePath() + "\\train-images.idx3-ubyte").toPath());
@@ -58,15 +58,27 @@ public class UbyteEncoder {
         System.out.println(pixelArray.length);
     }
 
-    private void createImages(){
+    private static void createImages(){
 
         int colorInt;
+        long startTime = System.currentTimeMillis();
+        int timeRemaining = Integer.MAX_VALUE;
         for(int ip = 0; ip <= (pixelArray.length / (28*28)) - 1; ip++) {
             if((ip + 1) % 100 == 0 )
             {
                 int percentage = ((int) ((ip + 1) * 100 / ((pixelArray.length / (28 * 28)))));
-                int timeRemaining;
-                System.out.println("Bild " + (ip + 1) + " von " + ((pixelArray.length / (28 * 28))) + ". " + percentage + "% abgeschlossen.");
+
+                if (percentage > 0 )
+                {
+                    int newTimeRemaining = (int) ((((System.currentTimeMillis() - startTime) / ((ip + 1) * 100 / ((pixelArray.length / (28 * 28))))) * (100 - ((ip + 1) * 100 / ((pixelArray.length / (28 * 28)))))) / 1000 );
+                    if (newTimeRemaining < timeRemaining){
+                        timeRemaining = newTimeRemaining;
+                    }
+                } else
+                    {
+                    timeRemaining = Integer.MAX_VALUE;
+                }
+                System.out.println("Bild " + (ip + 1) + " von " + ((pixelArray.length / (28 * 28))) + ". " + percentage + "% abgeschlossen. " + timeRemaining + " Sekunden verbleibend.");
             }
             BufferedImage bufferedImage = new BufferedImage(28, 28, BufferedImage.TYPE_INT_RGB); // hoehe auf 28x28 festgelegt, da nur mit dem mnist datensatz gearbeitet wird
             for (int iy = 0; iy <= 27; iy++) {
