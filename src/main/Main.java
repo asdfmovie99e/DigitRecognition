@@ -22,5 +22,6 @@ public class Main extends Application {
         //launch(args);
         UbyteEncoder encoder = new UbyteEncoder();
         encoder.decode();
+        System.exit(0);
     }
 }
