@@ -9,6 +9,7 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 
+
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("../res/sample.fxml"));
@@ -21,7 +22,9 @@ public class Main extends Application {
     public static void main(String[] args) {
         //launch(args);
         UbyteEncoder encoder = new UbyteEncoder();
-        encoder.decode();
+        //encoder.decode();
+        NetworkController networkController = new NetworkController();
+        networkController.initializeNetwork();
         System.exit(0);
     }
 }
