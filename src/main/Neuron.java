@@ -7,6 +7,7 @@ public abstract class Neuron {
     private float inputSum = 0;
     private Neuron[] previousNeurons = null;
     private Neuron[] nextNeurons = null;
+    private int identNumber;
 
 
 
@@ -14,7 +15,9 @@ public abstract class Neuron {
 
 
 
-
+    public void setIdentNumber(int identNumber){
+        this.identNumber = identNumber;
+    }
 
     public void setPreviousNeurons(Neuron[] previousNeurons){
         this.previousNeurons = previousNeurons;
