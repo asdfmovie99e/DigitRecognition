@@ -1,6 +1,7 @@
 package main;
 
 import helper.MathHelper;
+import helper.UbyteCoder;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -23,7 +24,8 @@ public class Main extends Application {
         //launch(args);
         MathHelper.start();
         System.out.println(MathHelper.sigmoidApprox(1f));
-        //UbyteCoder.decode();
+        UbyteCoder.decode();
+        //UbyteCoder.createImages();
         NetworkController networkController = new NetworkController();
         networkController.initializeNetwork();
         System.exit(0);

@@ -27,8 +27,8 @@ public class UbyteCoder {
     public static void decode() {
         scanLabels();
         scanImages();
-        createImages();
     }
+
 
     private static void scanLabels(){
         byteArray = new byte[0];
@@ -45,6 +45,7 @@ public class UbyteCoder {
     }
 
     private static void scanImages(){
+
         byteArray = new byte[0];
         try{
             byteArray = Files.readAllBytes(new File(mnistFolder.getAbsolutePath() + "\\train-images.idx3-ubyte").toPath());
@@ -58,8 +59,10 @@ public class UbyteCoder {
         System.out.println(pixelArray.length);
     }
 
-    private static void createImages(){
-
+    public static void createImages(){
+        if (pixelArray == null || labelArray == null) {
+            decode();
+        }
         int colorInt;
         long startTime = System.currentTimeMillis();
         int timeRemaining = Integer.MAX_VALUE;
@@ -101,5 +104,19 @@ public class UbyteCoder {
                 e.printStackTrace();
             }
         }
+    }
+
+    public static Object[] getImage(int imageNumber){
+        if (pixelArray == null || labelArray == null) {
+            decode();
+        }
+        Object[] objectArray = new Object[2];
+        objectArray[0] = labelArray[imageNumber];
+        boolean[] pixelArrayExtract = new boolean[784];
+        for(int i = 0; i < 784; i++){
+            pixelArrayExtract[i] = pixelArray[i + (imageNumber * 784)];
+        }
+        objectArray[1] = pixelArrayExtract;
+        return  objectArray;
     }
 }
