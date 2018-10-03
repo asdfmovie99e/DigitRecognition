@@ -14,7 +14,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.time.LocalDateTime;
 
-public class UbyteEncoder {
+public class UbyteCoder {
     private static File mnistFolder = new File(Paths.get("").toAbsolutePath().toString() +"\\src\\mnist");
     private static int[] labelArray;
     private static byte[] byteArray;
@@ -93,6 +93,7 @@ public class UbyteEncoder {
                 }
             }
             try {
+
                 new File(System.getenv("APPDATA") + "\\mnist\\images\\").mkdirs();
                 File file = new File(System.getenv("APPDATA") + "\\mnist\\images\\" + labelArray[ip] + "_" + (ip+1) + ".png");
                 ImageIO.write(bufferedImage, "png", file);
