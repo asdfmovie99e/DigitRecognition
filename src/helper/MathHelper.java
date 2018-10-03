@@ -1,6 +1,6 @@
 package helper;
 
-        import java.util.HashMap;
+import java.util.HashMap;
 
 public class MathHelper {
     private static HashMap<Integer, Float> sigmoidMap;
