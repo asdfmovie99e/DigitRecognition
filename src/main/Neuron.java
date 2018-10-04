@@ -46,6 +46,7 @@ public abstract class Neuron {
         for(int i = 0; i < inputMap.size(); i++){
             inputSum += inputMap.get(i) * weightMap.get(i);
         }
+        if(this instanceof  HiddenNeuron){ inputSum += 1; } // BIAS. Keine ahnung wie der gewählt werden muss und überhaupt. wird später bestimmt angepasst
         return MathHelper.sigmoidApprox(inputSum);
     }
 
