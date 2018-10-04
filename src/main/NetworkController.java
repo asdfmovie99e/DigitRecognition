@@ -40,8 +40,26 @@ class NetworkController {
     public void startLearning(){
         Object[] imageWithLabel = UbyteCoder.getImageWithLabel(1); // [0] lable; [1] pixel
         Boolean[] pixelArray = (Boolean[]) imageWithLabel[1];
+        for(Neuron neuron: hiddenNeurons){
+            neuron.generateMaps(); // darf nur einmal ingsgesamt ausgeführt werden
+            neuron.resetInputMap();
+        }
+        for(Neuron neuron: outputNeurons){
+            neuron.generateMaps(); // darf nur einmal ingsgesamt ausgeführt werden
+            neuron.resetInputMap();
+        }
         for(int i = 0; i < 748; i++){
             inputNeurons[i].receiveInput(pixelArray[i]);
+        }
+        for(InputNeuron neuron: inputNeurons){
+            neuron.generateMaps(); // darf nur einmal ingsgesamt ausgeführt werden
+            neuron.sendOutput();
+        }
+        for(HiddenNeuron neuron: hiddenNeurons){
+            neuron.sendOutput();
+        }
+        for(OutputNeuron neuron: outputNeurons){
+            System.out.println(neuron.getOutputValue());
         }
     }
 }

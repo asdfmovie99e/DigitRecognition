@@ -20,9 +20,9 @@ public abstract class Neuron {
     }
 
     public void generateMaps(){
+        if(this instanceof  InputNeuron) return;
         weightMap = new HashMap<Integer, Float>();
         inputMap = new HashMap<Integer, Float>();
-
         for(int i = 0; i < previousNeurons.length; i++){
             weightMap.put(i, 0.5f); // am anfang haben alle weights den wert 0.5f
         }

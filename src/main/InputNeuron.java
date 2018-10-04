@@ -13,5 +13,10 @@ private int inputSum;
         } else {
             inputSum = 0;
         }
+
+    }
+    @Override
+    public float getOutputValue(){
+        return inputSum;
     }
 }

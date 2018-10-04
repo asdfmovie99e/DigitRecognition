@@ -27,6 +27,7 @@ public class Main extends Application {
         //UbyteCoder.decode();
         NetworkController networkController = new NetworkController();
         networkController.initializeNetwork();
+        networkController.startLearning();
         System.exit(0);
     }
 }
