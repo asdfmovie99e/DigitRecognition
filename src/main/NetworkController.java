@@ -34,4 +34,8 @@ class NetworkController {
             neuron.setPreviousNeurons(hiddenNeurons);
         }
     }
+
+    public void startLearning(){
+
+    }
 }

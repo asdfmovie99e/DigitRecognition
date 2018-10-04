@@ -23,4 +23,8 @@ public class MathHelper {
         return sigmoidMap.get(Math.round(input * 10));
     }
 
+    public static float identity(float input){
+        return input;
+    }
+
 }

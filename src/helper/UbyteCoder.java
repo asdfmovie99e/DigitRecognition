@@ -58,6 +58,13 @@ public class UbyteCoder {
         System.out.println(pixelArray.length);
     }
 
+    public Object[] getImageWithLabel(int i){
+        scanLabels();
+        scanImages();
+        Object[] resultArray = new Object[2];
+
+    }
+
     private static void createImages(){
 
         int colorInt;
