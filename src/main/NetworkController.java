@@ -38,7 +38,7 @@ class NetworkController {
     }
 
     public void startLearning(){
-        Object[] imageWithLabel = UbyteCoder.getImageWithLabel(1); // [0] lable; [1] pixel
+        Object[] imageWithLabel = UbyteCoder.getImageWithLabel(3); // [0] lable; [1] pixel
         Boolean[] pixelArray = (Boolean[]) imageWithLabel[1];
         for(Neuron neuron: hiddenNeurons){
             neuron.generateMaps(); // darf nur einmal ingsgesamt ausgeführt werden
@@ -59,7 +59,10 @@ class NetworkController {
             neuron.sendOutput();
         }
         for(OutputNeuron neuron: outputNeurons){
-            System.out.println(neuron.getOutputValue());
+            System.out.println(neuron.identNumber + "  " +neuron.getOutputValue());
+        }
+        for(OutputNeuron neuron: outputNeurons){
+            //neuron.adjustWeights();
         }
     }
 }

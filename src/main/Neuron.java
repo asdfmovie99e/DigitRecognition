@@ -24,7 +24,7 @@ public abstract class Neuron {
         weightMap = new HashMap<Integer, Float>();
         inputMap = new HashMap<Integer, Float>();
         for(int i = 0; i < previousNeurons.length; i++){
-            weightMap.put(i, 0.5f); // am anfang haben alle weights den wert 0.5f
+            weightMap.put(i, 0.05f); // am anfang haben alle weights den wert 0.5f
         }
     }
 
@@ -46,7 +46,7 @@ public abstract class Neuron {
         for(int i = 0; i < inputMap.size(); i++){
             inputSum += inputMap.get(i) * weightMap.get(i);
         }
-        if(this instanceof  HiddenNeuron){ inputSum += 1; } // BIAS. Keine ahnung wie der gewählt werden muss und überhaupt. wird später bestimmt angepasst
+        //if(this instanceof  HiddenNeuron){ inputSum += 1; } // BIAS. Keine ahnung wie der gewählt werden muss und überhaupt. wird später bestimmt angepasst
         return MathHelper.identity(inputSum);
     }
 
