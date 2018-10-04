@@ -1,5 +1,7 @@
 package main;
 
+import helper.UbyteCoder;
+
 class NetworkController {
 
     private InputNeuron[] inputNeurons = new InputNeuron[784];
@@ -36,6 +38,10 @@ class NetworkController {
     }
 
     public void startLearning(){
-
+        Object[] imageWithLabel = UbyteCoder.getImageWithLabel(1); // [0] lable; [1] pixel
+        Boolean[] pixelArray = (Boolean[]) imageWithLabel[1];
+        for(int i = 0; i < 748; i++){
+            inputNeurons[i].receiveInput(pixelArray[i]);
+        }
     }
 }

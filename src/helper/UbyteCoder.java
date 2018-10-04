@@ -54,7 +54,7 @@ public class UbyteCoder {
         System.out.println(pixelArray.length);
     }
 
-    public Object[] getImageWithLabel(int imageNumber) {
+    public static Object[] getImageWithLabel(int imageNumber) {
         scanLabels();
         scanImages();
         Object[] resultArray = new Object[2];
