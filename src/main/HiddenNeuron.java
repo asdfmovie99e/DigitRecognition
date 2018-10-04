@@ -6,7 +6,8 @@ class HiddenNeuron extends Neuron {
     float smallDelta;
 
 
-    public void adjustWeights(float targetWeight) {
+    public void adjustWeights() {
+        calcSmallDelta();
         for(int i = 0; i < previousNeurons.length; i++)
         {
             currentDelta = learningFactor * previousNeurons[i].getOutputValue() * smallDelta;

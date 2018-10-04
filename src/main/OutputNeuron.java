@@ -12,6 +12,8 @@ class OutputNeuron extends Neuron{
         for(int i = 0; i < previousNeurons.length; i++)
         {
             currentDelta = learningFactor * previousNeurons[i].getOutputValue() * smallDelta;
+            System.out.println("out weight delta: " + smallDelta + " " + targetWeight + "   " + getOutputValue());
+
             float oldWeight = weightMap.get(i);
             weightMap.remove(i);
             weightMap.put(i, oldWeight + currentDelta);

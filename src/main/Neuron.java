@@ -24,7 +24,7 @@ public abstract class Neuron {
         weightMap = new HashMap<Integer, Float>();
         inputMap = new HashMap<Integer, Float>();
         for(int i = 0; i < previousNeurons.length; i++){
-            weightMap.put(i, 0.05f); // am anfang haben alle weights den wert 0.5f
+            weightMap.put(i,(float) (Math.random() / 20) ); // am anfang haben alle weights den wert 0.5f
         }
     }
 

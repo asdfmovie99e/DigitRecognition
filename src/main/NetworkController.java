@@ -38,8 +38,6 @@ class NetworkController {
     }
 
     public void startLearning(){
-        Object[] imageWithLabel = UbyteCoder.getImageWithLabel(3); // [0] lable; [1] pixel
-        Boolean[] pixelArray = (Boolean[]) imageWithLabel[1];
         for(Neuron neuron: hiddenNeurons){
             neuron.generateMaps(); // darf nur einmal ingsgesamt ausgeführt werden
             neuron.resetInputMap();
@@ -48,21 +46,39 @@ class NetworkController {
             neuron.generateMaps(); // darf nur einmal ingsgesamt ausgeführt werden
             neuron.resetInputMap();
         }
-        for(int i = 0; i < 748; i++){
-            inputNeurons[i].receiveInput(pixelArray[i]);
-        }
-        for(InputNeuron neuron: inputNeurons){
+        for(Neuron neuron: inputNeurons){
             neuron.generateMaps(); // darf nur einmal ingsgesamt ausgeführt werden
-            neuron.sendOutput();
+            neuron.resetInputMap();
         }
-        for(HiddenNeuron neuron: hiddenNeurons){
-            neuron.sendOutput();
-        }
-        for(OutputNeuron neuron: outputNeurons){
-            System.out.println(neuron.identNumber + "  " +neuron.getOutputValue());
-        }
-        for(OutputNeuron neuron: outputNeurons){
-            //neuron.adjustWeights();
+        for(int i1 = 0 ; i1 < 1000; i1++) {
+            Object[] imageWithLabel = UbyteCoder.getImageWithLabel(i1); // [0] lable; [1] pixel
+            Boolean[] pixelArray = (Boolean[]) imageWithLabel[1];
+            int label =(int) imageWithLabel[0];
+            for (int i = 0; i < 748; i++) {
+                inputNeurons[i].resetInputMap();
+                inputNeurons[i].receiveInput(pixelArray[i]);
+            }
+            for (InputNeuron neuron : inputNeurons) {
+                neuron.sendOutput();
+            }
+            for (HiddenNeuron neuron : hiddenNeurons) {
+                neuron.sendOutput();
+                neuron.resetInputMap();
+            }
+            for (OutputNeuron neuron : outputNeurons) {
+                System.out.println(neuron.identNumber + "  " + neuron.getOutputValue());
+                neuron.resetInputMap();
+            }
+            for (OutputNeuron neuron : outputNeurons) {
+                if( neuron.identNumber == label){
+                    neuron.adjustWeights(100);
+                } else {
+                    neuron.adjustWeights(0);
+                }
+            }
+            for (HiddenNeuron neuron : hiddenNeurons) {
+                neuron.adjustWeights();
+            }
         }
     }
 }
