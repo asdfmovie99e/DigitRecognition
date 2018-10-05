@@ -65,10 +65,17 @@ class NetworkController {
                 neuron.sendOutput();
                 neuron.resetInputMap();
             }
+            Object[] biggest = new Object[2];
+            biggest[0] = -10000000f;
             for (OutputNeuron neuron : outputNeurons) {
-                System.out.println(neuron.identNumber + "  " + neuron.getOutputValue());
-                neuron.resetInputMap();
+                float biggestFloat =(float) biggest[0];
+                if (neuron.getOutputValue() > biggestFloat){
+                    biggest[0] = neuron.getOutputValue();
+                    biggest[1] = neuron;
+                }
             }
+            Neuron biggestNeuron = (Neuron) biggest[1];
+            System.out.println("es war: " + label + " . Am meisten punkte hatte: " + biggestNeuron.identNumber);
             for (OutputNeuron neuron : outputNeurons) {
                 if( neuron.identNumber == label){
                     neuron.adjustWeights(100);
@@ -78,6 +85,7 @@ class NetworkController {
             }
             for (HiddenNeuron neuron : hiddenNeurons) {
                 neuron.adjustWeights();
+                neuron.resetInputMap();
             }
         }
     }
