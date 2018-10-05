@@ -1,5 +1,7 @@
 package main;
 
+import helper.UbyteCoder;
+
 class NetworkController {
 
     private InputNeuron[] inputNeurons = new InputNeuron[784];
@@ -32,6 +34,59 @@ class NetworkController {
         }
         for(Neuron neuron: outputNeurons){
             neuron.setPreviousNeurons(hiddenNeurons);
+        }
+    }
+
+    public void startLearning(){
+        for(Neuron neuron: hiddenNeurons){
+            neuron.generateMaps(); // darf nur einmal ingsgesamt ausgeführt werden
+            neuron.resetInputMap();
+        }
+        for(Neuron neuron: outputNeurons){
+            neuron.generateMaps(); // darf nur einmal ingsgesamt ausgeführt werden
+            neuron.resetInputMap();
+        }
+        for(Neuron neuron: inputNeurons){
+            neuron.generateMaps(); // darf nur einmal ingsgesamt ausgeführt werden
+            neuron.resetInputMap();
+        }
+        for(int i1 = 0 ; i1 < 1000; i1++) {
+            Object[] imageWithLabel = UbyteCoder.getImageWithLabel(i1); // [0] lable; [1] pixel
+            Boolean[] pixelArray = (Boolean[]) imageWithLabel[1];
+            int label =(int) imageWithLabel[0];
+            for (int i = 0; i < 748; i++) {
+                inputNeurons[i].resetInputMap();
+                inputNeurons[i].receiveInput(pixelArray[i]);
+            }
+            for (InputNeuron neuron : inputNeurons) {
+                neuron.sendOutput();
+            }
+            for (HiddenNeuron neuron : hiddenNeurons) {
+                neuron.sendOutput();
+                neuron.resetInputMap();
+            }
+            Object[] biggest = new Object[2];
+            biggest[0] = -10000000f;
+            for (OutputNeuron neuron : outputNeurons) {
+                float biggestFloat =(float) biggest[0];
+                if (neuron.getOutputValue() > biggestFloat){
+                    biggest[0] = neuron.getOutputValue();
+                    biggest[1] = neuron;
+                }
+            }
+            Neuron biggestNeuron = (Neuron) biggest[1];
+            System.out.println("es war: " + label + " . Am meisten punkte hatte: " + biggestNeuron.identNumber);
+            for (OutputNeuron neuron : outputNeurons) {
+                if( neuron.identNumber == label){
+                    neuron.adjustWeights(100);
+                } else {
+                    neuron.adjustWeights(0);
+                }
+            }
+            for (HiddenNeuron neuron : hiddenNeurons) {
+                neuron.adjustWeights();
+                neuron.resetInputMap();
+            }
         }
     }
 }

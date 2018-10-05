@@ -23,11 +23,11 @@ public class Main extends Application {
     public static void main(String[] args) {
         //launch(args);
         MathHelper.start();
-        System.out.println(MathHelper.sigmoidApprox(1f));
-        UbyteCoder.decode();
-        //UbyteCoder.createImages();
+        //System.out.println(MathHelper.sigmoidApprox(1f));
+        //UbyteCoder.decode();
         NetworkController networkController = new NetworkController();
         networkController.initializeNetwork();
+        networkController.startLearning();
         System.exit(0);
     }
 }

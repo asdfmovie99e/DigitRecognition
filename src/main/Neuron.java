@@ -5,15 +5,12 @@ import helper.MathHelper;
 import java.util.HashMap;
 
 public abstract class Neuron {
-    float inputSum = 0;
     Neuron[] previousNeurons = null;
     Neuron[] nextNeurons = null;
     int identNumber;
     HashMap<Integer, Float> weightMap;
-
-
-
-
+    HashMap<Integer, Float> inputMap;
+    float learningFactor = 0.01f;
 
 
     public void sendOutput(){
@@ -22,11 +19,12 @@ public abstract class Neuron {
         }
     }
 
-    public void generateWeightMap(){
+    public void generateMaps(){
+        if(this instanceof  InputNeuron) return;
         weightMap = new HashMap<Integer, Float>();
-
+        inputMap = new HashMap<Integer, Float>();
         for(int i = 0; i < previousNeurons.length; i++){
-            weightMap.put(i, 0.5f); // am anfang haben alle weights den wert 0.5f
+            weightMap.put(i,(float) (Math.random() / 20) ); // am anfang haben alle weights den wert 0.5f
         }
     }
 
@@ -44,15 +42,22 @@ public abstract class Neuron {
 
 
     public float getOutputValue() {
-        return MathHelper.sigmoidApprox(inputSum);
+        float inputSum = 0;
+        for(int i = 0; i < inputMap.size(); i++){
+            inputSum += inputMap.get(i) * weightMap.get(i);
+        }
+        //if(this instanceof  HiddenNeuron){ inputSum += 1; } // BIAS. Keine ahnung wie der gewählt werden muss und überhaupt. wird später bestimmt angepasst
+        return MathHelper.identity(inputSum);
     }
 
-    public void resetInputSum(){
-        inputSum = 0;
+    public void resetInputMap(){
+        inputMap = new HashMap<Integer, Float>();
     }
+
+
 
     public void receiveInput(float inputValue, int identNumber){
-        inputSum +=  inputValue * weightMap.get(identNumber);
+       inputMap.put(identNumber, inputValue);
     }
 
 
