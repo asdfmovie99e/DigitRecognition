@@ -1,22 +1,31 @@
 package main;
 
-class InputNeuron extends Neuron{
-private int inputSum;
+public class InputNeuron {
 
-    @Override
-    public void setPreviousNeurons(Neuron[] previousNeurons){} // not used, because inputneurons dont have a previous layer of neurons
+    private int outputValue;
+    private HiddenNeuron[] hiddenNeurons;
+    private Integer identNummer = null;
 
-
-    public void receiveInput(boolean input){
-        if (input == true){
-            inputSum = 1;
-        } else {
-            inputSum = 0;
-        }
-
+    public void setHiddenNeurons(HiddenNeuron[] hiddenNeurons){
+        this.hiddenNeurons = hiddenNeurons;
     }
-    @Override
-    public float getOutputValue(){
-        return inputSum;
+
+    public void setIdentNummer(int identNummer){
+        this.identNummer = identNummer;
+    }
+
+    public void setOutputValue(boolean outputBool){
+        if (outputBool){
+            outputValue = 1;
+        } else
+        {
+            outputValue = 0;
+        }
+    }
+
+    public void sendOutputToNextLayer(){
+        for(HiddenNeuron hiddenNeuron: hiddenNeurons){
+            hiddenNeuron.receive(identNummer, outputValue);
+        }
     }
 }
