@@ -1,27 +1,35 @@
 package main;
 
-class OutputNeuron extends Neuron{
-    float currentDelta;
-    float smallDelta;
+import helper.MathHelper;
 
-    @Override
-    public void setNextNeurons(Neuron[] nextNeurons){}// not used because output neurons dont have a next layer
+import java.util.HashMap;
 
-    public void adjustWeights(float targetWeight){
-        smallDelta = (targetWeight - getOutputValue());
-        for(int i = 0; i < previousNeurons.length; i++)
-        {
-            currentDelta = learningFactor * previousNeurons[i].getOutputValue() * smallDelta;
-            //System.out.println("out weight delta: " + smallDelta + " " + targetWeight + "   " + getOutputValue());
+public class OutputNeuron {
 
-            float oldWeight = weightMap.get(i);
-            weightMap.remove(i);
-            weightMap.put(i, oldWeight + currentDelta);
+    private Integer identNummer = null;
+    private double inputSum = 0;
+    private double outputSum = 0;
+    private HashMap<Integer, Double> weightMap = new HashMap<Integer, Double>();
+
+    public void setIdentNummer(int identNummer){
+        this.identNummer = identNummer;
+    }
+
+
+    public void generateNewWeightMap(){
+        for(int i = 0; i < 35; i++){
+            weightMap.put(i,(Math.random() - 0.5d) / 20d); // so liegt das ergebnis ungefähr um 0
         }
-
     }
 
-    public float getSmallDelta(){
-        return smallDelta;
+    public void receive(int ident, double input){
+        inputSum += weightMap.get(ident) * input;
     }
+
+    private void calcOutput(){
+        outputSum = MathHelper.sigmoidApprox(inputSum);
+    }
+
+
+
 }

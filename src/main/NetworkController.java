@@ -1,5 +1,6 @@
 package main;
 
+import helper.Debugger;
 import helper.UbyteCoder;
 
 class NetworkController {
@@ -10,83 +11,32 @@ class NetworkController {
 
     void initializeNetwork()
     {
-        for(int i = 0; i < inputNeurons.length; i++)
-        {
+        for(int i = 0; i < 784; i++){
             inputNeurons[i] = new InputNeuron();
-            inputNeurons[i].setIdentNumber(i);
+            inputNeurons[i].setIdentNummer(i);
         }
-        for(int i = 0; i < hiddenNeurons.length; i++)
-        {
+        for (int i = 0; i < 35; i++){
             hiddenNeurons[i] = new HiddenNeuron();
-            hiddenNeurons[i].setIdentNumber(i);
+            hiddenNeurons[i].setIdentNummer(i);
+            hiddenNeurons[i].generateNewWeightMap();
         }
-        for(int i = 0; i < outputNeurons.length; i++)
-        {
+        for(int i = 0; i < 10; i++){
             outputNeurons[i] = new OutputNeuron();
-            outputNeurons[i].setIdentNumber(i);
+            outputNeurons[i].setIdentNummer(i);
+            outputNeurons[i].generateNewWeightMap();
         }
-        for(Neuron neuron: inputNeurons){
-            neuron.setNextNeurons(hiddenNeurons);
+        for(InputNeuron inputNeuron: inputNeurons){
+            inputNeuron.setHiddenNeurons(hiddenNeurons);
         }
-        for(Neuron neuron: hiddenNeurons){
-            neuron.setNextNeurons(outputNeurons);
-            neuron.setPreviousNeurons(inputNeurons);
+        for(HiddenNeuron hiddenNeuron: hiddenNeurons){
+            hiddenNeuron.setOutputNeurons(outputNeurons);
         }
-        for(Neuron neuron: outputNeurons){
-            neuron.setPreviousNeurons(hiddenNeurons);
-        }
+        Debugger.log("Netzwerk initialisiert");
     }
 
-    public void startLearning(){
-        for(Neuron neuron: hiddenNeurons){
-            neuron.generateMaps(); // darf nur einmal ingsgesamt ausgeführt werden
-            neuron.resetInputMap();
-        }
-        for(Neuron neuron: outputNeurons){
-            neuron.generateMaps(); // darf nur einmal ingsgesamt ausgeführt werden
-            neuron.resetInputMap();
-        }
-        for(Neuron neuron: inputNeurons){
-            neuron.generateMaps(); // darf nur einmal ingsgesamt ausgeführt werden
-            neuron.resetInputMap();
-        }
-        for(int i1 = 0 ; i1 < 1000; i1++) {
-            Object[] imageWithLabel = UbyteCoder.getImageWithLabel(i1); // [0] lable; [1] pixel
-            Boolean[] pixelArray = (Boolean[]) imageWithLabel[1];
-            int label =(int) imageWithLabel[0];
-            for (int i = 0; i < 748; i++) {
-                inputNeurons[i].resetInputMap();
-                inputNeurons[i].receiveInput(pixelArray[i]);
-            }
-            for (InputNeuron neuron : inputNeurons) {
-                neuron.sendOutput();
-            }
-            for (HiddenNeuron neuron : hiddenNeurons) {
-                neuron.sendOutput();
-                neuron.resetInputMap();
-            }
-            Object[] biggest = new Object[2];
-            biggest[0] = -10000000f;
-            for (OutputNeuron neuron : outputNeurons) {
-                float biggestFloat =(float) biggest[0];
-                if (neuron.getOutputValue() > biggestFloat){
-                    biggest[0] = neuron.getOutputValue();
-                    biggest[1] = neuron;
-                }
-            }
-            Neuron biggestNeuron = (Neuron) biggest[1];
-            System.out.println("es war: " + label + " . Am meisten punkte hatte: " + biggestNeuron.identNumber);
-            for (OutputNeuron neuron : outputNeurons) {
-                if( neuron.identNumber == label){
-                    neuron.adjustWeights(100);
-                } else {
-                    neuron.adjustWeights(0);
-                }
-            }
-            for (HiddenNeuron neuron : hiddenNeurons) {
-                neuron.adjustWeights();
-                neuron.resetInputMap();
-            }
-        }
+    public void startLearning() {
+
+
+
     }
 }

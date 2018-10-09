@@ -3,20 +3,20 @@ package helper;
 import java.util.HashMap;
 
 public class MathHelper {
-    private static HashMap<Integer, Float> sigmoidMap;
+    private static HashMap<Integer, Double> sigmoidMap;
 
 
     public static void start(){
-        sigmoidMap = new HashMap<Integer, Float>();
+        sigmoidMap = new HashMap<Integer, Double>();
         for(int i = -60; i <= 60; i += 1){
-            sigmoidMap.put(i,  (float) (1 / (1 + Math.pow(Math.E, -(i/10)))));
+            sigmoidMap.put(i,  (double) (1 / (1 + Math.pow(Math.E, -(i/10)))));
         }
         int a = 1+1;
     }
 
 
 
-    public static float sigmoidApprox(float input){
+    public static double sigmoidApprox(double input){
 
         if(input < - 6) return 0f;
         if(input > 6) return 1f;

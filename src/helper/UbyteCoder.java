@@ -54,7 +54,9 @@ public class UbyteCoder {
         System.out.println(pixelArray.length);
     }
 
-    public static Object[] getImageWithLabel(int imageNumber) {
+    public static Object[] getImageWithLabel(int imageNumber) { //das erste bild hat imageNumber = 0
+        // gibt ein Array zurück. auf dem 0. platz ist das label, das angibt welche zahl es wirklich ist
+        // auf dem 1. platz ist ein weiteres Array vom Typ Boolean[]. hier wird das bild gespeichert. true ist schwarz und false ist weiss
         scanLabels();
         scanImages();
         Object[] resultArray = new Object[2];
@@ -65,7 +67,6 @@ public class UbyteCoder {
         }
         resultArray[1] = pixelPartArray;
         return  resultArray;
-
     }
         private static void createImages () {
 
