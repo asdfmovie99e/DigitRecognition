@@ -45,8 +45,15 @@ class NetworkController {
 
     public void startLearning() {
         //startet die Lernroutine
-    for(int i1 = 0; i1 < 1000; i1++) { // zum testzweck erstmal nur 100 bilder
-
+        //die naechsten beiden variablen sind nur fuer debugzwecke
+        int timesTried = 0;
+        int timesSuccesful = 0;
+    for(int i1 = 0; i1 < 50000; i1++) { // zum testzweck erstmal nur 100 bilder
+        if(timesTried % 1000 == 0){//debug purpose
+            timesSuccesful = 0;
+            timesTried = 0;
+        }
+        timesTried++;
 
         imageWithLabel = UbyteCoder.getImageWithLabel(i1);
         label = (Integer) imageWithLabel[0];
@@ -59,17 +66,21 @@ class NetworkController {
         }
 
         for (InputNeuron inputNeuron : inputNeurons) {
-            Debug.log("Ich bin Inputneuron " + inputNeuron.getIdentNummer() + " und habe den Wert " + inputNeuron.getOutputValue(), false);
+            //System.out.println("Ich bin Inputneuron " + inputNeuron.getIdentNummer() + " und habe den Wert " + inputNeuron.getOutputValue());
             inputNeuron.sendOutputToNextLayer();
         }
         for (HiddenNeuron hiddenNeuron : hiddenNeurons) {
             //Debug.log("Ich bin HiddenNeuron " + hiddenNeuron.getIdentNummer() + " und mein Wert ist " + hiddenNeuron.getOutputValue());
             hiddenNeuron.sendOutputToNextLayer();
         }
-        Debug.log("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+        OutputNeuron biggestNeuron = null;
         for (OutputNeuron outputNeuron : outputNeurons) {
-            Debug.log("Ich bin OutputNeuron " + outputNeuron.getIdentNummer() + " und mein Wert ist " + outputNeuron.getOutputValue() + ". Richtig war die Nummer " + label);
+            if(biggestNeuron == null || biggestNeuron.getOutputValue() < outputNeuron.getOutputValue()) biggestNeuron = outputNeuron;
+           System.out.println("Ich bin OutputNeuron " + outputNeuron.getIdentNummer() + " und mein Wert ist " + outputNeuron.getOutputValue() + ". Richtig war die Nummer " + label);
         }
+        if(biggestNeuron.getIdentNummer() == label) timesSuccesful++;//debug purpose
+        Debug.log("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" + (biggestNeuron.getIdentNummer() == label) + " " + 100 * (double)timesSuccesful / (double)timesTried);
+        Debug.log("Bild Nummer: " + i1);
         //ab hier faengt das eigentliche lernen an.
         // Zuerst werden die gewichte zu den outputneuronen geaendert
         for (OutputNeuron outputNeuron : outputNeurons) {
