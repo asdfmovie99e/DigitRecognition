@@ -1,11 +1,14 @@
 package main;
 
+import helper.MathHelper;
+
 import java.util.HashMap;
 
 public class OutputNeuron {
 
     private Integer identNummer = null;
     private double inputSum = 0;
+    private double outputSum = 0;
     private HashMap<Integer, Double> weightMap = new HashMap<Integer, Double>();
 
     public void setIdentNummer(int identNummer){
@@ -22,5 +25,11 @@ public class OutputNeuron {
     public void receive(int ident, double input){
         inputSum += weightMap.get(ident) * input;
     }
+
+    private void calcOutput(){
+        outputSum = MathHelper.sigmoidApprox(inputSum);
+    }
+
+
 
 }

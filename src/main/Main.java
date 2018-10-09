@@ -1,5 +1,6 @@
 package main;
 
+import helper.Debugger;
 import helper.MathHelper;
 import helper.UbyteCoder;
 import javafx.application.Application;
@@ -21,6 +22,7 @@ public class Main extends Application {
 
 
     public static void main(String[] args) {
+        Debugger.log("Program started");
         //launch(args);
         MathHelper.start();
         //System.out.println(MathHelper.sigmoidApprox(1f));
@@ -28,6 +30,8 @@ public class Main extends Application {
         NetworkController networkController = new NetworkController();
         networkController.initializeNetwork();
         networkController.startLearning();
+        Debugger.log("Program finished");
+        Debugger.flush();
         System.exit(0);
     }
 }

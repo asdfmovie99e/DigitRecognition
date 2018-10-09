@@ -1,5 +1,6 @@
 package main;
 
+import helper.Debugger;
 import helper.UbyteCoder;
 
 class NetworkController {
@@ -30,6 +31,7 @@ class NetworkController {
         for(HiddenNeuron hiddenNeuron: hiddenNeurons){
             hiddenNeuron.setOutputNeurons(outputNeurons);
         }
+        Debugger.log("Netzwerk initialisiert");
     }
 
     public void startLearning() {

@@ -29,11 +29,12 @@ public class HiddenNeuron {
         inputSum += weightMap.get(ident) * input;
     }
 
-    public void calcOutput(){
+    private void calcOutput(){
         outputSum = MathHelper.sigmoidApprox(inputSum);
     }
 
     public void sendOutputToNextLayer(){
+        calcOutput();
         for(OutputNeuron outputNeuron: outputNeurons){
             outputNeuron.receive(identNummer, outputSum);
         }
