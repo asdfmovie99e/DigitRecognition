@@ -31,7 +31,7 @@ public class HiddenNeuron {
     public void generateNewWeightMap(){
         //generiert eine neue HashMap in der die Gewichte die eingehenden Verbindungen gespeichert sind.
         for(int i = 0; i < 784; i++){
-            weightMap.put(i,(Math.random() - 0.5d) / 1d); // so liegt das ergebnis ungefähr um 0 //GAAAANZ UNSICHER MIT GETEILT DURCH 100
+            weightMap.put(i,(Math.random() - 0.5d)); // so liegt das ergebnis ungefähr um 0 //GAAAANZ UNSICHER MIT GETEILT DURCH 100
         }
     }
     public void receive(int ident, double input){

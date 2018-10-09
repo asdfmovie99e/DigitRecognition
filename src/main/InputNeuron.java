@@ -43,4 +43,9 @@ public class InputNeuron {
         //wird eigentlich nie benutzt. nur fuer debug zwecke
         return outputValue;
     }
+
+    public int getIdentNummer(){
+        //nur fuer debug eigentlich
+        return identNummer;
+    }
 }

@@ -51,16 +51,20 @@ class NetworkController {
     for(int i = 0; i < pixelArray.length; i++){
         //aus dem grade geholten pixelarray werden die daten an die Inputneuronen verteilt
         inputNeurons[i].setOutputValue(pixelArray[i]);
-        Debug.log("Ich bin Inputneuron " + i + " und habe den Wert " + inputNeurons[i].getOutputValue());
+
     }
+
     for(InputNeuron inputNeuron: inputNeurons){
-        //die senden funktion der inputneuronen wird aufgerufen
+        Debug.log("Ich bin Inputneuron " + inputNeuron.getIdentNummer() + " und habe den Wert " + inputNeuron.getOutputValue(), false);
         inputNeuron.sendOutputToNextLayer();
     }
     for(HiddenNeuron hiddenNeuron: hiddenNeurons){
         Debug.log("Ich bin HiddenNeuron " + hiddenNeuron.getIdentNummer() + " und mein Wert ist " + hiddenNeuron.getOutputValue());
+        hiddenNeuron.sendOutputToNextLayer();
     }
-
+    for(OutputNeuron outputNeuron: outputNeurons){
+        Debug.log("Ich bin OutputNeuron " + outputNeuron.getIdentNummer() + " und mein Wert ist " + outputNeuron.getOutputValue());
+    }
 
 
     }

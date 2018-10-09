@@ -31,6 +31,22 @@ public class Debug {
 
     }
 
+    public static void log(String stringToLog, boolean toConsole){
+        if(toConsole){
+            log(stringToLog);
+            return;
+        }
+        //Der String stringToLog wird in die Output.log Datei und in die Konsole mit Timestamp geschrieben.
+        if (!fileCreated) fileCreated = createLogFile();
+        try {
+            String outputString = "[" + java.time.LocalTime.now() + "] " + stringToLog+"\n";
+            stream.write(outputString.getBytes());
+        } catch(Exception e){
+            e.printStackTrace();
+        }
+
+    }
+
     private static boolean createLogFile(){
         //Erstellt die Log Datei und den OutputStream. Muss normalerweise nur einmal aufgerufen werden am Anfang.
         try{

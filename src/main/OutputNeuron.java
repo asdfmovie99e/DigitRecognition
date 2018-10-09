@@ -26,7 +26,7 @@ public class OutputNeuron {
     public void generateNewWeightMap(){
         //generiert eine neue HashMap in der die Gewichte die eingehenden Verbindungen gespeichert sind.
         for(int i = 0; i < 35; i++){
-            weightMap.put(i,(Math.random() - 0.5d) / 5d); // so liegt das ergebnis ungefähr um 0 KEINE AHNUNG VON DEM GEWICHT. MAL SEHEN
+            weightMap.put(i,(Math.random() - 0.5d)); // so liegt das ergebnis ungefähr um 0 KEINE AHNUNG VON DEM GEWICHT. MAL SEHEN
         }
     }
 
@@ -40,6 +40,16 @@ public class OutputNeuron {
         outputSum = MathHelper.sigmoidApprox(inputSum);
     }
 
+    public double getOutputValue(){
+        //wird eigentlich nie benutzt. nur fuer debug zwecke
+        calcOutput();
+        return outputSum;
+    }
+
+    public int getIdentNummer(){
+        //nur fuer debug eigentlich
+        return identNummer;
+    }
 
 
 }

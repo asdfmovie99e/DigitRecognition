@@ -16,7 +16,9 @@ public class MathHelper {
         // wird ausgeführt um die HashMaps zu erstellen, welche die Berechnung verschnellern
         sigmoidMap = new HashMap<Integer, Double>();
         for(int i = -600; i <= 600; i += 1){
-            sigmoidMap.put(i,  (double) (1 / (1 + Math.pow(Math.E, -(i/100)))));
+            double iDouble = i;
+            sigmoidMap.put(i,  (double) (1 / (1 + Math.pow(Math.E, -(iDouble/100)))));
+
         }
         int a = 1+1;
     }
@@ -27,7 +29,7 @@ public class MathHelper {
         //gibt einen ungefähren wert der Sigmoid funktion zurück
         if(input < -5.8) return 0f;
         if(input > 5.8) return 1f;
-        return sigmoidMap.get( (int)input * 100);
+        return sigmoidMap.get( (int)(input * 100));
     }
 
     public static float identity(float input){
