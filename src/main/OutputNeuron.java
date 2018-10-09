@@ -16,6 +16,7 @@ public class OutputNeuron {
     private Integer identNummer = null;
     private double inputSum = 0;
     private double outputSum = 0;
+    private double smallDelta = 0;
     private HashMap<Integer, Double> weightMap = new HashMap<Integer, Double>();
     private HashMap<Integer, Double> inputMap = new HashMap<Integer, Double>();
 
@@ -59,8 +60,9 @@ public class OutputNeuron {
 
     public void modWeight(double targetWeight){
         //die Variablen wie z.B. smallDelta beziehen sich auf die Delta Lernregel. Die Formel ist im Internet leicht zu finden.
-        double smallDelta = targetWeight - getOutputValue();
-        double epsilon = 0.01f; // vollkommen experimentell. keine ahnung wie der wert gewählt werden soll
+        double oldValue = getOutputValue(); //debug purpose
+        smallDelta = targetWeight - getOutputValue();
+        double epsilon = 0.1f; // vollkommen experimentell. keine ahnung wie der wert gewählt werden soll
         for(int i = 0; i < 35; i++){
             double input = inputMap.get(i);
             double ableitung = MathHelper.sigmoidApprox(inputMap.get(i)) * (1 - MathHelper.sigmoidApprox(inputMap.get(i)));
@@ -70,8 +72,14 @@ public class OutputNeuron {
             weightMap.put(i, oldWeight + bigDelta);
         }
         //ab hier debug purposes
-        Debug.log("Der neue Wert von OutputNeuron " + getIdentNummer() + " ist " + getOutputValue());
+        //Debug.log("Der Unterschied von OutputNeuron " + getIdentNummer() + " ist " + (getOutputValue() - oldValue));
     }
 
+    public double getSmallDelta() {
+        return smallDelta;
+    }
 
+    public double getWeight(int ident){
+        return weightMap.get(ident);
+    }
 }
