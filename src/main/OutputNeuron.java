@@ -1,5 +1,11 @@
 package main;
 
+ /*
+ @author Jens Krueger
+ @version 1.0
+ */
+
+
 import helper.MathHelper;
 
 import java.util.HashMap;
@@ -12,21 +18,25 @@ public class OutputNeuron {
     private HashMap<Integer, Double> weightMap = new HashMap<Integer, Double>();
 
     public void setIdentNummer(int identNummer){
+        // setzt die Identifikationsnummer des Neurons
         this.identNummer = identNummer;
     }
 
 
     public void generateNewWeightMap(){
+        //generiert eine neue HashMap in der die Gewichte die eingehenden Verbindungen gespeichert sind.
         for(int i = 0; i < 35; i++){
             weightMap.put(i,(Math.random() - 0.5d) / 20d); // so liegt das ergebnis ungefähr um 0
         }
     }
 
     public void receive(int ident, double input){
+        //empfaengt die Daten der vorherigen Schicht
         inputSum += weightMap.get(ident) * input;
     }
 
     private void calcOutput(){
+        //berechnet den output mithilfe der sigmoid funktion
         outputSum = MathHelper.sigmoidApprox(inputSum);
     }
 

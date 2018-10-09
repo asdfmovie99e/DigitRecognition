@@ -1,5 +1,11 @@
 package main;
 
+ /*
+ @author Jens Krueger
+ @version 1.0
+ */
+
+
 import helper.Debugger;
 import helper.MathHelper;
 import helper.UbyteCoder;

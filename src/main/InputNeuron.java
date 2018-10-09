@@ -1,5 +1,11 @@
 package main;
 
+ /*
+ @author Jens Krueger
+ @version 1.0
+ */
+
+
 public class InputNeuron {
 
     private int outputValue;
@@ -7,14 +13,17 @@ public class InputNeuron {
     private Integer identNummer = null;
 
     public void setHiddenNeurons(HiddenNeuron[] hiddenNeurons){
+        //füllt das Array hiddenNeurons mit den Neuronen der nächsten schicht
         this.hiddenNeurons = hiddenNeurons;
     }
 
     public void setIdentNummer(int identNummer){
+        // setzt die Identifikationsnummer des Neurons
         this.identNummer = identNummer;
     }
 
     public void setOutputValue(boolean outputBool){
+        // setzt den Output Value dieses Neurons. true = 1 ; false = 0
         if (outputBool){
             outputValue = 1;
         } else
@@ -24,6 +33,7 @@ public class InputNeuron {
     }
 
     public void sendOutputToNextLayer(){
+        //sendet den Outputwert an die nächste schicht. diese empfängt ihn mit der receive methode
         for(HiddenNeuron hiddenNeuron: hiddenNeurons){
             hiddenNeuron.receive(identNummer, outputValue);
         }

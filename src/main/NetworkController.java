@@ -1,5 +1,10 @@
 package main;
 
+ /*
+ @author Jens Krueger
+ @version 1.0
+ */
+
 import helper.Debugger;
 import helper.UbyteCoder;
 
@@ -8,8 +13,12 @@ class NetworkController {
     private InputNeuron[] inputNeurons = new InputNeuron[784];
     private HiddenNeuron[] hiddenNeurons = new HiddenNeuron[35]; // noch nicht sicher ob hier auch 784 gewählt werden sollte bzw was besser ist
     private OutputNeuron[] outputNeurons = new OutputNeuron[10];
+    private Object[] imageWithLabel;
+    private String label;
+    private Boolean[] pixelArray;
 
     void initializeNetwork()
+            //erstellt alle Neuronen und Verbindungen und verbindet sie
     {
         for(int i = 0; i < 784; i++){
             inputNeurons[i] = new InputNeuron();
@@ -35,6 +44,9 @@ class NetworkController {
     }
 
     public void startLearning() {
+        //startet die Lernroutine
+    imageWithLabel = UbyteCoder.getImageWithLabel(0);
+    label = (String) imageWithLabel[0];
 
 
 

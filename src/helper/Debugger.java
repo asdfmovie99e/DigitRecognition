@@ -1,5 +1,11 @@
 package helper;
 
+ /*
+ @author Jens Krueger
+ @version 1.0
+ */
+
+
 import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
@@ -13,9 +19,10 @@ public class Debugger {
     private static BufferedOutputStream stream;
 
     public static void log(String stringToLog){
+        //Der String stringToLog wird in die Output.log Datei und in die Konsole mit Timestamp geschrieben.
     if (!fileCreated) fileCreated = createLogFile();
     try {
-        String outputString = java.time.LocalTime.now() + " " + stringToLog+"\n";
+        String outputString = "[" + java.time.LocalTime.now() + "] " + stringToLog+"\n";
         stream.write(outputString.getBytes());
         System.out.print(outputString);
     } catch(Exception e){
@@ -25,6 +32,7 @@ public class Debugger {
     }
 
     private static boolean createLogFile(){
+        //Erstellt die Log Datei und den OutputStream. Muss normalerweise nur einmal aufgerufen werden am Anfang.
         try{
             String path = new File("src/Helper/Output.log").getAbsolutePath();
             logFile = new File(path);
@@ -39,6 +47,7 @@ public class Debugger {
     }
 
     public static void flush(){
+        //Wird am ende ausgeführt um den Output Buffer zu leeren.
         try {
             stream.flush();
         } catch (IOException e) {

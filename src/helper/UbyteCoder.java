@@ -22,12 +22,14 @@ public class UbyteCoder {
 
 
     public static void decode() {
+        //alle bilder aus der Ubyte Datei werden in %appdata%\mnist entpackt
         scanLabels();
         scanImages();
         createImages();
     }
 
     private static void scanLabels() {
+        //die Daten aus der UByte Label Datei werden in das LabelArray geladen
         byteArray = new byte[0];
         try {
             byteArray = Files.readAllBytes(new File(mnistFolder.getAbsolutePath() + "\\train-labels.idx1-ubyte").toPath());
@@ -41,6 +43,7 @@ public class UbyteCoder {
     }
 
     private static void scanImages() {
+        //die Daten aus der UByte images Datei werden in das pixelArray geladen
         byteArray = new byte[0];
         try {
             byteArray = Files.readAllBytes(new File(mnistFolder.getAbsolutePath() + "\\train-images.idx3-ubyte").toPath());
@@ -51,7 +54,6 @@ public class UbyteCoder {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        System.out.println(pixelArray.length);
     }
 
     public static Object[] getImageWithLabel(int imageNumber) { //das erste bild hat imageNumber = 0
@@ -69,7 +71,7 @@ public class UbyteCoder {
         return  resultArray;
     }
         private static void createImages () {
-
+            //diese Funktion erstellt aus dem labelarray und dem pixelarray echte Bilder
             int colorInt;
             long startTime = System.currentTimeMillis();
             int timeRemaining = Integer.MAX_VALUE;
