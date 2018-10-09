@@ -1,832 +1,843 @@
-[20:59:14.349] Program started
-[20:59:14.361] Netzwerk initialisiert
-[20:59:14.477] [Hidden in console] Ich bin Inputneuron 0 und habe den Wert 0
-[20:59:14.477] [Hidden in console] Ich bin Inputneuron 1 und habe den Wert 0
-[20:59:14.477] [Hidden in console] Ich bin Inputneuron 2 und habe den Wert 0
-[20:59:14.477] [Hidden in console] Ich bin Inputneuron 3 und habe den Wert 0
-[20:59:14.477] [Hidden in console] Ich bin Inputneuron 4 und habe den Wert 0
-[20:59:14.477] [Hidden in console] Ich bin Inputneuron 5 und habe den Wert 0
-[20:59:14.477] [Hidden in console] Ich bin Inputneuron 6 und habe den Wert 0
-[20:59:14.477] [Hidden in console] Ich bin Inputneuron 7 und habe den Wert 0
-[20:59:14.477] [Hidden in console] Ich bin Inputneuron 8 und habe den Wert 0
-[20:59:14.477] [Hidden in console] Ich bin Inputneuron 9 und habe den Wert 0
-[20:59:14.477] [Hidden in console] Ich bin Inputneuron 10 und habe den Wert 0
-[20:59:14.478] [Hidden in console] Ich bin Inputneuron 11 und habe den Wert 0
-[20:59:14.478] [Hidden in console] Ich bin Inputneuron 12 und habe den Wert 0
-[20:59:14.478] [Hidden in console] Ich bin Inputneuron 13 und habe den Wert 0
-[20:59:14.478] [Hidden in console] Ich bin Inputneuron 14 und habe den Wert 0
-[20:59:14.478] [Hidden in console] Ich bin Inputneuron 15 und habe den Wert 0
-[20:59:14.478] [Hidden in console] Ich bin Inputneuron 16 und habe den Wert 0
-[20:59:14.478] [Hidden in console] Ich bin Inputneuron 17 und habe den Wert 0
-[20:59:14.478] [Hidden in console] Ich bin Inputneuron 18 und habe den Wert 0
-[20:59:14.478] [Hidden in console] Ich bin Inputneuron 19 und habe den Wert 0
-[20:59:14.478] [Hidden in console] Ich bin Inputneuron 20 und habe den Wert 0
-[20:59:14.478] [Hidden in console] Ich bin Inputneuron 21 und habe den Wert 0
-[20:59:14.478] [Hidden in console] Ich bin Inputneuron 22 und habe den Wert 0
-[20:59:14.478] [Hidden in console] Ich bin Inputneuron 23 und habe den Wert 0
-[20:59:14.478] [Hidden in console] Ich bin Inputneuron 24 und habe den Wert 0
-[20:59:14.478] [Hidden in console] Ich bin Inputneuron 25 und habe den Wert 0
-[20:59:14.478] [Hidden in console] Ich bin Inputneuron 26 und habe den Wert 0
-[20:59:14.478] [Hidden in console] Ich bin Inputneuron 27 und habe den Wert 0
-[20:59:14.478] [Hidden in console] Ich bin Inputneuron 28 und habe den Wert 0
-[20:59:14.478] [Hidden in console] Ich bin Inputneuron 29 und habe den Wert 0
-[20:59:14.478] [Hidden in console] Ich bin Inputneuron 30 und habe den Wert 0
-[20:59:14.478] [Hidden in console] Ich bin Inputneuron 31 und habe den Wert 0
-[20:59:14.478] [Hidden in console] Ich bin Inputneuron 32 und habe den Wert 0
-[20:59:14.478] [Hidden in console] Ich bin Inputneuron 33 und habe den Wert 0
-[20:59:14.478] [Hidden in console] Ich bin Inputneuron 34 und habe den Wert 0
-[20:59:14.478] [Hidden in console] Ich bin Inputneuron 35 und habe den Wert 0
-[20:59:14.478] [Hidden in console] Ich bin Inputneuron 36 und habe den Wert 0
-[20:59:14.478] [Hidden in console] Ich bin Inputneuron 37 und habe den Wert 0
-[20:59:14.478] [Hidden in console] Ich bin Inputneuron 38 und habe den Wert 0
-[20:59:14.479] [Hidden in console] Ich bin Inputneuron 39 und habe den Wert 0
-[20:59:14.479] [Hidden in console] Ich bin Inputneuron 40 und habe den Wert 0
-[20:59:14.479] [Hidden in console] Ich bin Inputneuron 41 und habe den Wert 0
-[20:59:14.479] [Hidden in console] Ich bin Inputneuron 42 und habe den Wert 0
-[20:59:14.479] [Hidden in console] Ich bin Inputneuron 43 und habe den Wert 0
-[20:59:14.479] [Hidden in console] Ich bin Inputneuron 44 und habe den Wert 0
-[20:59:14.479] [Hidden in console] Ich bin Inputneuron 45 und habe den Wert 0
-[20:59:14.479] [Hidden in console] Ich bin Inputneuron 46 und habe den Wert 0
-[20:59:14.479] [Hidden in console] Ich bin Inputneuron 47 und habe den Wert 0
-[20:59:14.479] [Hidden in console] Ich bin Inputneuron 48 und habe den Wert 0
-[20:59:14.479] [Hidden in console] Ich bin Inputneuron 49 und habe den Wert 0
-[20:59:14.479] [Hidden in console] Ich bin Inputneuron 50 und habe den Wert 0
-[20:59:14.479] [Hidden in console] Ich bin Inputneuron 51 und habe den Wert 0
-[20:59:14.479] [Hidden in console] Ich bin Inputneuron 52 und habe den Wert 0
-[20:59:14.480] [Hidden in console] Ich bin Inputneuron 53 und habe den Wert 0
-[20:59:14.480] [Hidden in console] Ich bin Inputneuron 54 und habe den Wert 0
-[20:59:14.480] [Hidden in console] Ich bin Inputneuron 55 und habe den Wert 0
-[20:59:14.480] [Hidden in console] Ich bin Inputneuron 56 und habe den Wert 0
-[20:59:14.480] [Hidden in console] Ich bin Inputneuron 57 und habe den Wert 0
-[20:59:14.480] [Hidden in console] Ich bin Inputneuron 58 und habe den Wert 0
-[20:59:14.480] [Hidden in console] Ich bin Inputneuron 59 und habe den Wert 0
-[20:59:14.480] [Hidden in console] Ich bin Inputneuron 60 und habe den Wert 0
-[20:59:14.480] [Hidden in console] Ich bin Inputneuron 61 und habe den Wert 0
-[20:59:14.480] [Hidden in console] Ich bin Inputneuron 62 und habe den Wert 0
-[20:59:14.480] [Hidden in console] Ich bin Inputneuron 63 und habe den Wert 0
-[20:59:14.480] [Hidden in console] Ich bin Inputneuron 64 und habe den Wert 0
-[20:59:14.480] [Hidden in console] Ich bin Inputneuron 65 und habe den Wert 0
-[20:59:14.480] [Hidden in console] Ich bin Inputneuron 66 und habe den Wert 0
-[20:59:14.480] [Hidden in console] Ich bin Inputneuron 67 und habe den Wert 0
-[20:59:14.480] [Hidden in console] Ich bin Inputneuron 68 und habe den Wert 0
-[20:59:14.480] [Hidden in console] Ich bin Inputneuron 69 und habe den Wert 0
-[20:59:14.480] [Hidden in console] Ich bin Inputneuron 70 und habe den Wert 0
-[20:59:14.480] [Hidden in console] Ich bin Inputneuron 71 und habe den Wert 0
-[20:59:14.480] [Hidden in console] Ich bin Inputneuron 72 und habe den Wert 0
-[20:59:14.480] [Hidden in console] Ich bin Inputneuron 73 und habe den Wert 0
-[20:59:14.480] [Hidden in console] Ich bin Inputneuron 74 und habe den Wert 0
-[20:59:14.480] [Hidden in console] Ich bin Inputneuron 75 und habe den Wert 0
-[20:59:14.480] [Hidden in console] Ich bin Inputneuron 76 und habe den Wert 0
-[20:59:14.480] [Hidden in console] Ich bin Inputneuron 77 und habe den Wert 0
-[20:59:14.480] [Hidden in console] Ich bin Inputneuron 78 und habe den Wert 0
-[20:59:14.480] [Hidden in console] Ich bin Inputneuron 79 und habe den Wert 0
-[20:59:14.480] [Hidden in console] Ich bin Inputneuron 80 und habe den Wert 0
-[20:59:14.480] [Hidden in console] Ich bin Inputneuron 81 und habe den Wert 0
-[20:59:14.480] [Hidden in console] Ich bin Inputneuron 82 und habe den Wert 0
-[20:59:14.480] [Hidden in console] Ich bin Inputneuron 83 und habe den Wert 0
-[20:59:14.480] [Hidden in console] Ich bin Inputneuron 84 und habe den Wert 0
-[20:59:14.481] [Hidden in console] Ich bin Inputneuron 85 und habe den Wert 0
-[20:59:14.481] [Hidden in console] Ich bin Inputneuron 86 und habe den Wert 0
-[20:59:14.481] [Hidden in console] Ich bin Inputneuron 87 und habe den Wert 0
-[20:59:14.481] [Hidden in console] Ich bin Inputneuron 88 und habe den Wert 0
-[20:59:14.481] [Hidden in console] Ich bin Inputneuron 89 und habe den Wert 0
-[20:59:14.481] [Hidden in console] Ich bin Inputneuron 90 und habe den Wert 0
-[20:59:14.481] [Hidden in console] Ich bin Inputneuron 91 und habe den Wert 0
-[20:59:14.481] [Hidden in console] Ich bin Inputneuron 92 und habe den Wert 0
-[20:59:14.481] [Hidden in console] Ich bin Inputneuron 93 und habe den Wert 0
-[20:59:14.481] [Hidden in console] Ich bin Inputneuron 94 und habe den Wert 0
-[20:59:14.481] [Hidden in console] Ich bin Inputneuron 95 und habe den Wert 0
-[20:59:14.481] [Hidden in console] Ich bin Inputneuron 96 und habe den Wert 0
-[20:59:14.481] [Hidden in console] Ich bin Inputneuron 97 und habe den Wert 0
-[20:59:14.481] [Hidden in console] Ich bin Inputneuron 98 und habe den Wert 0
-[20:59:14.481] [Hidden in console] Ich bin Inputneuron 99 und habe den Wert 0
-[20:59:14.481] [Hidden in console] Ich bin Inputneuron 100 und habe den Wert 0
-[20:59:14.481] [Hidden in console] Ich bin Inputneuron 101 und habe den Wert 0
-[20:59:14.481] [Hidden in console] Ich bin Inputneuron 102 und habe den Wert 0
-[20:59:14.481] [Hidden in console] Ich bin Inputneuron 103 und habe den Wert 0
-[20:59:14.481] [Hidden in console] Ich bin Inputneuron 104 und habe den Wert 0
-[20:59:14.481] [Hidden in console] Ich bin Inputneuron 105 und habe den Wert 0
-[20:59:14.481] [Hidden in console] Ich bin Inputneuron 106 und habe den Wert 0
-[20:59:14.481] [Hidden in console] Ich bin Inputneuron 107 und habe den Wert 0
-[20:59:14.481] [Hidden in console] Ich bin Inputneuron 108 und habe den Wert 0
-[20:59:14.482] [Hidden in console] Ich bin Inputneuron 109 und habe den Wert 0
-[20:59:14.482] [Hidden in console] Ich bin Inputneuron 110 und habe den Wert 0
-[20:59:14.482] [Hidden in console] Ich bin Inputneuron 111 und habe den Wert 0
-[20:59:14.482] [Hidden in console] Ich bin Inputneuron 112 und habe den Wert 0
-[20:59:14.482] [Hidden in console] Ich bin Inputneuron 113 und habe den Wert 0
-[20:59:14.482] [Hidden in console] Ich bin Inputneuron 114 und habe den Wert 0
-[20:59:14.482] [Hidden in console] Ich bin Inputneuron 115 und habe den Wert 0
-[20:59:14.482] [Hidden in console] Ich bin Inputneuron 116 und habe den Wert 0
-[20:59:14.482] [Hidden in console] Ich bin Inputneuron 117 und habe den Wert 0
-[20:59:14.482] [Hidden in console] Ich bin Inputneuron 118 und habe den Wert 0
-[20:59:14.482] [Hidden in console] Ich bin Inputneuron 119 und habe den Wert 0
-[20:59:14.482] [Hidden in console] Ich bin Inputneuron 120 und habe den Wert 0
-[20:59:14.482] [Hidden in console] Ich bin Inputneuron 121 und habe den Wert 0
-[20:59:14.482] [Hidden in console] Ich bin Inputneuron 122 und habe den Wert 0
-[20:59:14.482] [Hidden in console] Ich bin Inputneuron 123 und habe den Wert 0
-[20:59:14.482] [Hidden in console] Ich bin Inputneuron 124 und habe den Wert 0
-[20:59:14.482] [Hidden in console] Ich bin Inputneuron 125 und habe den Wert 0
-[20:59:14.482] [Hidden in console] Ich bin Inputneuron 126 und habe den Wert 0
-[20:59:14.482] [Hidden in console] Ich bin Inputneuron 127 und habe den Wert 0
-[20:59:14.482] [Hidden in console] Ich bin Inputneuron 128 und habe den Wert 0
-[20:59:14.482] [Hidden in console] Ich bin Inputneuron 129 und habe den Wert 0
-[20:59:14.482] [Hidden in console] Ich bin Inputneuron 130 und habe den Wert 0
-[20:59:14.482] [Hidden in console] Ich bin Inputneuron 131 und habe den Wert 0
-[20:59:14.483] [Hidden in console] Ich bin Inputneuron 132 und habe den Wert 0
-[20:59:14.483] [Hidden in console] Ich bin Inputneuron 133 und habe den Wert 0
-[20:59:14.483] [Hidden in console] Ich bin Inputneuron 134 und habe den Wert 0
-[20:59:14.483] [Hidden in console] Ich bin Inputneuron 135 und habe den Wert 0
-[20:59:14.483] [Hidden in console] Ich bin Inputneuron 136 und habe den Wert 0
-[20:59:14.483] [Hidden in console] Ich bin Inputneuron 137 und habe den Wert 0
-[20:59:14.483] [Hidden in console] Ich bin Inputneuron 138 und habe den Wert 0
-[20:59:14.483] [Hidden in console] Ich bin Inputneuron 139 und habe den Wert 0
-[20:59:14.483] [Hidden in console] Ich bin Inputneuron 140 und habe den Wert 0
-[20:59:14.483] [Hidden in console] Ich bin Inputneuron 141 und habe den Wert 0
-[20:59:14.483] [Hidden in console] Ich bin Inputneuron 142 und habe den Wert 0
-[20:59:14.483] [Hidden in console] Ich bin Inputneuron 143 und habe den Wert 0
-[20:59:14.483] [Hidden in console] Ich bin Inputneuron 144 und habe den Wert 0
-[20:59:14.483] [Hidden in console] Ich bin Inputneuron 145 und habe den Wert 0
-[20:59:14.483] [Hidden in console] Ich bin Inputneuron 146 und habe den Wert 0
-[20:59:14.483] [Hidden in console] Ich bin Inputneuron 147 und habe den Wert 0
-[20:59:14.483] [Hidden in console] Ich bin Inputneuron 148 und habe den Wert 0
-[20:59:14.483] [Hidden in console] Ich bin Inputneuron 149 und habe den Wert 0
-[20:59:14.483] [Hidden in console] Ich bin Inputneuron 150 und habe den Wert 0
-[20:59:14.483] [Hidden in console] Ich bin Inputneuron 151 und habe den Wert 0
-[20:59:14.483] [Hidden in console] Ich bin Inputneuron 152 und habe den Wert 1
-[20:59:14.483] [Hidden in console] Ich bin Inputneuron 153 und habe den Wert 1
-[20:59:14.483] [Hidden in console] Ich bin Inputneuron 154 und habe den Wert 1
-[20:59:14.483] [Hidden in console] Ich bin Inputneuron 155 und habe den Wert 1
-[20:59:14.483] [Hidden in console] Ich bin Inputneuron 156 und habe den Wert 1
-[20:59:14.483] [Hidden in console] Ich bin Inputneuron 157 und habe den Wert 1
-[20:59:14.483] [Hidden in console] Ich bin Inputneuron 158 und habe den Wert 1
-[20:59:14.483] [Hidden in console] Ich bin Inputneuron 159 und habe den Wert 1
-[20:59:14.484] [Hidden in console] Ich bin Inputneuron 160 und habe den Wert 1
-[20:59:14.484] [Hidden in console] Ich bin Inputneuron 161 und habe den Wert 1
-[20:59:14.484] [Hidden in console] Ich bin Inputneuron 162 und habe den Wert 1
-[20:59:14.484] [Hidden in console] Ich bin Inputneuron 163 und habe den Wert 1
-[20:59:14.484] [Hidden in console] Ich bin Inputneuron 164 und habe den Wert 0
-[20:59:14.484] [Hidden in console] Ich bin Inputneuron 165 und habe den Wert 0
-[20:59:14.484] [Hidden in console] Ich bin Inputneuron 166 und habe den Wert 0
-[20:59:14.484] [Hidden in console] Ich bin Inputneuron 167 und habe den Wert 0
-[20:59:14.484] [Hidden in console] Ich bin Inputneuron 168 und habe den Wert 0
-[20:59:14.484] [Hidden in console] Ich bin Inputneuron 169 und habe den Wert 0
-[20:59:14.484] [Hidden in console] Ich bin Inputneuron 170 und habe den Wert 0
-[20:59:14.484] [Hidden in console] Ich bin Inputneuron 171 und habe den Wert 0
-[20:59:14.484] [Hidden in console] Ich bin Inputneuron 172 und habe den Wert 0
-[20:59:14.484] [Hidden in console] Ich bin Inputneuron 173 und habe den Wert 0
-[20:59:14.484] [Hidden in console] Ich bin Inputneuron 174 und habe den Wert 0
-[20:59:14.484] [Hidden in console] Ich bin Inputneuron 175 und habe den Wert 0
-[20:59:14.484] [Hidden in console] Ich bin Inputneuron 176 und habe den Wert 1
-[20:59:14.484] [Hidden in console] Ich bin Inputneuron 177 und habe den Wert 1
-[20:59:14.484] [Hidden in console] Ich bin Inputneuron 178 und habe den Wert 1
-[20:59:14.484] [Hidden in console] Ich bin Inputneuron 179 und habe den Wert 1
-[20:59:14.484] [Hidden in console] Ich bin Inputneuron 180 und habe den Wert 1
-[20:59:14.484] [Hidden in console] Ich bin Inputneuron 181 und habe den Wert 1
-[20:59:14.484] [Hidden in console] Ich bin Inputneuron 182 und habe den Wert 1
-[20:59:14.484] [Hidden in console] Ich bin Inputneuron 183 und habe den Wert 1
-[20:59:14.484] [Hidden in console] Ich bin Inputneuron 184 und habe den Wert 1
-[20:59:14.484] [Hidden in console] Ich bin Inputneuron 185 und habe den Wert 1
-[20:59:14.484] [Hidden in console] Ich bin Inputneuron 186 und habe den Wert 1
-[20:59:14.484] [Hidden in console] Ich bin Inputneuron 187 und habe den Wert 1
-[20:59:14.484] [Hidden in console] Ich bin Inputneuron 188 und habe den Wert 1
-[20:59:14.484] [Hidden in console] Ich bin Inputneuron 189 und habe den Wert 1
-[20:59:14.484] [Hidden in console] Ich bin Inputneuron 190 und habe den Wert 1
-[20:59:14.484] [Hidden in console] Ich bin Inputneuron 191 und habe den Wert 1
-[20:59:14.484] [Hidden in console] Ich bin Inputneuron 192 und habe den Wert 0
-[20:59:14.485] [Hidden in console] Ich bin Inputneuron 193 und habe den Wert 0
-[20:59:14.485] [Hidden in console] Ich bin Inputneuron 194 und habe den Wert 0
-[20:59:14.485] [Hidden in console] Ich bin Inputneuron 195 und habe den Wert 0
-[20:59:14.485] [Hidden in console] Ich bin Inputneuron 196 und habe den Wert 0
-[20:59:14.485] [Hidden in console] Ich bin Inputneuron 197 und habe den Wert 0
-[20:59:14.485] [Hidden in console] Ich bin Inputneuron 198 und habe den Wert 0
-[20:59:14.485] [Hidden in console] Ich bin Inputneuron 199 und habe den Wert 0
-[20:59:14.485] [Hidden in console] Ich bin Inputneuron 200 und habe den Wert 0
-[20:59:14.485] [Hidden in console] Ich bin Inputneuron 201 und habe den Wert 0
-[20:59:14.485] [Hidden in console] Ich bin Inputneuron 202 und habe den Wert 0
-[20:59:14.485] [Hidden in console] Ich bin Inputneuron 203 und habe den Wert 1
-[20:59:14.485] [Hidden in console] Ich bin Inputneuron 204 und habe den Wert 1
-[20:59:14.485] [Hidden in console] Ich bin Inputneuron 205 und habe den Wert 1
-[20:59:14.485] [Hidden in console] Ich bin Inputneuron 206 und habe den Wert 1
-[20:59:14.485] [Hidden in console] Ich bin Inputneuron 207 und habe den Wert 1
-[20:59:14.485] [Hidden in console] Ich bin Inputneuron 208 und habe den Wert 1
-[20:59:14.485] [Hidden in console] Ich bin Inputneuron 209 und habe den Wert 1
-[20:59:14.485] [Hidden in console] Ich bin Inputneuron 210 und habe den Wert 1
-[20:59:14.485] [Hidden in console] Ich bin Inputneuron 211 und habe den Wert 1
-[20:59:14.485] [Hidden in console] Ich bin Inputneuron 212 und habe den Wert 1
-[20:59:14.485] [Hidden in console] Ich bin Inputneuron 213 und habe den Wert 1
-[20:59:14.485] [Hidden in console] Ich bin Inputneuron 214 und habe den Wert 1
-[20:59:14.485] [Hidden in console] Ich bin Inputneuron 215 und habe den Wert 1
-[20:59:14.485] [Hidden in console] Ich bin Inputneuron 216 und habe den Wert 1
-[20:59:14.485] [Hidden in console] Ich bin Inputneuron 217 und habe den Wert 1
-[20:59:14.485] [Hidden in console] Ich bin Inputneuron 218 und habe den Wert 1
-[20:59:14.486] [Hidden in console] Ich bin Inputneuron 219 und habe den Wert 0
-[20:59:14.486] [Hidden in console] Ich bin Inputneuron 220 und habe den Wert 0
-[20:59:14.486] [Hidden in console] Ich bin Inputneuron 221 und habe den Wert 0
-[20:59:14.486] [Hidden in console] Ich bin Inputneuron 222 und habe den Wert 0
-[20:59:14.486] [Hidden in console] Ich bin Inputneuron 223 und habe den Wert 0
-[20:59:14.486] [Hidden in console] Ich bin Inputneuron 224 und habe den Wert 0
-[20:59:14.486] [Hidden in console] Ich bin Inputneuron 225 und habe den Wert 0
-[20:59:14.486] [Hidden in console] Ich bin Inputneuron 226 und habe den Wert 0
-[20:59:14.486] [Hidden in console] Ich bin Inputneuron 227 und habe den Wert 0
-[20:59:14.486] [Hidden in console] Ich bin Inputneuron 228 und habe den Wert 0
-[20:59:14.486] [Hidden in console] Ich bin Inputneuron 229 und habe den Wert 0
-[20:59:14.486] [Hidden in console] Ich bin Inputneuron 230 und habe den Wert 0
-[20:59:14.486] [Hidden in console] Ich bin Inputneuron 231 und habe den Wert 1
-[20:59:14.486] [Hidden in console] Ich bin Inputneuron 232 und habe den Wert 1
-[20:59:14.486] [Hidden in console] Ich bin Inputneuron 233 und habe den Wert 1
-[20:59:14.486] [Hidden in console] Ich bin Inputneuron 234 und habe den Wert 1
-[20:59:14.486] [Hidden in console] Ich bin Inputneuron 235 und habe den Wert 1
-[20:59:14.486] [Hidden in console] Ich bin Inputneuron 236 und habe den Wert 1
-[20:59:14.486] [Hidden in console] Ich bin Inputneuron 237 und habe den Wert 1
-[20:59:14.486] [Hidden in console] Ich bin Inputneuron 238 und habe den Wert 1
-[20:59:14.486] [Hidden in console] Ich bin Inputneuron 239 und habe den Wert 1
-[20:59:14.486] [Hidden in console] Ich bin Inputneuron 240 und habe den Wert 1
-[20:59:14.486] [Hidden in console] Ich bin Inputneuron 241 und habe den Wert 1
-[20:59:14.486] [Hidden in console] Ich bin Inputneuron 242 und habe den Wert 0
-[20:59:14.486] [Hidden in console] Ich bin Inputneuron 243 und habe den Wert 0
-[20:59:14.486] [Hidden in console] Ich bin Inputneuron 244 und habe den Wert 0
-[20:59:14.486] [Hidden in console] Ich bin Inputneuron 245 und habe den Wert 0
-[20:59:14.486] [Hidden in console] Ich bin Inputneuron 246 und habe den Wert 0
-[20:59:14.486] [Hidden in console] Ich bin Inputneuron 247 und habe den Wert 0
-[20:59:14.486] [Hidden in console] Ich bin Inputneuron 248 und habe den Wert 0
-[20:59:14.486] [Hidden in console] Ich bin Inputneuron 249 und habe den Wert 0
-[20:59:14.486] [Hidden in console] Ich bin Inputneuron 250 und habe den Wert 0
-[20:59:14.486] [Hidden in console] Ich bin Inputneuron 251 und habe den Wert 0
-[20:59:14.486] [Hidden in console] Ich bin Inputneuron 252 und habe den Wert 0
-[20:59:14.486] [Hidden in console] Ich bin Inputneuron 253 und habe den Wert 0
-[20:59:14.486] [Hidden in console] Ich bin Inputneuron 254 und habe den Wert 0
-[20:59:14.486] [Hidden in console] Ich bin Inputneuron 255 und habe den Wert 0
-[20:59:14.486] [Hidden in console] Ich bin Inputneuron 256 und habe den Wert 0
-[20:59:14.486] [Hidden in console] Ich bin Inputneuron 257 und habe den Wert 0
-[20:59:14.486] [Hidden in console] Ich bin Inputneuron 258 und habe den Wert 0
-[20:59:14.486] [Hidden in console] Ich bin Inputneuron 259 und habe den Wert 0
-[20:59:14.486] [Hidden in console] Ich bin Inputneuron 260 und habe den Wert 1
-[20:59:14.486] [Hidden in console] Ich bin Inputneuron 261 und habe den Wert 1
-[20:59:14.486] [Hidden in console] Ich bin Inputneuron 262 und habe den Wert 1
-[20:59:14.486] [Hidden in console] Ich bin Inputneuron 263 und habe den Wert 1
-[20:59:14.486] [Hidden in console] Ich bin Inputneuron 264 und habe den Wert 1
-[20:59:14.486] [Hidden in console] Ich bin Inputneuron 265 und habe den Wert 1
-[20:59:14.486] [Hidden in console] Ich bin Inputneuron 266 und habe den Wert 1
-[20:59:14.486] [Hidden in console] Ich bin Inputneuron 267 und habe den Wert 0
-[20:59:14.487] [Hidden in console] Ich bin Inputneuron 268 und habe den Wert 1
-[20:59:14.487] [Hidden in console] Ich bin Inputneuron 269 und habe den Wert 1
-[20:59:14.487] [Hidden in console] Ich bin Inputneuron 270 und habe den Wert 0
-[20:59:14.487] [Hidden in console] Ich bin Inputneuron 271 und habe den Wert 0
-[20:59:14.487] [Hidden in console] Ich bin Inputneuron 272 und habe den Wert 0
-[20:59:14.487] [Hidden in console] Ich bin Inputneuron 273 und habe den Wert 0
-[20:59:14.487] [Hidden in console] Ich bin Inputneuron 274 und habe den Wert 0
-[20:59:14.487] [Hidden in console] Ich bin Inputneuron 275 und habe den Wert 0
-[20:59:14.487] [Hidden in console] Ich bin Inputneuron 276 und habe den Wert 0
-[20:59:14.487] [Hidden in console] Ich bin Inputneuron 277 und habe den Wert 0
-[20:59:14.487] [Hidden in console] Ich bin Inputneuron 278 und habe den Wert 0
-[20:59:14.487] [Hidden in console] Ich bin Inputneuron 279 und habe den Wert 0
-[20:59:14.487] [Hidden in console] Ich bin Inputneuron 280 und habe den Wert 0
-[20:59:14.487] [Hidden in console] Ich bin Inputneuron 281 und habe den Wert 0
-[20:59:14.487] [Hidden in console] Ich bin Inputneuron 282 und habe den Wert 0
-[20:59:14.487] [Hidden in console] Ich bin Inputneuron 283 und habe den Wert 0
-[20:59:14.487] [Hidden in console] Ich bin Inputneuron 284 und habe den Wert 0
-[20:59:14.487] [Hidden in console] Ich bin Inputneuron 285 und habe den Wert 0
-[20:59:14.487] [Hidden in console] Ich bin Inputneuron 286 und habe den Wert 0
-[20:59:14.487] [Hidden in console] Ich bin Inputneuron 287 und habe den Wert 0
-[20:59:14.487] [Hidden in console] Ich bin Inputneuron 288 und habe den Wert 0
-[20:59:14.487] [Hidden in console] Ich bin Inputneuron 289 und habe den Wert 1
-[20:59:14.487] [Hidden in console] Ich bin Inputneuron 290 und habe den Wert 1
-[20:59:14.487] [Hidden in console] Ich bin Inputneuron 291 und habe den Wert 1
-[20:59:14.487] [Hidden in console] Ich bin Inputneuron 292 und habe den Wert 1
-[20:59:14.487] [Hidden in console] Ich bin Inputneuron 293 und habe den Wert 1
-[20:59:14.487] [Hidden in console] Ich bin Inputneuron 294 und habe den Wert 0
-[20:59:14.487] [Hidden in console] Ich bin Inputneuron 295 und habe den Wert 0
-[20:59:14.487] [Hidden in console] Ich bin Inputneuron 296 und habe den Wert 0
-[20:59:14.487] [Hidden in console] Ich bin Inputneuron 297 und habe den Wert 0
-[20:59:14.487] [Hidden in console] Ich bin Inputneuron 298 und habe den Wert 0
-[20:59:14.487] [Hidden in console] Ich bin Inputneuron 299 und habe den Wert 0
-[20:59:14.487] [Hidden in console] Ich bin Inputneuron 300 und habe den Wert 0
-[20:59:14.487] [Hidden in console] Ich bin Inputneuron 301 und habe den Wert 0
-[20:59:14.487] [Hidden in console] Ich bin Inputneuron 302 und habe den Wert 0
-[20:59:14.487] [Hidden in console] Ich bin Inputneuron 303 und habe den Wert 0
-[20:59:14.487] [Hidden in console] Ich bin Inputneuron 304 und habe den Wert 0
-[20:59:14.487] [Hidden in console] Ich bin Inputneuron 305 und habe den Wert 0
-[20:59:14.487] [Hidden in console] Ich bin Inputneuron 306 und habe den Wert 0
-[20:59:14.487] [Hidden in console] Ich bin Inputneuron 307 und habe den Wert 0
-[20:59:14.487] [Hidden in console] Ich bin Inputneuron 308 und habe den Wert 0
-[20:59:14.487] [Hidden in console] Ich bin Inputneuron 309 und habe den Wert 0
-[20:59:14.487] [Hidden in console] Ich bin Inputneuron 310 und habe den Wert 0
-[20:59:14.487] [Hidden in console] Ich bin Inputneuron 311 und habe den Wert 0
-[20:59:14.487] [Hidden in console] Ich bin Inputneuron 312 und habe den Wert 0
-[20:59:14.487] [Hidden in console] Ich bin Inputneuron 313 und habe den Wert 0
-[20:59:14.487] [Hidden in console] Ich bin Inputneuron 314 und habe den Wert 0
-[20:59:14.487] [Hidden in console] Ich bin Inputneuron 315 und habe den Wert 0
-[20:59:14.487] [Hidden in console] Ich bin Inputneuron 316 und habe den Wert 0
-[20:59:14.487] [Hidden in console] Ich bin Inputneuron 317 und habe den Wert 0
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 318 und habe den Wert 0
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 319 und habe den Wert 1
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 320 und habe den Wert 1
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 321 und habe den Wert 1
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 322 und habe den Wert 1
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 323 und habe den Wert 0
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 324 und habe den Wert 0
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 325 und habe den Wert 0
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 326 und habe den Wert 0
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 327 und habe den Wert 0
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 328 und habe den Wert 0
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 329 und habe den Wert 0
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 330 und habe den Wert 0
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 331 und habe den Wert 0
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 332 und habe den Wert 0
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 333 und habe den Wert 0
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 334 und habe den Wert 0
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 335 und habe den Wert 0
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 336 und habe den Wert 0
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 337 und habe den Wert 0
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 338 und habe den Wert 0
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 339 und habe den Wert 0
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 340 und habe den Wert 0
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 341 und habe den Wert 0
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 342 und habe den Wert 0
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 343 und habe den Wert 0
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 344 und habe den Wert 0
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 345 und habe den Wert 0
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 346 und habe den Wert 0
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 347 und habe den Wert 1
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 348 und habe den Wert 1
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 349 und habe den Wert 1
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 350 und habe den Wert 1
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 351 und habe den Wert 0
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 352 und habe den Wert 0
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 353 und habe den Wert 0
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 354 und habe den Wert 0
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 355 und habe den Wert 0
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 356 und habe den Wert 0
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 357 und habe den Wert 0
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 358 und habe den Wert 0
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 359 und habe den Wert 0
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 360 und habe den Wert 0
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 361 und habe den Wert 0
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 362 und habe den Wert 0
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 363 und habe den Wert 0
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 364 und habe den Wert 0
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 365 und habe den Wert 0
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 366 und habe den Wert 0
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 367 und habe den Wert 0
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 368 und habe den Wert 0
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 369 und habe den Wert 0
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 370 und habe den Wert 0
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 371 und habe den Wert 0
-[20:59:14.488] [Hidden in console] Ich bin Inputneuron 372 und habe den Wert 0
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 373 und habe den Wert 0
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 374 und habe den Wert 0
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 375 und habe den Wert 0
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 376 und habe den Wert 1
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 377 und habe den Wert 1
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 378 und habe den Wert 1
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 379 und habe den Wert 1
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 380 und habe den Wert 1
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 381 und habe den Wert 1
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 382 und habe den Wert 0
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 383 und habe den Wert 0
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 384 und habe den Wert 0
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 385 und habe den Wert 0
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 386 und habe den Wert 0
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 387 und habe den Wert 0
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 388 und habe den Wert 0
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 389 und habe den Wert 0
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 390 und habe den Wert 0
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 391 und habe den Wert 0
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 392 und habe den Wert 0
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 393 und habe den Wert 0
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 394 und habe den Wert 0
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 395 und habe den Wert 0
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 396 und habe den Wert 0
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 397 und habe den Wert 0
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 398 und habe den Wert 0
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 399 und habe den Wert 0
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 400 und habe den Wert 0
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 401 und habe den Wert 0
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 402 und habe den Wert 0
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 403 und habe den Wert 0
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 404 und habe den Wert 0
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 405 und habe den Wert 1
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 406 und habe den Wert 1
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 407 und habe den Wert 1
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 408 und habe den Wert 1
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 409 und habe den Wert 1
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 410 und habe den Wert 1
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 411 und habe den Wert 0
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 412 und habe den Wert 0
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 413 und habe den Wert 0
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 414 und habe den Wert 0
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 415 und habe den Wert 0
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 416 und habe den Wert 0
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 417 und habe den Wert 0
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 418 und habe den Wert 0
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 419 und habe den Wert 0
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 420 und habe den Wert 0
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 421 und habe den Wert 0
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 422 und habe den Wert 0
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 423 und habe den Wert 0
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 424 und habe den Wert 0
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 425 und habe den Wert 0
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 426 und habe den Wert 0
-[20:59:14.489] [Hidden in console] Ich bin Inputneuron 427 und habe den Wert 0
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 428 und habe den Wert 0
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 429 und habe den Wert 0
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 430 und habe den Wert 0
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 431 und habe den Wert 0
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 432 und habe den Wert 0
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 433 und habe den Wert 0
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 434 und habe den Wert 1
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 435 und habe den Wert 1
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 436 und habe den Wert 1
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 437 und habe den Wert 1
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 438 und habe den Wert 1
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 439 und habe den Wert 1
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 440 und habe den Wert 0
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 441 und habe den Wert 0
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 442 und habe den Wert 0
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 443 und habe den Wert 0
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 444 und habe den Wert 0
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 445 und habe den Wert 0
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 446 und habe den Wert 0
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 447 und habe den Wert 0
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 448 und habe den Wert 0
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 449 und habe den Wert 0
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 450 und habe den Wert 0
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 451 und habe den Wert 0
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 452 und habe den Wert 0
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 453 und habe den Wert 0
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 454 und habe den Wert 0
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 455 und habe den Wert 0
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 456 und habe den Wert 0
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 457 und habe den Wert 0
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 458 und habe den Wert 0
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 459 und habe den Wert 0
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 460 und habe den Wert 0
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 461 und habe den Wert 0
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 462 und habe den Wert 0
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 463 und habe den Wert 1
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 464 und habe den Wert 1
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 465 und habe den Wert 1
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 466 und habe den Wert 1
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 467 und habe den Wert 1
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 468 und habe den Wert 0
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 469 und habe den Wert 0
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 470 und habe den Wert 0
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 471 und habe den Wert 0
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 472 und habe den Wert 0
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 473 und habe den Wert 0
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 474 und habe den Wert 0
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 475 und habe den Wert 0
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 476 und habe den Wert 0
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 477 und habe den Wert 0
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 478 und habe den Wert 0
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 479 und habe den Wert 0
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 480 und habe den Wert 0
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 481 und habe den Wert 0
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 482 und habe den Wert 0
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 483 und habe den Wert 0
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 484 und habe den Wert 0
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 485 und habe den Wert 0
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 486 und habe den Wert 0
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 487 und habe den Wert 0
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 488 und habe den Wert 0
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 489 und habe den Wert 0
-[20:59:14.490] [Hidden in console] Ich bin Inputneuron 490 und habe den Wert 0
-[20:59:14.491] [Hidden in console] Ich bin Inputneuron 491 und habe den Wert 0
-[20:59:14.491] [Hidden in console] Ich bin Inputneuron 492 und habe den Wert 0
-[20:59:14.491] [Hidden in console] Ich bin Inputneuron 493 und habe den Wert 1
-[20:59:14.491] [Hidden in console] Ich bin Inputneuron 494 und habe den Wert 1
-[20:59:14.491] [Hidden in console] Ich bin Inputneuron 495 und habe den Wert 1
-[20:59:14.491] [Hidden in console] Ich bin Inputneuron 496 und habe den Wert 1
-[20:59:14.491] [Hidden in console] Ich bin Inputneuron 497 und habe den Wert 0
-[20:59:14.491] [Hidden in console] Ich bin Inputneuron 498 und habe den Wert 0
-[20:59:14.491] [Hidden in console] Ich bin Inputneuron 499 und habe den Wert 0
-[20:59:14.491] [Hidden in console] Ich bin Inputneuron 500 und habe den Wert 0
-[20:59:14.491] [Hidden in console] Ich bin Inputneuron 501 und habe den Wert 0
-[20:59:14.491] [Hidden in console] Ich bin Inputneuron 502 und habe den Wert 0
-[20:59:14.491] [Hidden in console] Ich bin Inputneuron 503 und habe den Wert 0
-[20:59:14.491] [Hidden in console] Ich bin Inputneuron 504 und habe den Wert 0
-[20:59:14.491] [Hidden in console] Ich bin Inputneuron 505 und habe den Wert 0
-[20:59:14.491] [Hidden in console] Ich bin Inputneuron 506 und habe den Wert 0
-[20:59:14.491] [Hidden in console] Ich bin Inputneuron 507 und habe den Wert 0
-[20:59:14.491] [Hidden in console] Ich bin Inputneuron 508 und habe den Wert 0
-[20:59:14.491] [Hidden in console] Ich bin Inputneuron 509 und habe den Wert 0
-[20:59:14.491] [Hidden in console] Ich bin Inputneuron 510 und habe den Wert 0
-[20:59:14.491] [Hidden in console] Ich bin Inputneuron 511 und habe den Wert 0
-[20:59:14.491] [Hidden in console] Ich bin Inputneuron 512 und habe den Wert 0
-[20:59:14.491] [Hidden in console] Ich bin Inputneuron 513 und habe den Wert 0
-[20:59:14.491] [Hidden in console] Ich bin Inputneuron 514 und habe den Wert 0
-[20:59:14.491] [Hidden in console] Ich bin Inputneuron 515 und habe den Wert 0
-[20:59:14.491] [Hidden in console] Ich bin Inputneuron 516 und habe den Wert 0
-[20:59:14.491] [Hidden in console] Ich bin Inputneuron 517 und habe den Wert 0
-[20:59:14.491] [Hidden in console] Ich bin Inputneuron 518 und habe den Wert 1
-[20:59:14.491] [Hidden in console] Ich bin Inputneuron 519 und habe den Wert 1
-[20:59:14.491] [Hidden in console] Ich bin Inputneuron 520 und habe den Wert 1
-[20:59:14.491] [Hidden in console] Ich bin Inputneuron 521 und habe den Wert 1
-[20:59:14.491] [Hidden in console] Ich bin Inputneuron 522 und habe den Wert 1
-[20:59:14.491] [Hidden in console] Ich bin Inputneuron 523 und habe den Wert 1
-[20:59:14.491] [Hidden in console] Ich bin Inputneuron 524 und habe den Wert 1
-[20:59:14.491] [Hidden in console] Ich bin Inputneuron 525 und habe den Wert 0
-[20:59:14.491] [Hidden in console] Ich bin Inputneuron 526 und habe den Wert 0
-[20:59:14.491] [Hidden in console] Ich bin Inputneuron 527 und habe den Wert 0
-[20:59:14.491] [Hidden in console] Ich bin Inputneuron 528 und habe den Wert 0
-[20:59:14.491] [Hidden in console] Ich bin Inputneuron 529 und habe den Wert 0
-[20:59:14.491] [Hidden in console] Ich bin Inputneuron 530 und habe den Wert 0
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 531 und habe den Wert 0
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 532 und habe den Wert 0
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 533 und habe den Wert 0
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 534 und habe den Wert 0
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 535 und habe den Wert 0
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 536 und habe den Wert 0
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 537 und habe den Wert 0
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 538 und habe den Wert 0
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 539 und habe den Wert 0
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 540 und habe den Wert 0
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 541 und habe den Wert 0
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 542 und habe den Wert 0
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 543 und habe den Wert 0
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 544 und habe den Wert 1
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 545 und habe den Wert 1
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 546 und habe den Wert 1
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 547 und habe den Wert 1
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 548 und habe den Wert 1
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 549 und habe den Wert 1
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 550 und habe den Wert 1
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 551 und habe den Wert 1
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 552 und habe den Wert 0
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 553 und habe den Wert 0
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 554 und habe den Wert 0
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 555 und habe den Wert 0
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 556 und habe den Wert 0
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 557 und habe den Wert 0
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 558 und habe den Wert 0
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 559 und habe den Wert 0
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 560 und habe den Wert 0
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 561 und habe den Wert 0
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 562 und habe den Wert 0
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 563 und habe den Wert 0
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 564 und habe den Wert 0
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 565 und habe den Wert 0
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 566 und habe den Wert 0
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 567 und habe den Wert 0
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 568 und habe den Wert 0
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 569 und habe den Wert 0
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 570 und habe den Wert 1
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 571 und habe den Wert 1
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 572 und habe den Wert 1
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 573 und habe den Wert 1
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 574 und habe den Wert 1
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 575 und habe den Wert 1
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 576 und habe den Wert 1
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 577 und habe den Wert 1
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 578 und habe den Wert 1
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 579 und habe den Wert 0
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 580 und habe den Wert 0
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 581 und habe den Wert 0
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 582 und habe den Wert 0
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 583 und habe den Wert 0
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 584 und habe den Wert 0
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 585 und habe den Wert 0
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 586 und habe den Wert 0
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 587 und habe den Wert 0
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 588 und habe den Wert 0
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 589 und habe den Wert 0
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 590 und habe den Wert 0
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 591 und habe den Wert 0
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 592 und habe den Wert 0
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 593 und habe den Wert 0
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 594 und habe den Wert 0
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 595 und habe den Wert 0
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 596 und habe den Wert 1
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 597 und habe den Wert 1
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 598 und habe den Wert 1
-[20:59:14.492] [Hidden in console] Ich bin Inputneuron 599 und habe den Wert 1
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 600 und habe den Wert 1
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 601 und habe den Wert 1
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 602 und habe den Wert 1
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 603 und habe den Wert 1
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 604 und habe den Wert 1
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 605 und habe den Wert 1
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 606 und habe den Wert 0
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 607 und habe den Wert 0
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 608 und habe den Wert 0
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 609 und habe den Wert 0
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 610 und habe den Wert 0
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 611 und habe den Wert 0
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 612 und habe den Wert 0
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 613 und habe den Wert 0
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 614 und habe den Wert 0
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 615 und habe den Wert 0
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 616 und habe den Wert 0
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 617 und habe den Wert 0
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 618 und habe den Wert 0
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 619 und habe den Wert 0
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 620 und habe den Wert 0
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 621 und habe den Wert 0
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 622 und habe den Wert 1
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 623 und habe den Wert 1
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 624 und habe den Wert 1
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 625 und habe den Wert 1
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 626 und habe den Wert 1
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 627 und habe den Wert 1
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 628 und habe den Wert 1
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 629 und habe den Wert 1
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 630 und habe den Wert 1
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 631 und habe den Wert 1
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 632 und habe den Wert 0
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 633 und habe den Wert 0
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 634 und habe den Wert 0
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 635 und habe den Wert 0
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 636 und habe den Wert 0
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 637 und habe den Wert 0
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 638 und habe den Wert 0
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 639 und habe den Wert 0
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 640 und habe den Wert 0
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 641 und habe den Wert 0
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 642 und habe den Wert 0
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 643 und habe den Wert 0
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 644 und habe den Wert 0
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 645 und habe den Wert 0
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 646 und habe den Wert 0
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 647 und habe den Wert 0
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 648 und habe den Wert 1
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 649 und habe den Wert 1
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 650 und habe den Wert 1
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 651 und habe den Wert 1
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 652 und habe den Wert 1
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 653 und habe den Wert 1
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 654 und habe den Wert 1
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 655 und habe den Wert 1
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 656 und habe den Wert 1
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 657 und habe den Wert 1
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 658 und habe den Wert 0
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 659 und habe den Wert 0
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 660 und habe den Wert 0
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 661 und habe den Wert 0
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 662 und habe den Wert 0
-[20:59:14.493] [Hidden in console] Ich bin Inputneuron 663 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 664 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 665 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 666 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 667 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 668 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 669 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 670 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 671 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 672 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 673 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 674 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 675 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 676 und habe den Wert 1
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 677 und habe den Wert 1
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 678 und habe den Wert 1
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 679 und habe den Wert 1
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 680 und habe den Wert 1
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 681 und habe den Wert 1
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 682 und habe den Wert 1
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 683 und habe den Wert 1
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 684 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 685 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 686 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 687 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 688 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 689 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 690 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 691 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 692 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 693 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 694 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 695 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 696 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 697 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 698 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 699 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 700 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 701 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 702 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 703 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 704 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 705 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 706 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 707 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 708 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 709 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 710 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 711 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 712 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 713 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 714 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 715 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 716 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 717 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 718 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 719 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 720 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 721 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 722 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 723 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 724 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 725 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 726 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 727 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 728 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 729 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 730 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 731 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 732 und habe den Wert 0
-[20:59:14.494] [Hidden in console] Ich bin Inputneuron 733 und habe den Wert 0
-[20:59:14.495] [Hidden in console] Ich bin Inputneuron 734 und habe den Wert 0
-[20:59:14.495] [Hidden in console] Ich bin Inputneuron 735 und habe den Wert 0
-[20:59:14.495] [Hidden in console] Ich bin Inputneuron 736 und habe den Wert 0
-[20:59:14.495] [Hidden in console] Ich bin Inputneuron 737 und habe den Wert 0
-[20:59:14.495] [Hidden in console] Ich bin Inputneuron 738 und habe den Wert 0
-[20:59:14.495] [Hidden in console] Ich bin Inputneuron 739 und habe den Wert 0
-[20:59:14.495] [Hidden in console] Ich bin Inputneuron 740 und habe den Wert 0
-[20:59:14.495] [Hidden in console] Ich bin Inputneuron 741 und habe den Wert 0
-[20:59:14.495] [Hidden in console] Ich bin Inputneuron 742 und habe den Wert 0
-[20:59:14.495] [Hidden in console] Ich bin Inputneuron 743 und habe den Wert 0
-[20:59:14.495] [Hidden in console] Ich bin Inputneuron 744 und habe den Wert 0
-[20:59:14.495] [Hidden in console] Ich bin Inputneuron 745 und habe den Wert 0
-[20:59:14.495] [Hidden in console] Ich bin Inputneuron 746 und habe den Wert 0
-[20:59:14.495] [Hidden in console] Ich bin Inputneuron 747 und habe den Wert 0
-[20:59:14.495] [Hidden in console] Ich bin Inputneuron 748 und habe den Wert 0
-[20:59:14.495] [Hidden in console] Ich bin Inputneuron 749 und habe den Wert 0
-[20:59:14.495] [Hidden in console] Ich bin Inputneuron 750 und habe den Wert 0
-[20:59:14.495] [Hidden in console] Ich bin Inputneuron 751 und habe den Wert 0
-[20:59:14.495] [Hidden in console] Ich bin Inputneuron 752 und habe den Wert 0
-[20:59:14.495] [Hidden in console] Ich bin Inputneuron 753 und habe den Wert 0
-[20:59:14.495] [Hidden in console] Ich bin Inputneuron 754 und habe den Wert 0
-[20:59:14.495] [Hidden in console] Ich bin Inputneuron 755 und habe den Wert 0
-[20:59:14.495] [Hidden in console] Ich bin Inputneuron 756 und habe den Wert 0
-[20:59:14.495] [Hidden in console] Ich bin Inputneuron 757 und habe den Wert 0
-[20:59:14.495] [Hidden in console] Ich bin Inputneuron 758 und habe den Wert 0
-[20:59:14.495] [Hidden in console] Ich bin Inputneuron 759 und habe den Wert 0
-[20:59:14.495] [Hidden in console] Ich bin Inputneuron 760 und habe den Wert 0
-[20:59:14.495] [Hidden in console] Ich bin Inputneuron 761 und habe den Wert 0
-[20:59:14.495] [Hidden in console] Ich bin Inputneuron 762 und habe den Wert 0
-[20:59:14.495] [Hidden in console] Ich bin Inputneuron 763 und habe den Wert 0
-[20:59:14.495] [Hidden in console] Ich bin Inputneuron 764 und habe den Wert 0
-[20:59:14.495] [Hidden in console] Ich bin Inputneuron 765 und habe den Wert 0
-[20:59:14.495] [Hidden in console] Ich bin Inputneuron 766 und habe den Wert 0
-[20:59:14.495] [Hidden in console] Ich bin Inputneuron 767 und habe den Wert 0
-[20:59:14.495] [Hidden in console] Ich bin Inputneuron 768 und habe den Wert 0
-[20:59:14.495] [Hidden in console] Ich bin Inputneuron 769 und habe den Wert 0
-[20:59:14.495] [Hidden in console] Ich bin Inputneuron 770 und habe den Wert 0
-[20:59:14.495] [Hidden in console] Ich bin Inputneuron 771 und habe den Wert 0
-[20:59:14.495] [Hidden in console] Ich bin Inputneuron 772 und habe den Wert 0
-[20:59:14.495] [Hidden in console] Ich bin Inputneuron 773 und habe den Wert 0
-[20:59:14.495] [Hidden in console] Ich bin Inputneuron 774 und habe den Wert 0
-[20:59:14.495] [Hidden in console] Ich bin Inputneuron 775 und habe den Wert 0
-[20:59:14.495] [Hidden in console] Ich bin Inputneuron 776 und habe den Wert 0
-[20:59:14.495] [Hidden in console] Ich bin Inputneuron 777 und habe den Wert 0
-[20:59:14.495] [Hidden in console] Ich bin Inputneuron 778 und habe den Wert 0
-[20:59:14.495] [Hidden in console] Ich bin Inputneuron 779 und habe den Wert 0
-[20:59:14.495] [Hidden in console] Ich bin Inputneuron 780 und habe den Wert 0
-[20:59:14.495] [Hidden in console] Ich bin Inputneuron 781 und habe den Wert 0
-[20:59:14.495] [Hidden in console] Ich bin Inputneuron 782 und habe den Wert 0
-[20:59:14.495] [Hidden in console] Ich bin Inputneuron 783 und habe den Wert 0
-[20:59:14.496] Ich bin HiddenNeuron 0 und mein Wert ist 0.23866728515708963
-[20:59:14.496] Ich bin HiddenNeuron 1 und mein Wert ist 0.8928319295134719
-[20:59:14.496] Ich bin HiddenNeuron 2 und mein Wert ist 0.9935678915330812
-[20:59:14.496] Ich bin HiddenNeuron 3 und mein Wert ist 0.018890961937039052
-[20:59:14.497] Ich bin HiddenNeuron 4 und mein Wert ist 0.31864626621097447
-[20:59:14.497] Ich bin HiddenNeuron 5 und mein Wert ist 0.07656219735181216
-[20:59:14.497] Ich bin HiddenNeuron 6 und mein Wert ist 0.017810431640525405
-[20:59:14.497] Ich bin HiddenNeuron 7 und mein Wert ist 0.935836123594826
-[20:59:14.497] Ich bin HiddenNeuron 8 und mein Wert ist 0.17364664701900503
-[20:59:14.497] Ich bin HiddenNeuron 9 und mein Wert ist 0.1223888868230489
-[20:59:14.497] Ich bin HiddenNeuron 10 und mein Wert ist 0.08241331812791279
-[20:59:14.497] Ich bin HiddenNeuron 11 und mein Wert ist 0.14804719803168948
-[20:59:14.497] Ich bin HiddenNeuron 12 und mein Wert ist 0.7271082163411295
-[20:59:14.497] Ich bin HiddenNeuron 13 und mein Wert ist 1.0
-[20:59:14.497] Ich bin HiddenNeuron 14 und mein Wert ist 0.9931728675778617
-[20:59:14.497] Ich bin HiddenNeuron 15 und mein Wert ist 0.015519756578408893
-[20:59:14.497] Ich bin HiddenNeuron 16 und mein Wert ist 0.3681875822638983
-[20:59:14.497] Ich bin HiddenNeuron 17 und mein Wert ist 0.4476920904256748
-[20:59:14.497] Ich bin HiddenNeuron 18 und mein Wert ist 0.8849332679544502
-[20:59:14.497] Ich bin HiddenNeuron 19 und mein Wert ist 0.0030486594302236996
-[20:59:14.497] Ich bin HiddenNeuron 20 und mein Wert ist 0.0
-[20:59:14.497] Ich bin HiddenNeuron 21 und mein Wert ist 0.009565318672091677
-[20:59:14.497] Ich bin HiddenNeuron 22 und mein Wert ist 0.24048908305088898
-[20:59:14.497] Ich bin HiddenNeuron 23 und mein Wert ist 0.5299640517645717
-[20:59:14.497] Ich bin HiddenNeuron 24 und mein Wert ist 1.0
-[20:59:14.497] Ich bin HiddenNeuron 25 und mein Wert ist 0.6387631751488418
-[20:59:14.497] Ich bin HiddenNeuron 26 und mein Wert ist 0.9938185391083889
-[20:59:14.497] Ich bin HiddenNeuron 27 und mein Wert ist 0.9453186827840592
-[20:59:14.497] Ich bin HiddenNeuron 28 und mein Wert ist 0.8593618742658659
-[20:59:14.497] Ich bin HiddenNeuron 29 und mein Wert ist 0.005220125693558399
-[20:59:14.497] Ich bin HiddenNeuron 30 und mein Wert ist 0.18694261396804637
-[20:59:14.497] Ich bin HiddenNeuron 31 und mein Wert ist 0.03229546469845052
-[20:59:14.497] Ich bin HiddenNeuron 32 und mein Wert ist 0.6659669267518202
-[20:59:14.498] Ich bin HiddenNeuron 33 und mein Wert ist 0.0
-[20:59:14.498] Ich bin HiddenNeuron 34 und mein Wert ist 0.8053384164084221
-[20:59:14.498] Ich bin OutputNeuron 0 und mein Wert ist 0.323004143761477
-[20:59:14.498] Ich bin OutputNeuron 1 und mein Wert ist 0.4675456936126812
-[20:59:14.498] Ich bin OutputNeuron 2 und mein Wert ist 0.16658861357545965
-[20:59:14.498] Ich bin OutputNeuron 3 und mein Wert ist 0.6034832498647262
-[20:59:14.498] Ich bin OutputNeuron 4 und mein Wert ist 0.4700359482354282
-[20:59:14.498] Ich bin OutputNeuron 5 und mein Wert ist 0.6524894621927444
-[20:59:14.498] Ich bin OutputNeuron 6 und mein Wert ist 0.6637386974043527
-[20:59:14.498] Ich bin OutputNeuron 7 und mein Wert ist 0.3728522336868044
-[20:59:14.498] Ich bin OutputNeuron 8 und mein Wert ist 0.35434369377420455
-[20:59:14.498] Ich bin OutputNeuron 9 und mein Wert ist 0.6748052725823135
-[20:59:14.498] Program finished
+[21:42:57.404] Program started
+[21:42:57.417] Netzwerk initialisiert
+[21:42:57.533] Jetzt kommt ein Bild mit der Zahl 5
+[21:42:57.533] Ich bin Inputneuron 0 und habe den Wert 0
+[21:42:57.533] Ich bin Inputneuron 1 und habe den Wert 0
+[21:42:57.533] Ich bin Inputneuron 2 und habe den Wert 0
+[21:42:57.533] Ich bin Inputneuron 3 und habe den Wert 0
+[21:42:57.533] Ich bin Inputneuron 4 und habe den Wert 0
+[21:42:57.533] Ich bin Inputneuron 5 und habe den Wert 0
+[21:42:57.533] Ich bin Inputneuron 6 und habe den Wert 0
+[21:42:57.533] Ich bin Inputneuron 7 und habe den Wert 0
+[21:42:57.533] Ich bin Inputneuron 8 und habe den Wert 0
+[21:42:57.533] Ich bin Inputneuron 9 und habe den Wert 0
+[21:42:57.534] Ich bin Inputneuron 10 und habe den Wert 0
+[21:42:57.534] Ich bin Inputneuron 11 und habe den Wert 0
+[21:42:57.534] Ich bin Inputneuron 12 und habe den Wert 0
+[21:42:57.534] Ich bin Inputneuron 13 und habe den Wert 0
+[21:42:57.534] Ich bin Inputneuron 14 und habe den Wert 0
+[21:42:57.534] Ich bin Inputneuron 15 und habe den Wert 0
+[21:42:57.534] Ich bin Inputneuron 16 und habe den Wert 0
+[21:42:57.534] Ich bin Inputneuron 17 und habe den Wert 0
+[21:42:57.534] Ich bin Inputneuron 18 und habe den Wert 0
+[21:42:57.534] Ich bin Inputneuron 19 und habe den Wert 0
+[21:42:57.534] Ich bin Inputneuron 20 und habe den Wert 0
+[21:42:57.534] Ich bin Inputneuron 21 und habe den Wert 0
+[21:42:57.534] Ich bin Inputneuron 22 und habe den Wert 0
+[21:42:57.534] Ich bin Inputneuron 23 und habe den Wert 0
+[21:42:57.534] Ich bin Inputneuron 24 und habe den Wert 0
+[21:42:57.534] Ich bin Inputneuron 25 und habe den Wert 0
+[21:42:57.534] Ich bin Inputneuron 26 und habe den Wert 0
+[21:42:57.534] Ich bin Inputneuron 27 und habe den Wert 0
+[21:42:57.534] Ich bin Inputneuron 28 und habe den Wert 0
+[21:42:57.534] Ich bin Inputneuron 29 und habe den Wert 0
+[21:42:57.534] Ich bin Inputneuron 30 und habe den Wert 0
+[21:42:57.534] Ich bin Inputneuron 31 und habe den Wert 0
+[21:42:57.534] Ich bin Inputneuron 32 und habe den Wert 0
+[21:42:57.534] Ich bin Inputneuron 33 und habe den Wert 0
+[21:42:57.534] Ich bin Inputneuron 34 und habe den Wert 0
+[21:42:57.534] Ich bin Inputneuron 35 und habe den Wert 0
+[21:42:57.534] Ich bin Inputneuron 36 und habe den Wert 0
+[21:42:57.534] Ich bin Inputneuron 37 und habe den Wert 0
+[21:42:57.534] Ich bin Inputneuron 38 und habe den Wert 0
+[21:42:57.534] Ich bin Inputneuron 39 und habe den Wert 0
+[21:42:57.534] Ich bin Inputneuron 40 und habe den Wert 0
+[21:42:57.535] Ich bin Inputneuron 41 und habe den Wert 0
+[21:42:57.535] Ich bin Inputneuron 42 und habe den Wert 0
+[21:42:57.535] Ich bin Inputneuron 43 und habe den Wert 0
+[21:42:57.535] Ich bin Inputneuron 44 und habe den Wert 0
+[21:42:57.535] Ich bin Inputneuron 45 und habe den Wert 0
+[21:42:57.535] Ich bin Inputneuron 46 und habe den Wert 0
+[21:42:57.535] Ich bin Inputneuron 47 und habe den Wert 0
+[21:42:57.535] Ich bin Inputneuron 48 und habe den Wert 0
+[21:42:57.535] Ich bin Inputneuron 49 und habe den Wert 0
+[21:42:57.535] Ich bin Inputneuron 50 und habe den Wert 0
+[21:42:57.535] Ich bin Inputneuron 51 und habe den Wert 0
+[21:42:57.535] Ich bin Inputneuron 52 und habe den Wert 0
+[21:42:57.535] Ich bin Inputneuron 53 und habe den Wert 0
+[21:42:57.535] Ich bin Inputneuron 54 und habe den Wert 0
+[21:42:57.535] Ich bin Inputneuron 55 und habe den Wert 0
+[21:42:57.535] Ich bin Inputneuron 56 und habe den Wert 0
+[21:42:57.535] Ich bin Inputneuron 57 und habe den Wert 0
+[21:42:57.535] Ich bin Inputneuron 58 und habe den Wert 0
+[21:42:57.535] Ich bin Inputneuron 59 und habe den Wert 0
+[21:42:57.535] Ich bin Inputneuron 60 und habe den Wert 0
+[21:42:57.535] Ich bin Inputneuron 61 und habe den Wert 0
+[21:42:57.535] Ich bin Inputneuron 62 und habe den Wert 0
+[21:42:57.535] Ich bin Inputneuron 63 und habe den Wert 0
+[21:42:57.535] Ich bin Inputneuron 64 und habe den Wert 0
+[21:42:57.535] Ich bin Inputneuron 65 und habe den Wert 0
+[21:42:57.535] Ich bin Inputneuron 66 und habe den Wert 0
+[21:42:57.535] Ich bin Inputneuron 67 und habe den Wert 0
+[21:42:57.535] Ich bin Inputneuron 68 und habe den Wert 0
+[21:42:57.535] Ich bin Inputneuron 69 und habe den Wert 0
+[21:42:57.535] Ich bin Inputneuron 70 und habe den Wert 0
+[21:42:57.535] Ich bin Inputneuron 71 und habe den Wert 0
+[21:42:57.535] Ich bin Inputneuron 72 und habe den Wert 0
+[21:42:57.536] Ich bin Inputneuron 73 und habe den Wert 0
+[21:42:57.536] Ich bin Inputneuron 74 und habe den Wert 0
+[21:42:57.536] Ich bin Inputneuron 75 und habe den Wert 0
+[21:42:57.536] Ich bin Inputneuron 76 und habe den Wert 0
+[21:42:57.536] Ich bin Inputneuron 77 und habe den Wert 0
+[21:42:57.536] Ich bin Inputneuron 78 und habe den Wert 0
+[21:42:57.536] Ich bin Inputneuron 79 und habe den Wert 0
+[21:42:57.536] Ich bin Inputneuron 80 und habe den Wert 0
+[21:42:57.536] Ich bin Inputneuron 81 und habe den Wert 0
+[21:42:57.536] Ich bin Inputneuron 82 und habe den Wert 0
+[21:42:57.536] Ich bin Inputneuron 83 und habe den Wert 0
+[21:42:57.536] Ich bin Inputneuron 84 und habe den Wert 0
+[21:42:57.536] Ich bin Inputneuron 85 und habe den Wert 0
+[21:42:57.536] Ich bin Inputneuron 86 und habe den Wert 0
+[21:42:57.536] Ich bin Inputneuron 87 und habe den Wert 0
+[21:42:57.536] Ich bin Inputneuron 88 und habe den Wert 0
+[21:42:57.536] Ich bin Inputneuron 89 und habe den Wert 0
+[21:42:57.536] Ich bin Inputneuron 90 und habe den Wert 0
+[21:42:57.536] Ich bin Inputneuron 91 und habe den Wert 0
+[21:42:57.536] Ich bin Inputneuron 92 und habe den Wert 0
+[21:42:57.536] Ich bin Inputneuron 93 und habe den Wert 0
+[21:42:57.536] Ich bin Inputneuron 94 und habe den Wert 0
+[21:42:57.536] Ich bin Inputneuron 95 und habe den Wert 0
+[21:42:57.536] Ich bin Inputneuron 96 und habe den Wert 0
+[21:42:57.536] Ich bin Inputneuron 97 und habe den Wert 0
+[21:42:57.536] Ich bin Inputneuron 98 und habe den Wert 0
+[21:42:57.536] Ich bin Inputneuron 99 und habe den Wert 0
+[21:42:57.536] Ich bin Inputneuron 100 und habe den Wert 0
+[21:42:57.536] Ich bin Inputneuron 101 und habe den Wert 0
+[21:42:57.536] Ich bin Inputneuron 102 und habe den Wert 0
+[21:42:57.536] Ich bin Inputneuron 103 und habe den Wert 0
+[21:42:57.536] Ich bin Inputneuron 104 und habe den Wert 0
+[21:42:57.536] Ich bin Inputneuron 105 und habe den Wert 0
+[21:42:57.536] Ich bin Inputneuron 106 und habe den Wert 0
+[21:42:57.537] Ich bin Inputneuron 107 und habe den Wert 0
+[21:42:57.537] Ich bin Inputneuron 108 und habe den Wert 0
+[21:42:57.537] Ich bin Inputneuron 109 und habe den Wert 0
+[21:42:57.537] Ich bin Inputneuron 110 und habe den Wert 0
+[21:42:57.537] Ich bin Inputneuron 111 und habe den Wert 0
+[21:42:57.537] Ich bin Inputneuron 112 und habe den Wert 0
+[21:42:57.537] Ich bin Inputneuron 113 und habe den Wert 0
+[21:42:57.537] Ich bin Inputneuron 114 und habe den Wert 0
+[21:42:57.537] Ich bin Inputneuron 115 und habe den Wert 0
+[21:42:57.537] Ich bin Inputneuron 116 und habe den Wert 0
+[21:42:57.537] Ich bin Inputneuron 117 und habe den Wert 0
+[21:42:57.537] Ich bin Inputneuron 118 und habe den Wert 0
+[21:42:57.537] Ich bin Inputneuron 119 und habe den Wert 0
+[21:42:57.537] Ich bin Inputneuron 120 und habe den Wert 0
+[21:42:57.537] Ich bin Inputneuron 121 und habe den Wert 0
+[21:42:57.537] Ich bin Inputneuron 122 und habe den Wert 0
+[21:42:57.537] Ich bin Inputneuron 123 und habe den Wert 0
+[21:42:57.537] Ich bin Inputneuron 124 und habe den Wert 0
+[21:42:57.537] Ich bin Inputneuron 125 und habe den Wert 0
+[21:42:57.537] Ich bin Inputneuron 126 und habe den Wert 0
+[21:42:57.537] Ich bin Inputneuron 127 und habe den Wert 0
+[21:42:57.537] Ich bin Inputneuron 128 und habe den Wert 0
+[21:42:57.537] Ich bin Inputneuron 129 und habe den Wert 0
+[21:42:57.537] Ich bin Inputneuron 130 und habe den Wert 0
+[21:42:57.537] Ich bin Inputneuron 131 und habe den Wert 0
+[21:42:57.537] Ich bin Inputneuron 132 und habe den Wert 0
+[21:42:57.537] Ich bin Inputneuron 133 und habe den Wert 0
+[21:42:57.537] Ich bin Inputneuron 134 und habe den Wert 0
+[21:42:57.537] Ich bin Inputneuron 135 und habe den Wert 0
+[21:42:57.537] Ich bin Inputneuron 136 und habe den Wert 0
+[21:42:57.537] Ich bin Inputneuron 137 und habe den Wert 0
+[21:42:57.537] Ich bin Inputneuron 138 und habe den Wert 0
+[21:42:57.538] Ich bin Inputneuron 139 und habe den Wert 0
+[21:42:57.538] Ich bin Inputneuron 140 und habe den Wert 0
+[21:42:57.538] Ich bin Inputneuron 141 und habe den Wert 0
+[21:42:57.538] Ich bin Inputneuron 142 und habe den Wert 0
+[21:42:57.538] Ich bin Inputneuron 143 und habe den Wert 0
+[21:42:57.538] Ich bin Inputneuron 144 und habe den Wert 0
+[21:42:57.538] Ich bin Inputneuron 145 und habe den Wert 0
+[21:42:57.538] Ich bin Inputneuron 146 und habe den Wert 0
+[21:42:57.538] Ich bin Inputneuron 147 und habe den Wert 0
+[21:42:57.538] Ich bin Inputneuron 148 und habe den Wert 0
+[21:42:57.538] Ich bin Inputneuron 149 und habe den Wert 0
+[21:42:57.538] Ich bin Inputneuron 150 und habe den Wert 0
+[21:42:57.538] Ich bin Inputneuron 151 und habe den Wert 0
+[21:42:57.538] Ich bin Inputneuron 152 und habe den Wert 1
+[21:42:57.538] Ich bin Inputneuron 153 und habe den Wert 1
+[21:42:57.538] Ich bin Inputneuron 154 und habe den Wert 1
+[21:42:57.538] Ich bin Inputneuron 155 und habe den Wert 1
+[21:42:57.538] Ich bin Inputneuron 156 und habe den Wert 1
+[21:42:57.538] Ich bin Inputneuron 157 und habe den Wert 1
+[21:42:57.538] Ich bin Inputneuron 158 und habe den Wert 1
+[21:42:57.538] Ich bin Inputneuron 159 und habe den Wert 1
+[21:42:57.538] Ich bin Inputneuron 160 und habe den Wert 1
+[21:42:57.538] Ich bin Inputneuron 161 und habe den Wert 1
+[21:42:57.538] Ich bin Inputneuron 162 und habe den Wert 1
+[21:42:57.538] Ich bin Inputneuron 163 und habe den Wert 1
+[21:42:57.538] Ich bin Inputneuron 164 und habe den Wert 0
+[21:42:57.538] Ich bin Inputneuron 165 und habe den Wert 0
+[21:42:57.539] Ich bin Inputneuron 166 und habe den Wert 0
+[21:42:57.539] Ich bin Inputneuron 167 und habe den Wert 0
+[21:42:57.539] Ich bin Inputneuron 168 und habe den Wert 0
+[21:42:57.539] Ich bin Inputneuron 169 und habe den Wert 0
+[21:42:57.539] Ich bin Inputneuron 170 und habe den Wert 0
+[21:42:57.539] Ich bin Inputneuron 171 und habe den Wert 0
+[21:42:57.539] Ich bin Inputneuron 172 und habe den Wert 0
+[21:42:57.539] Ich bin Inputneuron 173 und habe den Wert 0
+[21:42:57.539] Ich bin Inputneuron 174 und habe den Wert 0
+[21:42:57.539] Ich bin Inputneuron 175 und habe den Wert 0
+[21:42:57.539] Ich bin Inputneuron 176 und habe den Wert 1
+[21:42:57.539] Ich bin Inputneuron 177 und habe den Wert 1
+[21:42:57.539] Ich bin Inputneuron 178 und habe den Wert 1
+[21:42:57.539] Ich bin Inputneuron 179 und habe den Wert 1
+[21:42:57.539] Ich bin Inputneuron 180 und habe den Wert 1
+[21:42:57.539] Ich bin Inputneuron 181 und habe den Wert 1
+[21:42:57.539] Ich bin Inputneuron 182 und habe den Wert 1
+[21:42:57.540] Ich bin Inputneuron 183 und habe den Wert 1
+[21:42:57.540] Ich bin Inputneuron 184 und habe den Wert 1
+[21:42:57.540] Ich bin Inputneuron 185 und habe den Wert 1
+[21:42:57.540] Ich bin Inputneuron 186 und habe den Wert 1
+[21:42:57.540] Ich bin Inputneuron 187 und habe den Wert 1
+[21:42:57.540] Ich bin Inputneuron 188 und habe den Wert 1
+[21:42:57.540] Ich bin Inputneuron 189 und habe den Wert 1
+[21:42:57.540] Ich bin Inputneuron 190 und habe den Wert 1
+[21:42:57.540] Ich bin Inputneuron 191 und habe den Wert 1
+[21:42:57.540] Ich bin Inputneuron 192 und habe den Wert 0
+[21:42:57.540] Ich bin Inputneuron 193 und habe den Wert 0
+[21:42:57.540] Ich bin Inputneuron 194 und habe den Wert 0
+[21:42:57.540] Ich bin Inputneuron 195 und habe den Wert 0
+[21:42:57.540] Ich bin Inputneuron 196 und habe den Wert 0
+[21:42:57.540] Ich bin Inputneuron 197 und habe den Wert 0
+[21:42:57.540] Ich bin Inputneuron 198 und habe den Wert 0
+[21:42:57.540] Ich bin Inputneuron 199 und habe den Wert 0
+[21:42:57.540] Ich bin Inputneuron 200 und habe den Wert 0
+[21:42:57.540] Ich bin Inputneuron 201 und habe den Wert 0
+[21:42:57.540] Ich bin Inputneuron 202 und habe den Wert 0
+[21:42:57.540] Ich bin Inputneuron 203 und habe den Wert 1
+[21:42:57.540] Ich bin Inputneuron 204 und habe den Wert 1
+[21:42:57.541] Ich bin Inputneuron 205 und habe den Wert 1
+[21:42:57.541] Ich bin Inputneuron 206 und habe den Wert 1
+[21:42:57.541] Ich bin Inputneuron 207 und habe den Wert 1
+[21:42:57.541] Ich bin Inputneuron 208 und habe den Wert 1
+[21:42:57.541] Ich bin Inputneuron 209 und habe den Wert 1
+[21:42:57.541] Ich bin Inputneuron 210 und habe den Wert 1
+[21:42:57.541] Ich bin Inputneuron 211 und habe den Wert 1
+[21:42:57.541] Ich bin Inputneuron 212 und habe den Wert 1
+[21:42:57.541] Ich bin Inputneuron 213 und habe den Wert 1
+[21:42:57.541] Ich bin Inputneuron 214 und habe den Wert 1
+[21:42:57.541] Ich bin Inputneuron 215 und habe den Wert 1
+[21:42:57.541] Ich bin Inputneuron 216 und habe den Wert 1
+[21:42:57.541] Ich bin Inputneuron 217 und habe den Wert 1
+[21:42:57.541] Ich bin Inputneuron 218 und habe den Wert 1
+[21:42:57.541] Ich bin Inputneuron 219 und habe den Wert 0
+[21:42:57.541] Ich bin Inputneuron 220 und habe den Wert 0
+[21:42:57.541] Ich bin Inputneuron 221 und habe den Wert 0
+[21:42:57.541] Ich bin Inputneuron 222 und habe den Wert 0
+[21:42:57.541] Ich bin Inputneuron 223 und habe den Wert 0
+[21:42:57.541] Ich bin Inputneuron 224 und habe den Wert 0
+[21:42:57.541] Ich bin Inputneuron 225 und habe den Wert 0
+[21:42:57.541] Ich bin Inputneuron 226 und habe den Wert 0
+[21:42:57.541] Ich bin Inputneuron 227 und habe den Wert 0
+[21:42:57.541] Ich bin Inputneuron 228 und habe den Wert 0
+[21:42:57.541] Ich bin Inputneuron 229 und habe den Wert 0
+[21:42:57.541] Ich bin Inputneuron 230 und habe den Wert 0
+[21:42:57.541] Ich bin Inputneuron 231 und habe den Wert 1
+[21:42:57.541] Ich bin Inputneuron 232 und habe den Wert 1
+[21:42:57.541] Ich bin Inputneuron 233 und habe den Wert 1
+[21:42:57.541] Ich bin Inputneuron 234 und habe den Wert 1
+[21:42:57.541] Ich bin Inputneuron 235 und habe den Wert 1
+[21:42:57.541] Ich bin Inputneuron 236 und habe den Wert 1
+[21:42:57.541] Ich bin Inputneuron 237 und habe den Wert 1
+[21:42:57.541] Ich bin Inputneuron 238 und habe den Wert 1
+[21:42:57.541] Ich bin Inputneuron 239 und habe den Wert 1
+[21:42:57.541] Ich bin Inputneuron 240 und habe den Wert 1
+[21:42:57.541] Ich bin Inputneuron 241 und habe den Wert 1
+[21:42:57.541] Ich bin Inputneuron 242 und habe den Wert 0
+[21:42:57.542] Ich bin Inputneuron 243 und habe den Wert 0
+[21:42:57.542] Ich bin Inputneuron 244 und habe den Wert 0
+[21:42:57.542] Ich bin Inputneuron 245 und habe den Wert 0
+[21:42:57.542] Ich bin Inputneuron 246 und habe den Wert 0
+[21:42:57.542] Ich bin Inputneuron 247 und habe den Wert 0
+[21:42:57.542] Ich bin Inputneuron 248 und habe den Wert 0
+[21:42:57.542] Ich bin Inputneuron 249 und habe den Wert 0
+[21:42:57.542] Ich bin Inputneuron 250 und habe den Wert 0
+[21:42:57.542] Ich bin Inputneuron 251 und habe den Wert 0
+[21:42:57.542] Ich bin Inputneuron 252 und habe den Wert 0
+[21:42:57.542] Ich bin Inputneuron 253 und habe den Wert 0
+[21:42:57.542] Ich bin Inputneuron 254 und habe den Wert 0
+[21:42:57.542] Ich bin Inputneuron 255 und habe den Wert 0
+[21:42:57.542] Ich bin Inputneuron 256 und habe den Wert 0
+[21:42:57.542] Ich bin Inputneuron 257 und habe den Wert 0
+[21:42:57.542] Ich bin Inputneuron 258 und habe den Wert 0
+[21:42:57.542] Ich bin Inputneuron 259 und habe den Wert 0
+[21:42:57.542] Ich bin Inputneuron 260 und habe den Wert 1
+[21:42:57.542] Ich bin Inputneuron 261 und habe den Wert 1
+[21:42:57.542] Ich bin Inputneuron 262 und habe den Wert 1
+[21:42:57.542] Ich bin Inputneuron 263 und habe den Wert 1
+[21:42:57.542] Ich bin Inputneuron 264 und habe den Wert 1
+[21:42:57.542] Ich bin Inputneuron 265 und habe den Wert 1
+[21:42:57.542] Ich bin Inputneuron 266 und habe den Wert 1
+[21:42:57.542] Ich bin Inputneuron 267 und habe den Wert 0
+[21:42:57.542] Ich bin Inputneuron 268 und habe den Wert 1
+[21:42:57.542] Ich bin Inputneuron 269 und habe den Wert 1
+[21:42:57.542] Ich bin Inputneuron 270 und habe den Wert 0
+[21:42:57.542] Ich bin Inputneuron 271 und habe den Wert 0
+[21:42:57.542] Ich bin Inputneuron 272 und habe den Wert 0
+[21:42:57.542] Ich bin Inputneuron 273 und habe den Wert 0
+[21:42:57.542] Ich bin Inputneuron 274 und habe den Wert 0
+[21:42:57.542] Ich bin Inputneuron 275 und habe den Wert 0
+[21:42:57.542] Ich bin Inputneuron 276 und habe den Wert 0
+[21:42:57.543] Ich bin Inputneuron 277 und habe den Wert 0
+[21:42:57.543] Ich bin Inputneuron 278 und habe den Wert 0
+[21:42:57.543] Ich bin Inputneuron 279 und habe den Wert 0
+[21:42:57.543] Ich bin Inputneuron 280 und habe den Wert 0
+[21:42:57.543] Ich bin Inputneuron 281 und habe den Wert 0
+[21:42:57.543] Ich bin Inputneuron 282 und habe den Wert 0
+[21:42:57.543] Ich bin Inputneuron 283 und habe den Wert 0
+[21:42:57.543] Ich bin Inputneuron 284 und habe den Wert 0
+[21:42:57.543] Ich bin Inputneuron 285 und habe den Wert 0
+[21:42:57.543] Ich bin Inputneuron 286 und habe den Wert 0
+[21:42:57.543] Ich bin Inputneuron 287 und habe den Wert 0
+[21:42:57.543] Ich bin Inputneuron 288 und habe den Wert 0
+[21:42:57.543] Ich bin Inputneuron 289 und habe den Wert 1
+[21:42:57.543] Ich bin Inputneuron 290 und habe den Wert 1
+[21:42:57.543] Ich bin Inputneuron 291 und habe den Wert 1
+[21:42:57.543] Ich bin Inputneuron 292 und habe den Wert 1
+[21:42:57.543] Ich bin Inputneuron 293 und habe den Wert 1
+[21:42:57.543] Ich bin Inputneuron 294 und habe den Wert 0
+[21:42:57.543] Ich bin Inputneuron 295 und habe den Wert 0
+[21:42:57.543] Ich bin Inputneuron 296 und habe den Wert 0
+[21:42:57.543] Ich bin Inputneuron 297 und habe den Wert 0
+[21:42:57.543] Ich bin Inputneuron 298 und habe den Wert 0
+[21:42:57.543] Ich bin Inputneuron 299 und habe den Wert 0
+[21:42:57.543] Ich bin Inputneuron 300 und habe den Wert 0
+[21:42:57.543] Ich bin Inputneuron 301 und habe den Wert 0
+[21:42:57.543] Ich bin Inputneuron 302 und habe den Wert 0
+[21:42:57.543] Ich bin Inputneuron 303 und habe den Wert 0
+[21:42:57.543] Ich bin Inputneuron 304 und habe den Wert 0
+[21:42:57.543] Ich bin Inputneuron 305 und habe den Wert 0
+[21:42:57.543] Ich bin Inputneuron 306 und habe den Wert 0
+[21:42:57.543] Ich bin Inputneuron 307 und habe den Wert 0
+[21:42:57.543] Ich bin Inputneuron 308 und habe den Wert 0
+[21:42:57.543] Ich bin Inputneuron 309 und habe den Wert 0
+[21:42:57.543] Ich bin Inputneuron 310 und habe den Wert 0
+[21:42:57.543] Ich bin Inputneuron 311 und habe den Wert 0
+[21:42:57.543] Ich bin Inputneuron 312 und habe den Wert 0
+[21:42:57.544] Ich bin Inputneuron 313 und habe den Wert 0
+[21:42:57.544] Ich bin Inputneuron 314 und habe den Wert 0
+[21:42:57.544] Ich bin Inputneuron 315 und habe den Wert 0
+[21:42:57.544] Ich bin Inputneuron 316 und habe den Wert 0
+[21:42:57.544] Ich bin Inputneuron 317 und habe den Wert 0
+[21:42:57.544] Ich bin Inputneuron 318 und habe den Wert 0
+[21:42:57.544] Ich bin Inputneuron 319 und habe den Wert 1
+[21:42:57.544] Ich bin Inputneuron 320 und habe den Wert 1
+[21:42:57.544] Ich bin Inputneuron 321 und habe den Wert 1
+[21:42:57.544] Ich bin Inputneuron 322 und habe den Wert 1
+[21:42:57.544] Ich bin Inputneuron 323 und habe den Wert 0
+[21:42:57.544] Ich bin Inputneuron 324 und habe den Wert 0
+[21:42:57.544] Ich bin Inputneuron 325 und habe den Wert 0
+[21:42:57.544] Ich bin Inputneuron 326 und habe den Wert 0
+[21:42:57.544] Ich bin Inputneuron 327 und habe den Wert 0
+[21:42:57.544] Ich bin Inputneuron 328 und habe den Wert 0
+[21:42:57.544] Ich bin Inputneuron 329 und habe den Wert 0
+[21:42:57.544] Ich bin Inputneuron 330 und habe den Wert 0
+[21:42:57.544] Ich bin Inputneuron 331 und habe den Wert 0
+[21:42:57.544] Ich bin Inputneuron 332 und habe den Wert 0
+[21:42:57.544] Ich bin Inputneuron 333 und habe den Wert 0
+[21:42:57.544] Ich bin Inputneuron 334 und habe den Wert 0
+[21:42:57.544] Ich bin Inputneuron 335 und habe den Wert 0
+[21:42:57.544] Ich bin Inputneuron 336 und habe den Wert 0
+[21:42:57.544] Ich bin Inputneuron 337 und habe den Wert 0
+[21:42:57.544] Ich bin Inputneuron 338 und habe den Wert 0
+[21:42:57.544] Ich bin Inputneuron 339 und habe den Wert 0
+[21:42:57.544] Ich bin Inputneuron 340 und habe den Wert 0
+[21:42:57.544] Ich bin Inputneuron 341 und habe den Wert 0
+[21:42:57.544] Ich bin Inputneuron 342 und habe den Wert 0
+[21:42:57.544] Ich bin Inputneuron 343 und habe den Wert 0
+[21:42:57.544] Ich bin Inputneuron 344 und habe den Wert 0
+[21:42:57.544] Ich bin Inputneuron 345 und habe den Wert 0
+[21:42:57.544] Ich bin Inputneuron 346 und habe den Wert 0
+[21:42:57.544] Ich bin Inputneuron 347 und habe den Wert 1
+[21:42:57.544] Ich bin Inputneuron 348 und habe den Wert 1
+[21:42:57.544] Ich bin Inputneuron 349 und habe den Wert 1
+[21:42:57.544] Ich bin Inputneuron 350 und habe den Wert 1
+[21:42:57.544] Ich bin Inputneuron 351 und habe den Wert 0
+[21:42:57.544] Ich bin Inputneuron 352 und habe den Wert 0
+[21:42:57.544] Ich bin Inputneuron 353 und habe den Wert 0
+[21:42:57.544] Ich bin Inputneuron 354 und habe den Wert 0
+[21:42:57.544] Ich bin Inputneuron 355 und habe den Wert 0
+[21:42:57.544] Ich bin Inputneuron 356 und habe den Wert 0
+[21:42:57.545] Ich bin Inputneuron 357 und habe den Wert 0
+[21:42:57.545] Ich bin Inputneuron 358 und habe den Wert 0
+[21:42:57.545] Ich bin Inputneuron 359 und habe den Wert 0
+[21:42:57.545] Ich bin Inputneuron 360 und habe den Wert 0
+[21:42:57.545] Ich bin Inputneuron 361 und habe den Wert 0
+[21:42:57.545] Ich bin Inputneuron 362 und habe den Wert 0
+[21:42:57.545] Ich bin Inputneuron 363 und habe den Wert 0
+[21:42:57.545] Ich bin Inputneuron 364 und habe den Wert 0
+[21:42:57.545] Ich bin Inputneuron 365 und habe den Wert 0
+[21:42:57.545] Ich bin Inputneuron 366 und habe den Wert 0
+[21:42:57.545] Ich bin Inputneuron 367 und habe den Wert 0
+[21:42:57.545] Ich bin Inputneuron 368 und habe den Wert 0
+[21:42:57.545] Ich bin Inputneuron 369 und habe den Wert 0
+[21:42:57.545] Ich bin Inputneuron 370 und habe den Wert 0
+[21:42:57.545] Ich bin Inputneuron 371 und habe den Wert 0
+[21:42:57.545] Ich bin Inputneuron 372 und habe den Wert 0
+[21:42:57.545] Ich bin Inputneuron 373 und habe den Wert 0
+[21:42:57.545] Ich bin Inputneuron 374 und habe den Wert 0
+[21:42:57.545] Ich bin Inputneuron 375 und habe den Wert 0
+[21:42:57.545] Ich bin Inputneuron 376 und habe den Wert 1
+[21:42:57.545] Ich bin Inputneuron 377 und habe den Wert 1
+[21:42:57.545] Ich bin Inputneuron 378 und habe den Wert 1
+[21:42:57.545] Ich bin Inputneuron 379 und habe den Wert 1
+[21:42:57.545] Ich bin Inputneuron 380 und habe den Wert 1
+[21:42:57.545] Ich bin Inputneuron 381 und habe den Wert 1
+[21:42:57.545] Ich bin Inputneuron 382 und habe den Wert 0
+[21:42:57.545] Ich bin Inputneuron 383 und habe den Wert 0
+[21:42:57.545] Ich bin Inputneuron 384 und habe den Wert 0
+[21:42:57.545] Ich bin Inputneuron 385 und habe den Wert 0
+[21:42:57.545] Ich bin Inputneuron 386 und habe den Wert 0
+[21:42:57.545] Ich bin Inputneuron 387 und habe den Wert 0
+[21:42:57.545] Ich bin Inputneuron 388 und habe den Wert 0
+[21:42:57.545] Ich bin Inputneuron 389 und habe den Wert 0
+[21:42:57.545] Ich bin Inputneuron 390 und habe den Wert 0
+[21:42:57.546] Ich bin Inputneuron 391 und habe den Wert 0
+[21:42:57.546] Ich bin Inputneuron 392 und habe den Wert 0
+[21:42:57.546] Ich bin Inputneuron 393 und habe den Wert 0
+[21:42:57.546] Ich bin Inputneuron 394 und habe den Wert 0
+[21:42:57.546] Ich bin Inputneuron 395 und habe den Wert 0
+[21:42:57.546] Ich bin Inputneuron 396 und habe den Wert 0
+[21:42:57.546] Ich bin Inputneuron 397 und habe den Wert 0
+[21:42:57.546] Ich bin Inputneuron 398 und habe den Wert 0
+[21:42:57.546] Ich bin Inputneuron 399 und habe den Wert 0
+[21:42:57.546] Ich bin Inputneuron 400 und habe den Wert 0
+[21:42:57.546] Ich bin Inputneuron 401 und habe den Wert 0
+[21:42:57.546] Ich bin Inputneuron 402 und habe den Wert 0
+[21:42:57.546] Ich bin Inputneuron 403 und habe den Wert 0
+[21:42:57.546] Ich bin Inputneuron 404 und habe den Wert 0
+[21:42:57.546] Ich bin Inputneuron 405 und habe den Wert 1
+[21:42:57.546] Ich bin Inputneuron 406 und habe den Wert 1
+[21:42:57.546] Ich bin Inputneuron 407 und habe den Wert 1
+[21:42:57.546] Ich bin Inputneuron 408 und habe den Wert 1
+[21:42:57.546] Ich bin Inputneuron 409 und habe den Wert 1
+[21:42:57.546] Ich bin Inputneuron 410 und habe den Wert 1
+[21:42:57.546] Ich bin Inputneuron 411 und habe den Wert 0
+[21:42:57.546] Ich bin Inputneuron 412 und habe den Wert 0
+[21:42:57.546] Ich bin Inputneuron 413 und habe den Wert 0
+[21:42:57.546] Ich bin Inputneuron 414 und habe den Wert 0
+[21:42:57.546] Ich bin Inputneuron 415 und habe den Wert 0
+[21:42:57.546] Ich bin Inputneuron 416 und habe den Wert 0
+[21:42:57.546] Ich bin Inputneuron 417 und habe den Wert 0
+[21:42:57.546] Ich bin Inputneuron 418 und habe den Wert 0
+[21:42:57.546] Ich bin Inputneuron 419 und habe den Wert 0
+[21:42:57.546] Ich bin Inputneuron 420 und habe den Wert 0
+[21:42:57.546] Ich bin Inputneuron 421 und habe den Wert 0
+[21:42:57.546] Ich bin Inputneuron 422 und habe den Wert 0
+[21:42:57.546] Ich bin Inputneuron 423 und habe den Wert 0
+[21:42:57.546] Ich bin Inputneuron 424 und habe den Wert 0
+[21:42:57.546] Ich bin Inputneuron 425 und habe den Wert 0
+[21:42:57.546] Ich bin Inputneuron 426 und habe den Wert 0
+[21:42:57.546] Ich bin Inputneuron 427 und habe den Wert 0
+[21:42:57.546] Ich bin Inputneuron 428 und habe den Wert 0
+[21:42:57.546] Ich bin Inputneuron 429 und habe den Wert 0
+[21:42:57.546] Ich bin Inputneuron 430 und habe den Wert 0
+[21:42:57.546] Ich bin Inputneuron 431 und habe den Wert 0
+[21:42:57.546] Ich bin Inputneuron 432 und habe den Wert 0
+[21:42:57.546] Ich bin Inputneuron 433 und habe den Wert 0
+[21:42:57.546] Ich bin Inputneuron 434 und habe den Wert 1
+[21:42:57.546] Ich bin Inputneuron 435 und habe den Wert 1
+[21:42:57.546] Ich bin Inputneuron 436 und habe den Wert 1
+[21:42:57.546] Ich bin Inputneuron 437 und habe den Wert 1
+[21:42:57.546] Ich bin Inputneuron 438 und habe den Wert 1
+[21:42:57.546] Ich bin Inputneuron 439 und habe den Wert 1
+[21:42:57.547] Ich bin Inputneuron 440 und habe den Wert 0
+[21:42:57.547] Ich bin Inputneuron 441 und habe den Wert 0
+[21:42:57.547] Ich bin Inputneuron 442 und habe den Wert 0
+[21:42:57.547] Ich bin Inputneuron 443 und habe den Wert 0
+[21:42:57.547] Ich bin Inputneuron 444 und habe den Wert 0
+[21:42:57.547] Ich bin Inputneuron 445 und habe den Wert 0
+[21:42:57.547] Ich bin Inputneuron 446 und habe den Wert 0
+[21:42:57.547] Ich bin Inputneuron 447 und habe den Wert 0
+[21:42:57.547] Ich bin Inputneuron 448 und habe den Wert 0
+[21:42:57.547] Ich bin Inputneuron 449 und habe den Wert 0
+[21:42:57.547] Ich bin Inputneuron 450 und habe den Wert 0
+[21:42:57.547] Ich bin Inputneuron 451 und habe den Wert 0
+[21:42:57.547] Ich bin Inputneuron 452 und habe den Wert 0
+[21:42:57.547] Ich bin Inputneuron 453 und habe den Wert 0
+[21:42:57.547] Ich bin Inputneuron 454 und habe den Wert 0
+[21:42:57.547] Ich bin Inputneuron 455 und habe den Wert 0
+[21:42:57.547] Ich bin Inputneuron 456 und habe den Wert 0
+[21:42:57.547] Ich bin Inputneuron 457 und habe den Wert 0
+[21:42:57.547] Ich bin Inputneuron 458 und habe den Wert 0
+[21:42:57.547] Ich bin Inputneuron 459 und habe den Wert 0
+[21:42:57.547] Ich bin Inputneuron 460 und habe den Wert 0
+[21:42:57.547] Ich bin Inputneuron 461 und habe den Wert 0
+[21:42:57.547] Ich bin Inputneuron 462 und habe den Wert 0
+[21:42:57.547] Ich bin Inputneuron 463 und habe den Wert 1
+[21:42:57.547] Ich bin Inputneuron 464 und habe den Wert 1
+[21:42:57.547] Ich bin Inputneuron 465 und habe den Wert 1
+[21:42:57.547] Ich bin Inputneuron 466 und habe den Wert 1
+[21:42:57.547] Ich bin Inputneuron 467 und habe den Wert 1
+[21:42:57.547] Ich bin Inputneuron 468 und habe den Wert 0
+[21:42:57.547] Ich bin Inputneuron 469 und habe den Wert 0
+[21:42:57.547] Ich bin Inputneuron 470 und habe den Wert 0
+[21:42:57.547] Ich bin Inputneuron 471 und habe den Wert 0
+[21:42:57.547] Ich bin Inputneuron 472 und habe den Wert 0
+[21:42:57.547] Ich bin Inputneuron 473 und habe den Wert 0
+[21:42:57.547] Ich bin Inputneuron 474 und habe den Wert 0
+[21:42:57.547] Ich bin Inputneuron 475 und habe den Wert 0
+[21:42:57.547] Ich bin Inputneuron 476 und habe den Wert 0
+[21:42:57.547] Ich bin Inputneuron 477 und habe den Wert 0
+[21:42:57.547] Ich bin Inputneuron 478 und habe den Wert 0
+[21:42:57.547] Ich bin Inputneuron 479 und habe den Wert 0
+[21:42:57.547] Ich bin Inputneuron 480 und habe den Wert 0
+[21:42:57.547] Ich bin Inputneuron 481 und habe den Wert 0
+[21:42:57.547] Ich bin Inputneuron 482 und habe den Wert 0
+[21:42:57.547] Ich bin Inputneuron 483 und habe den Wert 0
+[21:42:57.547] Ich bin Inputneuron 484 und habe den Wert 0
+[21:42:57.547] Ich bin Inputneuron 485 und habe den Wert 0
+[21:42:57.547] Ich bin Inputneuron 486 und habe den Wert 0
+[21:42:57.547] Ich bin Inputneuron 487 und habe den Wert 0
+[21:42:57.547] Ich bin Inputneuron 488 und habe den Wert 0
+[21:42:57.547] Ich bin Inputneuron 489 und habe den Wert 0
+[21:42:57.547] Ich bin Inputneuron 490 und habe den Wert 0
+[21:42:57.547] Ich bin Inputneuron 491 und habe den Wert 0
+[21:42:57.547] Ich bin Inputneuron 492 und habe den Wert 0
+[21:42:57.547] Ich bin Inputneuron 493 und habe den Wert 1
+[21:42:57.547] Ich bin Inputneuron 494 und habe den Wert 1
+[21:42:57.548] Ich bin Inputneuron 495 und habe den Wert 1
+[21:42:57.548] Ich bin Inputneuron 496 und habe den Wert 1
+[21:42:57.548] Ich bin Inputneuron 497 und habe den Wert 0
+[21:42:57.548] Ich bin Inputneuron 498 und habe den Wert 0
+[21:42:57.548] Ich bin Inputneuron 499 und habe den Wert 0
+[21:42:57.548] Ich bin Inputneuron 500 und habe den Wert 0
+[21:42:57.548] Ich bin Inputneuron 501 und habe den Wert 0
+[21:42:57.548] Ich bin Inputneuron 502 und habe den Wert 0
+[21:42:57.548] Ich bin Inputneuron 503 und habe den Wert 0
+[21:42:57.548] Ich bin Inputneuron 504 und habe den Wert 0
+[21:42:57.548] Ich bin Inputneuron 505 und habe den Wert 0
+[21:42:57.548] Ich bin Inputneuron 506 und habe den Wert 0
+[21:42:57.548] Ich bin Inputneuron 507 und habe den Wert 0
+[21:42:57.548] Ich bin Inputneuron 508 und habe den Wert 0
+[21:42:57.548] Ich bin Inputneuron 509 und habe den Wert 0
+[21:42:57.548] Ich bin Inputneuron 510 und habe den Wert 0
+[21:42:57.548] Ich bin Inputneuron 511 und habe den Wert 0
+[21:42:57.548] Ich bin Inputneuron 512 und habe den Wert 0
+[21:42:57.548] Ich bin Inputneuron 513 und habe den Wert 0
+[21:42:57.548] Ich bin Inputneuron 514 und habe den Wert 0
+[21:42:57.548] Ich bin Inputneuron 515 und habe den Wert 0
+[21:42:57.548] Ich bin Inputneuron 516 und habe den Wert 0
+[21:42:57.548] Ich bin Inputneuron 517 und habe den Wert 0
+[21:42:57.548] Ich bin Inputneuron 518 und habe den Wert 1
+[21:42:57.548] Ich bin Inputneuron 519 und habe den Wert 1
+[21:42:57.548] Ich bin Inputneuron 520 und habe den Wert 1
+[21:42:57.548] Ich bin Inputneuron 521 und habe den Wert 1
+[21:42:57.548] Ich bin Inputneuron 522 und habe den Wert 1
+[21:42:57.548] Ich bin Inputneuron 523 und habe den Wert 1
+[21:42:57.548] Ich bin Inputneuron 524 und habe den Wert 1
+[21:42:57.548] Ich bin Inputneuron 525 und habe den Wert 0
+[21:42:57.548] Ich bin Inputneuron 526 und habe den Wert 0
+[21:42:57.548] Ich bin Inputneuron 527 und habe den Wert 0
+[21:42:57.548] Ich bin Inputneuron 528 und habe den Wert 0
+[21:42:57.548] Ich bin Inputneuron 529 und habe den Wert 0
+[21:42:57.548] Ich bin Inputneuron 530 und habe den Wert 0
+[21:42:57.548] Ich bin Inputneuron 531 und habe den Wert 0
+[21:42:57.548] Ich bin Inputneuron 532 und habe den Wert 0
+[21:42:57.549] Ich bin Inputneuron 533 und habe den Wert 0
+[21:42:57.549] Ich bin Inputneuron 534 und habe den Wert 0
+[21:42:57.549] Ich bin Inputneuron 535 und habe den Wert 0
+[21:42:57.549] Ich bin Inputneuron 536 und habe den Wert 0
+[21:42:57.549] Ich bin Inputneuron 537 und habe den Wert 0
+[21:42:57.549] Ich bin Inputneuron 538 und habe den Wert 0
+[21:42:57.549] Ich bin Inputneuron 539 und habe den Wert 0
+[21:42:57.549] Ich bin Inputneuron 540 und habe den Wert 0
+[21:42:57.549] Ich bin Inputneuron 541 und habe den Wert 0
+[21:42:57.549] Ich bin Inputneuron 542 und habe den Wert 0
+[21:42:57.549] Ich bin Inputneuron 543 und habe den Wert 0
+[21:42:57.549] Ich bin Inputneuron 544 und habe den Wert 1
+[21:42:57.549] Ich bin Inputneuron 545 und habe den Wert 1
+[21:42:57.549] Ich bin Inputneuron 546 und habe den Wert 1
+[21:42:57.549] Ich bin Inputneuron 547 und habe den Wert 1
+[21:42:57.549] Ich bin Inputneuron 548 und habe den Wert 1
+[21:42:57.549] Ich bin Inputneuron 549 und habe den Wert 1
+[21:42:57.549] Ich bin Inputneuron 550 und habe den Wert 1
+[21:42:57.549] Ich bin Inputneuron 551 und habe den Wert 1
+[21:42:57.549] Ich bin Inputneuron 552 und habe den Wert 0
+[21:42:57.549] Ich bin Inputneuron 553 und habe den Wert 0
+[21:42:57.549] Ich bin Inputneuron 554 und habe den Wert 0
+[21:42:57.549] Ich bin Inputneuron 555 und habe den Wert 0
+[21:42:57.549] Ich bin Inputneuron 556 und habe den Wert 0
+[21:42:57.549] Ich bin Inputneuron 557 und habe den Wert 0
+[21:42:57.549] Ich bin Inputneuron 558 und habe den Wert 0
+[21:42:57.549] Ich bin Inputneuron 559 und habe den Wert 0
+[21:42:57.549] Ich bin Inputneuron 560 und habe den Wert 0
+[21:42:57.549] Ich bin Inputneuron 561 und habe den Wert 0
+[21:42:57.549] Ich bin Inputneuron 562 und habe den Wert 0
+[21:42:57.549] Ich bin Inputneuron 563 und habe den Wert 0
+[21:42:57.549] Ich bin Inputneuron 564 und habe den Wert 0
+[21:42:57.549] Ich bin Inputneuron 565 und habe den Wert 0
+[21:42:57.549] Ich bin Inputneuron 566 und habe den Wert 0
+[21:42:57.549] Ich bin Inputneuron 567 und habe den Wert 0
+[21:42:57.549] Ich bin Inputneuron 568 und habe den Wert 0
+[21:42:57.549] Ich bin Inputneuron 569 und habe den Wert 0
+[21:42:57.549] Ich bin Inputneuron 570 und habe den Wert 1
+[21:42:57.549] Ich bin Inputneuron 571 und habe den Wert 1
+[21:42:57.549] Ich bin Inputneuron 572 und habe den Wert 1
+[21:42:57.549] Ich bin Inputneuron 573 und habe den Wert 1
+[21:42:57.549] Ich bin Inputneuron 574 und habe den Wert 1
+[21:42:57.549] Ich bin Inputneuron 575 und habe den Wert 1
+[21:42:57.549] Ich bin Inputneuron 576 und habe den Wert 1
+[21:42:57.549] Ich bin Inputneuron 577 und habe den Wert 1
+[21:42:57.549] Ich bin Inputneuron 578 und habe den Wert 1
+[21:42:57.549] Ich bin Inputneuron 579 und habe den Wert 0
+[21:42:57.549] Ich bin Inputneuron 580 und habe den Wert 0
+[21:42:57.549] Ich bin Inputneuron 581 und habe den Wert 0
+[21:42:57.549] Ich bin Inputneuron 582 und habe den Wert 0
+[21:42:57.549] Ich bin Inputneuron 583 und habe den Wert 0
+[21:42:57.549] Ich bin Inputneuron 584 und habe den Wert 0
+[21:42:57.550] Ich bin Inputneuron 585 und habe den Wert 0
+[21:42:57.550] Ich bin Inputneuron 586 und habe den Wert 0
+[21:42:57.550] Ich bin Inputneuron 587 und habe den Wert 0
+[21:42:57.550] Ich bin Inputneuron 588 und habe den Wert 0
+[21:42:57.550] Ich bin Inputneuron 589 und habe den Wert 0
+[21:42:57.550] Ich bin Inputneuron 590 und habe den Wert 0
+[21:42:57.550] Ich bin Inputneuron 591 und habe den Wert 0
+[21:42:57.550] Ich bin Inputneuron 592 und habe den Wert 0
+[21:42:57.550] Ich bin Inputneuron 593 und habe den Wert 0
+[21:42:57.550] Ich bin Inputneuron 594 und habe den Wert 0
+[21:42:57.550] Ich bin Inputneuron 595 und habe den Wert 0
+[21:42:57.550] Ich bin Inputneuron 596 und habe den Wert 1
+[21:42:57.550] Ich bin Inputneuron 597 und habe den Wert 1
+[21:42:57.550] Ich bin Inputneuron 598 und habe den Wert 1
+[21:42:57.550] Ich bin Inputneuron 599 und habe den Wert 1
+[21:42:57.550] Ich bin Inputneuron 600 und habe den Wert 1
+[21:42:57.550] Ich bin Inputneuron 601 und habe den Wert 1
+[21:42:57.550] Ich bin Inputneuron 602 und habe den Wert 1
+[21:42:57.550] Ich bin Inputneuron 603 und habe den Wert 1
+[21:42:57.550] Ich bin Inputneuron 604 und habe den Wert 1
+[21:42:57.550] Ich bin Inputneuron 605 und habe den Wert 1
+[21:42:57.550] Ich bin Inputneuron 606 und habe den Wert 0
+[21:42:57.550] Ich bin Inputneuron 607 und habe den Wert 0
+[21:42:57.550] Ich bin Inputneuron 608 und habe den Wert 0
+[21:42:57.550] Ich bin Inputneuron 609 und habe den Wert 0
+[21:42:57.550] Ich bin Inputneuron 610 und habe den Wert 0
+[21:42:57.550] Ich bin Inputneuron 611 und habe den Wert 0
+[21:42:57.550] Ich bin Inputneuron 612 und habe den Wert 0
+[21:42:57.550] Ich bin Inputneuron 613 und habe den Wert 0
+[21:42:57.550] Ich bin Inputneuron 614 und habe den Wert 0
+[21:42:57.550] Ich bin Inputneuron 615 und habe den Wert 0
+[21:42:57.550] Ich bin Inputneuron 616 und habe den Wert 0
+[21:42:57.550] Ich bin Inputneuron 617 und habe den Wert 0
+[21:42:57.550] Ich bin Inputneuron 618 und habe den Wert 0
+[21:42:57.550] Ich bin Inputneuron 619 und habe den Wert 0
+[21:42:57.550] Ich bin Inputneuron 620 und habe den Wert 0
+[21:42:57.550] Ich bin Inputneuron 621 und habe den Wert 0
+[21:42:57.550] Ich bin Inputneuron 622 und habe den Wert 1
+[21:42:57.550] Ich bin Inputneuron 623 und habe den Wert 1
+[21:42:57.550] Ich bin Inputneuron 624 und habe den Wert 1
+[21:42:57.550] Ich bin Inputneuron 625 und habe den Wert 1
+[21:42:57.550] Ich bin Inputneuron 626 und habe den Wert 1
+[21:42:57.550] Ich bin Inputneuron 627 und habe den Wert 1
+[21:42:57.550] Ich bin Inputneuron 628 und habe den Wert 1
+[21:42:57.550] Ich bin Inputneuron 629 und habe den Wert 1
+[21:42:57.550] Ich bin Inputneuron 630 und habe den Wert 1
+[21:42:57.550] Ich bin Inputneuron 631 und habe den Wert 1
+[21:42:57.550] Ich bin Inputneuron 632 und habe den Wert 0
+[21:42:57.550] Ich bin Inputneuron 633 und habe den Wert 0
+[21:42:57.550] Ich bin Inputneuron 634 und habe den Wert 0
+[21:42:57.550] Ich bin Inputneuron 635 und habe den Wert 0
+[21:42:57.550] Ich bin Inputneuron 636 und habe den Wert 0
+[21:42:57.550] Ich bin Inputneuron 637 und habe den Wert 0
+[21:42:57.550] Ich bin Inputneuron 638 und habe den Wert 0
+[21:42:57.550] Ich bin Inputneuron 639 und habe den Wert 0
+[21:42:57.550] Ich bin Inputneuron 640 und habe den Wert 0
+[21:42:57.550] Ich bin Inputneuron 641 und habe den Wert 0
+[21:42:57.550] Ich bin Inputneuron 642 und habe den Wert 0
+[21:42:57.550] Ich bin Inputneuron 643 und habe den Wert 0
+[21:42:57.550] Ich bin Inputneuron 644 und habe den Wert 0
+[21:42:57.550] Ich bin Inputneuron 645 und habe den Wert 0
+[21:42:57.550] Ich bin Inputneuron 646 und habe den Wert 0
+[21:42:57.551] Ich bin Inputneuron 647 und habe den Wert 0
+[21:42:57.551] Ich bin Inputneuron 648 und habe den Wert 1
+[21:42:57.551] Ich bin Inputneuron 649 und habe den Wert 1
+[21:42:57.551] Ich bin Inputneuron 650 und habe den Wert 1
+[21:42:57.551] Ich bin Inputneuron 651 und habe den Wert 1
+[21:42:57.551] Ich bin Inputneuron 652 und habe den Wert 1
+[21:42:57.551] Ich bin Inputneuron 653 und habe den Wert 1
+[21:42:57.551] Ich bin Inputneuron 654 und habe den Wert 1
+[21:42:57.551] Ich bin Inputneuron 655 und habe den Wert 1
+[21:42:57.551] Ich bin Inputneuron 656 und habe den Wert 1
+[21:42:57.551] Ich bin Inputneuron 657 und habe den Wert 1
+[21:42:57.551] Ich bin Inputneuron 658 und habe den Wert 0
+[21:42:57.551] Ich bin Inputneuron 659 und habe den Wert 0
+[21:42:57.551] Ich bin Inputneuron 660 und habe den Wert 0
+[21:42:57.551] Ich bin Inputneuron 661 und habe den Wert 0
+[21:42:57.551] Ich bin Inputneuron 662 und habe den Wert 0
+[21:42:57.551] Ich bin Inputneuron 663 und habe den Wert 0
+[21:42:57.551] Ich bin Inputneuron 664 und habe den Wert 0
+[21:42:57.551] Ich bin Inputneuron 665 und habe den Wert 0
+[21:42:57.551] Ich bin Inputneuron 666 und habe den Wert 0
+[21:42:57.551] Ich bin Inputneuron 667 und habe den Wert 0
+[21:42:57.551] Ich bin Inputneuron 668 und habe den Wert 0
+[21:42:57.551] Ich bin Inputneuron 669 und habe den Wert 0
+[21:42:57.551] Ich bin Inputneuron 670 und habe den Wert 0
+[21:42:57.551] Ich bin Inputneuron 671 und habe den Wert 0
+[21:42:57.551] Ich bin Inputneuron 672 und habe den Wert 0
+[21:42:57.551] Ich bin Inputneuron 673 und habe den Wert 0
+[21:42:57.551] Ich bin Inputneuron 674 und habe den Wert 0
+[21:42:57.551] Ich bin Inputneuron 675 und habe den Wert 0
+[21:42:57.551] Ich bin Inputneuron 676 und habe den Wert 1
+[21:42:57.551] Ich bin Inputneuron 677 und habe den Wert 1
+[21:42:57.551] Ich bin Inputneuron 678 und habe den Wert 1
+[21:42:57.551] Ich bin Inputneuron 679 und habe den Wert 1
+[21:42:57.551] Ich bin Inputneuron 680 und habe den Wert 1
+[21:42:57.551] Ich bin Inputneuron 681 und habe den Wert 1
+[21:42:57.551] Ich bin Inputneuron 682 und habe den Wert 1
+[21:42:57.551] Ich bin Inputneuron 683 und habe den Wert 1
+[21:42:57.551] Ich bin Inputneuron 684 und habe den Wert 0
+[21:42:57.551] Ich bin Inputneuron 685 und habe den Wert 0
+[21:42:57.551] Ich bin Inputneuron 686 und habe den Wert 0
+[21:42:57.551] Ich bin Inputneuron 687 und habe den Wert 0
+[21:42:57.551] Ich bin Inputneuron 688 und habe den Wert 0
+[21:42:57.551] Ich bin Inputneuron 689 und habe den Wert 0
+[21:42:57.551] Ich bin Inputneuron 690 und habe den Wert 0
+[21:42:57.551] Ich bin Inputneuron 691 und habe den Wert 0
+[21:42:57.551] Ich bin Inputneuron 692 und habe den Wert 0
+[21:42:57.551] Ich bin Inputneuron 693 und habe den Wert 0
+[21:42:57.551] Ich bin Inputneuron 694 und habe den Wert 0
+[21:42:57.551] Ich bin Inputneuron 695 und habe den Wert 0
+[21:42:57.551] Ich bin Inputneuron 696 und habe den Wert 0
+[21:42:57.551] Ich bin Inputneuron 697 und habe den Wert 0
+[21:42:57.551] Ich bin Inputneuron 698 und habe den Wert 0
+[21:42:57.551] Ich bin Inputneuron 699 und habe den Wert 0
+[21:42:57.551] Ich bin Inputneuron 700 und habe den Wert 0
+[21:42:57.551] Ich bin Inputneuron 701 und habe den Wert 0
+[21:42:57.551] Ich bin Inputneuron 702 und habe den Wert 0
+[21:42:57.551] Ich bin Inputneuron 703 und habe den Wert 0
+[21:42:57.551] Ich bin Inputneuron 704 und habe den Wert 0
+[21:42:57.551] Ich bin Inputneuron 705 und habe den Wert 0
+[21:42:57.551] Ich bin Inputneuron 706 und habe den Wert 0
+[21:42:57.551] Ich bin Inputneuron 707 und habe den Wert 0
+[21:42:57.551] Ich bin Inputneuron 708 und habe den Wert 0
+[21:42:57.551] Ich bin Inputneuron 709 und habe den Wert 0
+[21:42:57.551] Ich bin Inputneuron 710 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 711 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 712 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 713 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 714 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 715 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 716 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 717 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 718 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 719 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 720 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 721 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 722 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 723 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 724 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 725 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 726 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 727 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 728 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 729 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 730 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 731 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 732 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 733 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 734 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 735 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 736 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 737 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 738 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 739 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 740 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 741 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 742 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 743 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 744 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 745 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 746 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 747 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 748 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 749 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 750 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 751 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 752 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 753 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 754 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 755 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 756 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 757 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 758 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 759 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 760 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 761 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 762 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 763 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 764 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 765 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 766 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 767 und habe den Wert 0
+[21:42:57.552] Ich bin Inputneuron 768 und habe den Wert 0
+[21:42:57.553] Ich bin Inputneuron 769 und habe den Wert 0
+[21:42:57.553] Ich bin Inputneuron 770 und habe den Wert 0
+[21:42:57.553] Ich bin Inputneuron 771 und habe den Wert 0
+[21:42:57.553] Ich bin Inputneuron 772 und habe den Wert 0
+[21:42:57.553] Ich bin Inputneuron 773 und habe den Wert 0
+[21:42:57.553] Ich bin Inputneuron 774 und habe den Wert 0
+[21:42:57.553] Ich bin Inputneuron 775 und habe den Wert 0
+[21:42:57.553] Ich bin Inputneuron 776 und habe den Wert 0
+[21:42:57.553] Ich bin Inputneuron 777 und habe den Wert 0
+[21:42:57.553] Ich bin Inputneuron 778 und habe den Wert 0
+[21:42:57.553] Ich bin Inputneuron 779 und habe den Wert 0
+[21:42:57.553] Ich bin Inputneuron 780 und habe den Wert 0
+[21:42:57.553] Ich bin Inputneuron 781 und habe den Wert 0
+[21:42:57.553] Ich bin Inputneuron 782 und habe den Wert 0
+[21:42:57.553] Ich bin Inputneuron 783 und habe den Wert 0
+[21:42:57.555] Ich bin HiddenNeuron 0 und mein Wert ist 0.990986701347152
+[21:42:57.555] Ich bin HiddenNeuron 1 und mein Wert ist 0.9458332995187639
+[21:42:57.556] Ich bin HiddenNeuron 2 und mein Wert ist 0.08627419449591671
+[21:42:57.556] Ich bin HiddenNeuron 3 und mein Wert ist 0.996795533342443
+[21:42:57.557] Ich bin HiddenNeuron 4 und mein Wert ist 0.8544576710630347
+[21:42:57.557] Ich bin HiddenNeuron 5 und mein Wert ist 0.9282424577362486
+[21:42:57.558] Ich bin HiddenNeuron 6 und mein Wert ist 0.17799368578624652
+[21:42:57.558] Ich bin HiddenNeuron 7 und mein Wert ist 1.0
+[21:42:57.559] Ich bin HiddenNeuron 8 und mein Wert ist 1.0
+[21:42:57.559] Ich bin HiddenNeuron 9 und mein Wert ist 0.34978145142617295
+[21:42:57.560] Ich bin HiddenNeuron 10 und mein Wert ist 0.574442516811659
+[21:42:57.560] Ich bin HiddenNeuron 11 und mein Wert ist 0.9918374288468401
+[21:42:57.560] Ich bin HiddenNeuron 12 und mein Wert ist 0.006432108466918637
+[21:42:57.561] Ich bin HiddenNeuron 13 und mein Wert ist 0.20100899975052944
+[21:42:57.561] Ich bin HiddenNeuron 14 und mein Wert ist 0.9011439268218306
+[21:42:57.562] Ich bin HiddenNeuron 15 und mein Wert ist 0.17508626816403983
+[21:42:57.562] Ich bin HiddenNeuron 16 und mein Wert ist 0.003950322154527814
+[21:42:57.563] Ich bin HiddenNeuron 17 und mein Wert ist 0.49750002083312506
+[21:42:57.563] Ich bin HiddenNeuron 18 und mein Wert ist 0.8743521434846542
+[21:42:57.563] Ich bin HiddenNeuron 19 und mein Wert ist 0.9512002770012
+[21:42:57.564] Ich bin HiddenNeuron 20 und mein Wert ist 1.0
+[21:42:57.564] Ich bin HiddenNeuron 21 und mein Wert ist 0.23147521650098238
+[21:42:57.565] Ich bin HiddenNeuron 22 und mein Wert ist 0.5299640517645717
+[21:42:57.565] Ich bin HiddenNeuron 23 und mein Wert ist 0.07310117342237821
+[21:42:57.566] Ich bin HiddenNeuron 24 und mein Wert ist 1.0
+[21:42:57.566] Ich bin HiddenNeuron 25 und mein Wert ist 0.7576796390037048
+[21:42:57.567] Ich bin HiddenNeuron 26 und mein Wert ist 0.07516010948212663
+[21:42:57.567] Ich bin HiddenNeuron 27 und mein Wert ist 1.0
+[21:42:57.567] Ich bin HiddenNeuron 28 und mein Wert ist 0.060086650174007626
+[21:42:57.568] Ich bin HiddenNeuron 29 und mein Wert ist 0.9564783650447278
+[21:42:57.568] Ich bin HiddenNeuron 30 und mein Wert ist 0.5024999791668749
+[21:42:57.569] Ich bin HiddenNeuron 31 und mein Wert ist 0.1854274192929823
+[21:42:57.569] Ich bin HiddenNeuron 32 und mein Wert ist 0.29733934565526854
+[21:42:57.570] Ich bin HiddenNeuron 33 und mein Wert ist 0.8641271029909058
+[21:42:57.570] Ich bin HiddenNeuron 34 und mein Wert ist 1.0
+[21:42:57.570] Ich bin OutputNeuron 0 und mein Wert ist 0.52497918747894
+[21:42:57.570] Ich bin OutputNeuron 1 und mein Wert ist 0.5
+[21:42:57.570] Ich bin OutputNeuron 2 und mein Wert ist 0.35434369377420455
+[21:42:57.570] Ich bin OutputNeuron 3 und mein Wert ist 0.6130141761393355
+[21:42:57.571] Ich bin OutputNeuron 4 und mein Wert ist 0.40854102156721994
+[21:42:57.571] Ich bin OutputNeuron 5 und mein Wert ist 0.2460112835510519
+[21:42:57.571] Ich bin OutputNeuron 6 und mein Wert ist 0.7349725994665188
+[21:42:57.571] Ich bin OutputNeuron 7 und mein Wert ist 0.261149993915751
+[21:42:57.571] Ich bin OutputNeuron 8 und mein Wert ist 0.8005922431513315
+[21:42:57.571] Ich bin OutputNeuron 9 und mein Wert ist 0.9333919644249093
+[21:42:57.571] Der neue Wert von OutputNeuron 0 ist 0.5199893401555818
+[21:42:57.571] Der neue Wert von OutputNeuron 1 ist 0.49750002083312506
+[21:42:57.571] Der neue Wert von OutputNeuron 2 ist 0.34978145142617295
+[21:42:57.571] Der neue Wert von OutputNeuron 3 ist 0.6058736684317606
+[21:42:57.571] Der neue Wert von OutputNeuron 4 ist 0.4061268970658573
+[21:42:57.571] Der neue Wert von OutputNeuron 5 ist 0.24973989440488234
+[21:42:57.571] Der neue Wert von OutputNeuron 6 ist 0.7290879223493065
+[21:42:57.571] Der neue Wert von OutputNeuron 7 ist 0.259225100817846
+[21:42:57.572] Der neue Wert von OutputNeuron 8 ist 0.7957596977159083
+[21:42:57.572] Der neue Wert von OutputNeuron 9 ist 0.9308615796566531
+[21:42:57.572] Program finished

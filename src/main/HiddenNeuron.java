@@ -14,6 +14,7 @@ public class HiddenNeuron {
 
     private Integer identNummer = null;
     private HashMap<Integer, Double> weightMap = new HashMap<Integer, Double>();
+    private HashMap<Integer, Double> inputMap = new HashMap<Integer, Double>();
     private double inputSum = 0;
     private double outputSum = 0;
     private OutputNeuron[] outputNeurons;
@@ -36,11 +37,15 @@ public class HiddenNeuron {
     }
     public void receive(int ident, double input){
         //empfaengt die Daten der vorherigen Schicht
-        inputSum += weightMap.get(ident) * input;
+        inputMap.put(ident, input);
     }
 
     private void calcOutput(){
         //berechnet den output mithilfe der sigmoid funktion
+        inputSum = 0;
+        for(int i = 0; i < 748;i++){
+            inputSum += inputMap.get(i) * weightMap.get(i);
+        }
         outputSum = MathHelper.sigmoidApprox(inputSum);
     }
 

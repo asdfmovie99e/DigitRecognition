@@ -47,6 +47,7 @@ class NetworkController {
         //startet die Lernroutine
     imageWithLabel = UbyteCoder.getImageWithLabel(0);
     label = (Integer) imageWithLabel[0];
+    Debug.log("Jetzt kommt ein Bild mit der Zahl " + label);
     pixelArray = (Boolean[]) imageWithLabel[1];
     for(int i = 0; i < pixelArray.length; i++){
         //aus dem grade geholten pixelarray werden die daten an die Inputneuronen verteilt
@@ -65,7 +66,15 @@ class NetworkController {
     for(OutputNeuron outputNeuron: outputNeurons){
         Debug.log("Ich bin OutputNeuron " + outputNeuron.getIdentNummer() + " und mein Wert ist " + outputNeuron.getOutputValue());
     }
-
+    //ab hier faengt das eigentliche lernen an.
+    // Zuerst werden die gewichte zu den outputneuronen geaendert
+    for(OutputNeuron outputNeuron: outputNeurons)    {
+        if(outputNeuron.getIdentNummer() == label){
+            outputNeuron.modWeight(1);
+        } else {
+            outputNeuron.modWeight(0);
+        }
+    }
 
     }
 }
