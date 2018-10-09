@@ -49,7 +49,7 @@ public class UbyteCoder {
             byteArray = Files.readAllBytes(new File(mnistFolder.getAbsolutePath() + "\\train-images.idx3-ubyte").toPath());
             pixelArray = new boolean[byteArray.length - 16];
             for (int i = 0; i <= pixelArray.length - 1; i++) {
-                pixelArray[i] = (byteArray[i + 16] == 0);
+                pixelArray[i] = (byteArray[i + 16] != 0);
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -87,15 +87,15 @@ public class UbyteCoder {
                     } else {
                         timeRemaining = Integer.MAX_VALUE;
                     }
-                    System.out.println("Bild " + (ip + 1) + " von " + ((pixelArray.length / (28 * 28))) + ". " + percentage + "% abgeschlossen. " + timeRemaining + " Sekunden verbleibend.");
+                    Debug.log("Bild " + (ip + 1) + " von " + ((pixelArray.length / (28 * 28))) + ". " + percentage + "% abgeschlossen. " + timeRemaining + " Sekunden verbleibend.");
                 }
                 BufferedImage bufferedImage = new BufferedImage(28, 28, BufferedImage.TYPE_INT_RGB); // hoehe auf 28x28 festgelegt, da nur mit dem mnist datensatz gearbeitet wird
                 for (int iy = 0; iy <= 27; iy++) {
                     for (int ix = 0; ix <= 27; ix++) {
                         if (pixelArray[ix + (iy * 28) + (ip * 28 * 28)] == true) {
-                            colorInt = 255;
-                        } else {
                             colorInt = 0;
+                        } else {
+                            colorInt = 255;
                         }
                         int pixel = (colorInt << 24 | colorInt << 16 | colorInt << 8 | colorInt); // bit shifting um den standards zu entsprchen. red green und blue sind immer 0
                         bufferedImage.setRGB(ix, iy, pixel);

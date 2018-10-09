@@ -38,4 +38,9 @@ public class InputNeuron {
             hiddenNeuron.receive(identNummer, outputValue);
         }
     }
+
+    public int getOutputValue(){
+        //wird eigentlich nie benutzt. nur fuer debug zwecke
+        return outputValue;
+    }
 }

@@ -5,7 +5,7 @@ package main;
  @version 1.0
  */
 
-import helper.Debugger;
+import helper.Debug;
 import helper.UbyteCoder;
 
 class NetworkController {
@@ -14,7 +14,7 @@ class NetworkController {
     private HiddenNeuron[] hiddenNeurons = new HiddenNeuron[35]; // noch nicht sicher ob hier auch 784 gewählt werden sollte bzw was besser ist
     private OutputNeuron[] outputNeurons = new OutputNeuron[10];
     private Object[] imageWithLabel;
-    private String label;
+    private Integer label;
     private Boolean[] pixelArray;
 
     void initializeNetwork()
@@ -40,13 +40,26 @@ class NetworkController {
         for(HiddenNeuron hiddenNeuron: hiddenNeurons){
             hiddenNeuron.setOutputNeurons(outputNeurons);
         }
-        Debugger.log("Netzwerk initialisiert");
+        Debug.log("Netzwerk initialisiert");
     }
 
     public void startLearning() {
         //startet die Lernroutine
     imageWithLabel = UbyteCoder.getImageWithLabel(0);
-    label = (String) imageWithLabel[0];
+    label = (Integer) imageWithLabel[0];
+    pixelArray = (Boolean[]) imageWithLabel[1];
+    for(int i = 0; i < pixelArray.length; i++){
+        //aus dem grade geholten pixelarray werden die daten an die Inputneuronen verteilt
+        inputNeurons[i].setOutputValue(pixelArray[i]);
+        Debug.log("Ich bin Inputneuron " + i + " und habe den Wert " + inputNeurons[i].getOutputValue());
+    }
+    for(InputNeuron inputNeuron: inputNeurons){
+        //die senden funktion der inputneuronen wird aufgerufen
+        inputNeuron.sendOutputToNextLayer();
+    }
+    for(HiddenNeuron hiddenNeuron: hiddenNeurons){
+        Debug.log("Ich bin HiddenNeuron " + hiddenNeuron.getIdentNummer() + " und mein Wert ist " + hiddenNeuron.getOutputValue());
+    }
 
 
 

@@ -12,7 +12,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.rmi.server.ExportException;
 
-public class Debugger {
+public class Debug {
 
     private static File logFile;
     private static boolean fileCreated = false;

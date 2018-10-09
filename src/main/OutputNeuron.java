@@ -26,7 +26,7 @@ public class OutputNeuron {
     public void generateNewWeightMap(){
         //generiert eine neue HashMap in der die Gewichte die eingehenden Verbindungen gespeichert sind.
         for(int i = 0; i < 35; i++){
-            weightMap.put(i,(Math.random() - 0.5d) / 20d); // so liegt das ergebnis ungefähr um 0
+            weightMap.put(i,(Math.random() - 0.5d) / 5d); // so liegt das ergebnis ungefähr um 0 KEINE AHNUNG VON DEM GEWICHT. MAL SEHEN
         }
     }
 
