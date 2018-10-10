@@ -10,21 +10,22 @@ import helper.UbyteCoder;
 
 class NetworkController {
 
-    private InputNeuron[] inputNeurons = new InputNeuron[784];
-    private HiddenNeuron[] hiddenNeurons = new HiddenNeuron[40]; // noch nicht sicher ob hier auch 784 gewählt werden sollte bzw was besser ist
-    private OutputNeuron[] outputNeurons = new OutputNeuron[10];
-    private Object[] imageWithLabel;
-    private Integer label;
-    private Boolean[] pixelArray;
+    private static InputNeuron[] inputNeurons = new InputNeuron[784];
+    private static HiddenNeuron[] hiddenNeurons = new HiddenNeuron[250]; // noch nicht sicher ob hier auch 784 gewählt werden sollte bzw was besser ist
+    private static OutputNeuron[] outputNeurons = new OutputNeuron[10];
+    private static  Object[] imageWithLabel;
+    private static Integer label;
+    private static Boolean[] pixelArray;
+    private static double falseFactor = 1d;
 
-    void initializeNetwork()
+    static void  initializeNetwork()
             //erstellt alle Neuronen und Verbindungen und verbindet sie
     {
         for(int i = 0; i < 784; i++){
             inputNeurons[i] = new InputNeuron();
             inputNeurons[i].setIdentNummer(i);
         }
-        for (int i = 0; i < 40; i++){
+        for (int i = 0; i < 250; i++){
             hiddenNeurons[i] = new HiddenNeuron();
             hiddenNeurons[i].setIdentNummer(i);
             hiddenNeurons[i].generateNewWeightMap();
@@ -43,7 +44,7 @@ class NetworkController {
         Debug.log("Netzwerk initialisiert");
     }
 
-    public void startLearning() {
+    public static void startLearning() {
         //startet die Lernroutine
         //die naechsten beiden variablen sind nur fuer debugzwecke
         int timesTried = 0;
@@ -78,7 +79,12 @@ class NetworkController {
             if(biggestNeuron == null || biggestNeuron.getOutputValue() < outputNeuron.getOutputValue()) biggestNeuron = outputNeuron;
            System.out.println("Ich bin OutputNeuron " + outputNeuron.getIdentNummer() + " und mein Wert ist " + outputNeuron.getOutputValue() + ". Richtig war die Nummer " + label);
         }
-        if(biggestNeuron.getIdentNummer() == label) timesSuccesful++;//debug purpose
+        if(biggestNeuron.getIdentNummer() == label){
+            timesSuccesful++;//debug purpose
+            setFalseFactor(1);
+        } else {
+            if(i1 > 8000 )setFalseFactor( 1);//kein plan ob das was bringt. schon 3 und 5 getestet
+        }
         Debug.log("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" + (biggestNeuron.getIdentNummer() == label) + " " + 100 * (double)timesSuccesful / (double)timesTried);
         Debug.log("Bild Nummer: " + i1);
         //ab hier faengt das eigentliche lernen an.
@@ -94,5 +100,13 @@ class NetworkController {
             hiddenNeuron.modWeight();
         }
     }
+    }
+
+    public static double getFalseFactor(){
+        return  falseFactor;
+    }
+
+    private static void setFalseFactor(double ff){
+        falseFactor = ff;
     }
 }

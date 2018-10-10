@@ -33,9 +33,9 @@ public class Main extends Application {
         MathHelper.start();
         //System.out.println(MathHelper.sigmoidApprox(1f));
         //UbyteCoder.decode();
-        NetworkController networkController = new NetworkController();
-        networkController.initializeNetwork();
-        networkController.startLearning();
+        //NetworkController networkController = new NetworkController();
+        NetworkController.initializeNetwork();
+        NetworkController.startLearning();
         Debug.log("Program finished");
         Debug.flush();
         System.exit(0);

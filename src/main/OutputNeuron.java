@@ -28,7 +28,7 @@ public class OutputNeuron {
 
     public void generateNewWeightMap(){
         //generiert eine neue HashMap in der die Gewichte die eingehenden Verbindungen gespeichert sind.
-        for(int i = 0; i < 40; i++){
+        for(int i = 0; i < 250; i++){
             weightMap.put(i,(Math.random() - 0.5d)); // so liegt das ergebnis ungefähr um 0 KEINE AHNUNG VON DEM GEWICHT. MAL SEHEN
         }
     }
@@ -41,7 +41,7 @@ public class OutputNeuron {
     private void calcOutput(){
         //berechnet den output mithilfe der sigmoid funktion
         inputSum = 0;
-        for(int i = 0; i < 40;i++){
+        for(int i = 0; i < 250;i++){
            inputSum += inputMap.get(i) * weightMap.get(i);
         }
         outputSum = MathHelper.sigmoidApprox(inputSum);
@@ -63,10 +63,10 @@ public class OutputNeuron {
         double oldValue = getOutputValue(); //debug purpose
         smallDelta = targetWeight - getOutputValue();
         double epsilon = 0.05f; // vollkommen experimentell. keine ahnung wie der wert gewählt werden soll
-        for(int i = 0; i < 40; i++){
+        for(int i = 0; i < 250; i++){
             double input = inputMap.get(i);
             double ableitung = MathHelper.sigmoidApprox(inputMap.get(i)) * (1 - MathHelper.sigmoidApprox(inputMap.get(i)));
-            double bigDelta = epsilon * smallDelta * input * ableitung;
+            double bigDelta = epsilon * smallDelta * input * ableitung * NetworkController.getFalseFactor();
             double oldWeight = weightMap.get(i);
             weightMap.remove(i);
             weightMap.put(i, oldWeight + bigDelta);
