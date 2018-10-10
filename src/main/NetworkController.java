@@ -11,7 +11,7 @@ import helper.UbyteCoder;
 class NetworkController {
 
     private InputNeuron[] inputNeurons = new InputNeuron[784];
-    private HiddenNeuron[] hiddenNeurons = new HiddenNeuron[35]; // noch nicht sicher ob hier auch 784 gewählt werden sollte bzw was besser ist
+    private HiddenNeuron[] hiddenNeurons = new HiddenNeuron[40]; // noch nicht sicher ob hier auch 784 gewählt werden sollte bzw was besser ist
     private OutputNeuron[] outputNeurons = new OutputNeuron[10];
     private Object[] imageWithLabel;
     private Integer label;
@@ -24,7 +24,7 @@ class NetworkController {
             inputNeurons[i] = new InputNeuron();
             inputNeurons[i].setIdentNummer(i);
         }
-        for (int i = 0; i < 35; i++){
+        for (int i = 0; i < 40; i++){
             hiddenNeurons[i] = new HiddenNeuron();
             hiddenNeurons[i].setIdentNummer(i);
             hiddenNeurons[i].generateNewWeightMap();
