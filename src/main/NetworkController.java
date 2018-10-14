@@ -11,7 +11,7 @@ import helper.UbyteCoder;
 class NetworkController {
 
     private static InputNeuron[] inputNeurons = new InputNeuron[784];
-    private static HiddenNeuron[] hiddenNeurons = new HiddenNeuron[250]; // noch nicht sicher ob hier auch 784 gewählt werden sollte bzw was besser ist
+    private static HiddenNeuron[] hiddenNeurons = new HiddenNeuron[40]; // noch nicht sicher ob hier auch 784 gewählt werden sollte bzw was besser ist
     private static OutputNeuron[] outputNeurons = new OutputNeuron[10];
     private static  Object[] imageWithLabel;
     private static Integer label;
@@ -25,7 +25,7 @@ class NetworkController {
             inputNeurons[i] = new InputNeuron();
             inputNeurons[i].setIdentNummer(i);
         }
-        for (int i = 0; i < 250; i++){
+        for (int i = 0; i < 40; i++){
             hiddenNeurons[i] = new HiddenNeuron();
             hiddenNeurons[i].setIdentNummer(i);
             hiddenNeurons[i].generateNewWeightMap();
@@ -47,24 +47,27 @@ class NetworkController {
     public static void startLearning() {
         //startet die Lernroutine
         //die naechsten beiden variablen sind nur fuer debugzwecke
-        int timesTried = 0;
-        int timesSuccesful = 0;
+        int[] timesTried = new int[10];
+        int[] timesSuccesful = new int[10];
     for(int i1 = 0; i1 < 50000; i1++) { // zum testzweck erstmal nur 100 bilder
-        if(timesTried % 1000 == 0){//debug purpose
-            timesSuccesful = 0;
-            timesTried = 0;
-        }
-        timesTried++;
 
         imageWithLabel = UbyteCoder.getImageWithLabel(i1);
         label = (Integer) imageWithLabel[0];
-        Debug.log("Jetzt kommt ein Bild mit der Zahl " + label);
+        //Debug.log("Jetzt kommt ein Bild mit der Zahl " + label);
         pixelArray = (Boolean[]) imageWithLabel[1];
         for (int i = 0; i < pixelArray.length; i++) {
             //aus dem grade geholten pixelarray werden die daten an die Inputneuronen verteilt
             inputNeurons[i].setOutputValue(pixelArray[i]);
 
         }
+
+        for(int i4 = 0; i4 < 10; i4++){
+            if(i1 % 5000 == 0){
+                timesTried[i4] = 0;
+                timesSuccesful[i4] = 0;
+            }
+        }
+        timesTried[label]++;
 
         for (InputNeuron inputNeuron : inputNeurons) {
             //System.out.println("Ich bin Inputneuron " + inputNeuron.getIdentNummer() + " und habe den Wert " + inputNeuron.getOutputValue());
@@ -77,16 +80,16 @@ class NetworkController {
         OutputNeuron biggestNeuron = null;
         for (OutputNeuron outputNeuron : outputNeurons) {
             if(biggestNeuron == null || biggestNeuron.getOutputValue() < outputNeuron.getOutputValue()) biggestNeuron = outputNeuron;
-           System.out.println("Ich bin OutputNeuron " + outputNeuron.getIdentNummer() + " und mein Wert ist " + outputNeuron.getOutputValue() + ". Richtig war die Nummer " + label);
+           //System.out.println("Ich bin OutputNeuron " + outputNeuron.getIdentNummer() + " und mein Wert ist " + outputNeuron.getOutputValue() + ". Richtig war die Nummer " + label);
         }
-        if(biggestNeuron.getIdentNummer() == label){
-            timesSuccesful++;//debug purpose
-            setFalseFactor(1);
-        } else {
-            if(i1 > 8000 )setFalseFactor( 1);//kein plan ob das was bringt. schon 3 und 5 getestet
+        if(biggestNeuron.getIdentNummer() == label) {
+            timesSuccesful[label]++;//debug purpose
         }
-        Debug.log("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" + (biggestNeuron.getIdentNummer() == label) + " " + 100 * (double)timesSuccesful / (double)timesTried);
-        Debug.log("Bild Nummer: " + i1);
+        for(int iDebug = 0; iDebug < 10; iDebug++){
+            if (timesTried[iDebug] == 0 ||i1 % 50 != 0) continue;
+            Debug.log("Die Zahl " +iDebug + " ist zu folgendem Prozentsatz richtig: " + 100 * (double)timesSuccesful[iDebug] / (double)timesTried[iDebug]);
+        }
+        if (i1 % 50 == 0) Debug.log("Bild " + i1 + " abgechlossen.");
         //ab hier faengt das eigentliche lernen an.
         // Zuerst werden die gewichte zu den outputneuronen geaendert
         for (OutputNeuron outputNeuron : outputNeurons) {
