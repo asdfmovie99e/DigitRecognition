@@ -16,7 +16,7 @@ class NetworkController {
     private static  Object[] imageWithLabel;
     private static Integer label;
     private static Boolean[] pixelArray;
-    private static double falseFactor = 1d;
+    private static double customFactor = 1d;
 
     static void  initializeNetwork()
             //erstellt alle Neuronen und Verbindungen und verbindet sie
@@ -82,6 +82,15 @@ class NetworkController {
             if(biggestNeuron == null || biggestNeuron.getOutputValue() < outputNeuron.getOutputValue()) biggestNeuron = outputNeuron;
            //System.out.println("Ich bin OutputNeuron " + outputNeuron.getIdentNummer() + " und mein Wert ist " + outputNeuron.getOutputValue() + ". Richtig war die Nummer " + label);
         }
+        Double[] worstNeuron = new Double[2]; //0. platz ist neuron ident und der 1. platz ist der wert
+        for(int i6 = 0; i6 < 10; i6++){
+            //gets the digit which have been recognized worst
+            if(worstNeuron[0] == null || (double)timesSuccesful[i6] / (double)timesTried[i6] < worstNeuron[1]){
+                worstNeuron[0] = (double) i6;
+                worstNeuron[1] = (double)timesSuccesful[i6] / (double)timesTried[i6];
+            }
+        }
+
         if(biggestNeuron.getIdentNummer() == label) {
             timesSuccesful[label]++;//debug purpose
         }
@@ -92,6 +101,7 @@ class NetworkController {
         if (i1 % 50 == 0) Debug.log("Bild " + i1 + " abgechlossen.");
         //ab hier faengt das eigentliche lernen an.
         // Zuerst werden die gewichte zu den outputneuronen geaendert
+        if( worstNeuron[0] == (double)label) setCustomFactor(1.5); else setCustomFactor(1);
         for (OutputNeuron outputNeuron : outputNeurons) {
             if (outputNeuron.getIdentNummer() == label) {
                 outputNeuron.modWeight(1);
@@ -105,11 +115,11 @@ class NetworkController {
     }
     }
 
-    public static double getFalseFactor(){
-        return  falseFactor;
+    public static double getCustomFactor(){
+        return  customFactor;
     }
 
-    private static void setFalseFactor(double ff){
-        falseFactor = ff;
+    private static void setCustomFactor(double ff){
+        customFactor = ff;
     }
 }
