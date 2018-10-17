@@ -46,7 +46,6 @@ class NetworkController {
 
     public static void startLearning() {
         //startet die Lernroutine
-        //die naechsten beiden variablen sind nur fuer debugzwecke
         int[] timesTried = new int[10];
         int[] timesSuccesful = new int[10];
     for(int i1 = 0; i1 < 50000; i1++) { // zum testzweck erstmal nur 100 bilder
@@ -101,7 +100,7 @@ class NetworkController {
         if (i1 % 50 == 0) Debug.log("Bild " + i1 + " abgechlossen.");
         //ab hier faengt das eigentliche lernen an.
         // Zuerst werden die gewichte zu den outputneuronen geaendert
-        if( worstNeuron[0] == (double)label) setCustomFactor(1.5); else setCustomFactor(1);
+        //if( worstNeuron[0] == (double)label) setCustomFactor(1.5); else setCustomFactor(1); // klappt glaube ich nicht so dolle
         for (OutputNeuron outputNeuron : outputNeurons) {
             if (outputNeuron.getIdentNummer() == label) {
                 outputNeuron.modWeight(1);

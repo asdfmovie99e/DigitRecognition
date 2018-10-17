@@ -32,7 +32,7 @@ public class Main extends Application {
         //launch(args);
         MathHelper.start();
         //System.out.println(MathHelper.sigmoidApprox(1f));
-        //UbyteCoder.decode();
+        //UbyteCoder.decode(); // extrahiert die bilder aus der sammeldatei nach %appdata%\mnist
         //NetworkController networkController = new NetworkController();
         NetworkController.initializeNetwork();
         NetworkController.startLearning();
