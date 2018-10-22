@@ -32,7 +32,6 @@ public class WeightSaver {
         try {
             fos.write(weightArray);
             fos.close();
-            initialize();
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -97,6 +97,7 @@ class NetworkController {
         for(int iDebug = 0; iDebug < 10; iDebug++){
             if (timesTried[iDebug] == 0 ||i1 % 50 != 0) continue;
             Debug.log("Die Zahl " +iDebug + " ist zu folgendem Prozentsatz richtig: " + 100 * (double)timesSuccesful[iDebug] / (double)timesTried[iDebug]);
+            WeightSaver.initialize();
             saveWeightsToFile();
             WeightSaver.writeArrayToFile();
         }
