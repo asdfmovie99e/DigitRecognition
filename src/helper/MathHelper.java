@@ -29,7 +29,7 @@ public class MathHelper {
         //gibt einen ungefähren wert der Sigmoid funktion zurück
         if(input < -5.8) return 0f;
         if(input > 5.8) return 1f;
-        return sigmoidMap.get( (int)(input * 100));
+        return sigmoidMap.get( (int)(input * 100)) - 0.5f;
     }
 
     public static float identity(float input){

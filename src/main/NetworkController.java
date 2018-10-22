@@ -7,6 +7,7 @@ package main;
 
 import helper.Debug;
 import helper.UbyteCoder;
+import helper.WeightSaver;
 
 class NetworkController {
 
@@ -69,17 +70,17 @@ class NetworkController {
         timesTried[label]++;
 
         for (InputNeuron inputNeuron : inputNeurons) {
-            //System.out.println("Ich bin Inputneuron " + inputNeuron.getIdentNummer() + " und habe den Wert " + inputNeuron.getOutputValue());
+
             inputNeuron.sendOutputToNextLayer();
         }
         for (HiddenNeuron hiddenNeuron : hiddenNeurons) {
-            //Debug.log("Ich bin HiddenNeuron " + hiddenNeuron.getIdentNummer() + " und mein Wert ist " + hiddenNeuron.getOutputValue());
+
             hiddenNeuron.sendOutputToNextLayer();
         }
         OutputNeuron biggestNeuron = null;
         for (OutputNeuron outputNeuron : outputNeurons) {
             if(biggestNeuron == null || biggestNeuron.getOutputValue() < outputNeuron.getOutputValue()) biggestNeuron = outputNeuron;
-           //System.out.println("Ich bin OutputNeuron " + outputNeuron.getIdentNummer() + " und mein Wert ist " + outputNeuron.getOutputValue() + ". Richtig war die Nummer " + label);
+
         }
         Double[] worstNeuron = new Double[2]; //0. platz ist neuron ident und der 1. platz ist der wert
         for(int i6 = 0; i6 < 10; i6++){
@@ -96,11 +97,13 @@ class NetworkController {
         for(int iDebug = 0; iDebug < 10; iDebug++){
             if (timesTried[iDebug] == 0 ||i1 % 50 != 0) continue;
             Debug.log("Die Zahl " +iDebug + " ist zu folgendem Prozentsatz richtig: " + 100 * (double)timesSuccesful[iDebug] / (double)timesTried[iDebug]);
+            saveWeightsToFile();
+            WeightSaver.writeArrayToFile();
         }
         if (i1 % 50 == 0) Debug.log("Bild " + i1 + " abgechlossen.");
         //ab hier faengt das eigentliche lernen an.
         // Zuerst werden die gewichte zu den outputneuronen geaendert
-        //if( worstNeuron[0] == (double)label) setCustomFactor(1.5); else setCustomFactor(1); // klappt glaube ich nicht so dolle
+        if( worstNeuron[0] == (double)label) setCustomFactor(1.5); else setCustomFactor(1);
         for (OutputNeuron outputNeuron : outputNeurons) {
             if (outputNeuron.getIdentNummer() == label) {
                 outputNeuron.modWeight(1);
@@ -121,4 +124,16 @@ class NetworkController {
     private static void setCustomFactor(double ff){
         customFactor = ff;
     }
+
+
+    private static void saveWeightsToFile(){
+        for(HiddenNeuron hiddenNeuron: hiddenNeurons){
+            hiddenNeuron.saveWeightsToFile();
+        }
+        for(OutputNeuron outputNeuron: outputNeurons){
+            outputNeuron.saveWeightsToFile();
+        }
+    }
 }
+
+

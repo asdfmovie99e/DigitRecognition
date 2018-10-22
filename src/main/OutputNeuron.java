@@ -8,6 +8,7 @@ package main;
 
 import helper.Debug;
 import helper.MathHelper;
+import helper.WeightSaver;
 
 import java.util.HashMap;
 
@@ -81,5 +82,11 @@ public class OutputNeuron {
 
     public double getWeight(int ident){
         return weightMap.get(ident);
+    }
+
+    public void saveWeightsToFile(){
+        for(int i = 0; i < 40; i++){
+            WeightSaver.receiveWeight(weightMap.get(i), 784 * 40 * 8+ i * 8 + 8 * 40 * this.getIdentNummer());
+        }
     }
 }

@@ -8,6 +8,7 @@ package main;
 
 import helper.Debug;
 import helper.MathHelper;
+import helper.WeightSaver;
 import sun.nio.ch.Net;
 
 import java.util.HashMap;
@@ -78,7 +79,7 @@ public class HiddenNeuron {
         for(int i = 0; i < 10; i++){
             smallDelta += outputNeurons[i].getSmallDelta() * outputNeurons[i].getWeight(getIdentNummer());
         }
-        double epsilon = 0.02f; // vollkommen experimentell. keine ahnung wie der wert gewählt werden soll
+        double epsilon = 0.04f; // vollkommen experimentell. keine ahnung wie der wert gewählt werden soll
         for(int i = 0; i < 748; i++){
             double input = inputMap.get(i);
             double ableitung = MathHelper.sigmoidApprox(inputMap.get(i)) * (1 - MathHelper.sigmoidApprox(inputMap.get(i)));
@@ -91,4 +92,10 @@ public class HiddenNeuron {
         //Debug.log("Der Unterschied von HiddenNeuron " + getIdentNummer() + " ist " + (getOutputValue() - oldValue));
     }
 
+
+    public void saveWeightsToFile(){
+        for(int i = 0; i < 784; i++){
+            WeightSaver.receiveWeight(weightMap.get(i), i * 8+ 784 * 8 * this.getIdentNummer());
+        }
+    }
 }

@@ -9,6 +9,7 @@ package main;
 import helper.Debug;
 import helper.MathHelper;
 import helper.UbyteCoder;
+import helper.WeightSaver;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -31,11 +32,10 @@ public class Main extends Application {
         Debug.log("Program started");
         //launch(args);
         MathHelper.start();
-        //System.out.println(MathHelper.sigmoidApprox(1f));
-        //UbyteCoder.decode(); // extrahiert die bilder aus der sammeldatei nach %appdata%\mnist
-        //NetworkController networkController = new NetworkController();
         NetworkController.initializeNetwork();
+        WeightSaver.initialize();
         NetworkController.startLearning();
+
         Debug.log("Program finished");
         Debug.flush();
         System.exit(0);
