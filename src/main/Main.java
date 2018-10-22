@@ -32,8 +32,8 @@ public class Main extends Application {
         Debug.log("Program started");
         //launch(args);
         MathHelper.start();
-        NetworkController.initializeNetwork();
         WeightSaver.initialize();
+        NetworkController.initializeNetwork();
         NetworkController.startLearning();
 
         Debug.log("Program finished");

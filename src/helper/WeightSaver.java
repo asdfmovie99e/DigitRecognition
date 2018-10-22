@@ -22,7 +22,8 @@ public class WeightSaver {
     private static File file;
     private static String timeString = ZonedDateTime.now().toLocalTime().truncatedTo(ChronoUnit.SECONDS).toString().replace(":", "");
     private static boolean openFileDialogFinished = false;
-    public static boolean fileChoosen = false;
+    private static boolean fileChoosen = false;
+    private static double[]  weightDoubleArray = new double[31760];
 
     public static void initialize() {
         new File(System.getenv("APPDATA") + "\\mnist\\temp\\").mkdirs();
@@ -74,6 +75,16 @@ public class WeightSaver {
         return ByteBuffer.wrap(bytes).getDouble();
     }
 
+    private static void generateDoubleArray(){
+        for(int i = 0; i < 31760; i++){
+            byte[] tempArray = new byte[8];
+            for(int i1= 0 ; i1< 8; i++){
+                tempArray[i1] = weightArray[i * 8 + i1];
+            }
+            weightDoubleArray[i] = toDouble(tempArray);
+        }
+    }
+
     public static byte[] getWeightArray() {
         return weightArray;
     }
@@ -91,7 +102,7 @@ public class WeightSaver {
     }
     }
 
-    public boolean getFileChoosen() {
+    public static boolean getFileChoosen() {
         return fileChoosen;
     }
 }

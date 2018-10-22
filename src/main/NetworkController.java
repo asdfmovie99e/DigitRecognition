@@ -43,6 +43,14 @@ public class NetworkController {
             hiddenNeuron.setOutputNeurons(outputNeurons);
         }
         Debug.log("Netzwerk initialisiert");
+        byte[] weightByteArray = WeightSaver.getWeightArray();
+        if(WeightSaver.getFileChoosen()){
+            for(int a1 = 0; a1 < 784; a1++){
+                for(int a2 = 0; a2 < 40; a2++){
+                    hiddenNeurons[a1].setWeight(a2, );
+                }
+            }
+        }
     }
 
     public static void startLearning() {

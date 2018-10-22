@@ -98,4 +98,9 @@ public class HiddenNeuron {
             WeightSaver.receiveWeight(weightMap.get(i), i * 8+ 784 * 8 * this.getIdentNummer());
         }
     }
+
+    public void setWeight(int ident, double weight){
+        if (weightMap.get(ident) != null) weightMap.remove(ident);
+        weightMap.put(ident,weight);
+    }
 }

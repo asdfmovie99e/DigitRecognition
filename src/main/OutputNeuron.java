@@ -89,4 +89,9 @@ public class OutputNeuron {
             WeightSaver.receiveWeight(weightMap.get(i), 784 * 40 * 8+ i * 8 + 8 * 40 * this.getIdentNummer());
         }
     }
+
+    public void setWeight(int ident, double weight){
+        if (weightMap.get(ident) != null) weightMap.remove(ident);
+        weightMap.put(ident,weight);
+    }
 }
