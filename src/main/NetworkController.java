@@ -9,7 +9,7 @@ import helper.Debug;
 import helper.UbyteCoder;
 import helper.WeightSaver;
 
-class NetworkController {
+public class NetworkController {
 
     private static InputNeuron[] inputNeurons = new InputNeuron[784];
     private static HiddenNeuron[] hiddenNeurons = new HiddenNeuron[40]; // noch nicht sicher ob hier auch 784 gewählt werden sollte bzw was besser ist
@@ -134,6 +134,10 @@ class NetworkController {
         for(OutputNeuron outputNeuron: outputNeurons){
             outputNeuron.saveWeightsToFile();
         }
+    }
+
+    private void distributeWeightsFromFile(){
+
     }
 }
 
