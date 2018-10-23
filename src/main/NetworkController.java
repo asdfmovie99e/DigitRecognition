@@ -120,9 +120,17 @@ public class NetworkController {
             }
 
         }
-        if ( worstRate != null && highestWorstRate < worstRate ){
+        if ( worstRate != null && (int)highestWorstRate <= worstRate ){ //int cast, damit auch bei lgeicher rate eine neue datei angelegt wird
+                double succGes = 0d;
+                double triedGes = 0d;
+                for(Integer succ: timesSuccesful){
+                    succGes += succ;
+                }
+                for(Integer tried: timesTried){
+                    triedGes += tried;
+                }
                 highestWorstRate = worstRate;
-                WeightSaver.initialize((int) highestWorstRate);
+                WeightSaver.initialize((int) highestWorstRate, (int) (succGes / triedGes));
                 saveWeightsToFile();
         }
         if (i1 % 50 == 0) Debug.log("Bild " + i1 + " abgechlossen.");
