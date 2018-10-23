@@ -25,9 +25,9 @@ public class WeightSaver {
     private static boolean fileChoosen = false;
     private static double[]  weightDoubleArray = new double[31760];
 
-    public static void initialize() {
+    public static void initialize(int rate) {
         new File(System.getenv("APPDATA") + "\\mnist\\temp\\").mkdirs();
-        file = new File(System.getenv("APPDATA") + "\\mnist\\temp\\" + timeString + ".weights");
+        file = new File(System.getenv("APPDATA") + "\\mnist\\temp\\" + timeString + "_" + rate + ".weight");
         if(!openFileDialogFinished) {
             chooseFile();
             openFileDialogFinished = true;

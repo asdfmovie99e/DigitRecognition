@@ -64,6 +64,7 @@ public class NetworkController {
         //startet die Lernroutine
         int[] timesTried = new int[10];
         int[] timesSuccesful = new int[10];
+        double highestWorstRate = 0d; // gehört zu for(int iDebug = 0; iDebug < 10; iDebug++){
     for(int i1 = 0; i1 < 50000; i1++) { // zum testzweck erstmal nur 100 bilder
 
         imageWithLabel = UbyteCoder.getImageWithLabel(i1);
@@ -109,11 +110,20 @@ public class NetworkController {
         if(biggestNeuron.getIdentNummer() == label) {
             timesSuccesful[label]++;//debug purpose
         }
-        for(int iDebug = 0; iDebug < 10; iDebug++){
-            if (timesTried[iDebug] == 0 ||i1 % 50 != 0) continue;
-            Debug.log("Die Zahl " +iDebug + " ist zu folgendem Prozentsatz richtig: " + 100 * (double)timesSuccesful[iDebug] / (double)timesTried[iDebug]);
-            WeightSaver.initialize();
-            saveWeightsToFile();
+        Double worstRate = null; // darf nicht verändert werden
+        for(int iDebug = 0; iDebug < 10; iDebug++){ // wird jedes 50. bild ausgeführt
+            if (timesTried[iDebug] == 0 ||i1 % 50 != 0 || i1 < 10) continue;
+            double succRate = 100 * (double)timesSuccesful[iDebug] / (double)timesTried[iDebug];
+            Debug.log("Die Zahl " +iDebug + " ist zu folgendem Prozentsatz richtig: " + succRate );
+            if(i1 % 5000 > 1000) { // if bedingung, damit nicht die ersten werte nach reset genommen werden aber garnicht wirklich sogut sondern nur noch nicht eingependelt sind
+                if (worstRate == null || succRate < worstRate) worstRate = succRate;
+            }
+
+        }
+        if ( worstRate != null && highestWorstRate < worstRate ){
+                highestWorstRate = worstRate;
+                WeightSaver.initialize((int) highestWorstRate);
+                saveWeightsToFile();
         }
         if (i1 % 50 == 0) Debug.log("Bild " + i1 + " abgechlossen.");
         //ab hier faengt das eigentliche lernen an.

@@ -32,7 +32,7 @@ public class Main extends Application {
         Debug.log("Program started");
         //launch(args);
         MathHelper.start();
-        WeightSaver.initialize();
+        WeightSaver.initialize(0);
         NetworkController.initializeNetwork();
         NetworkController.startLearning();
 
