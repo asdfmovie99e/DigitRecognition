@@ -54,7 +54,7 @@ public class NetworkController {
             }
             for(int a1 = 0; a1 < 40; a1++){
                 for(int a2 = 0; a2 < 10; a2++){
-                    outputNeurons[a2].setWeight(a1,weightDoubleArray[a2 * 40 + a1]);
+                    outputNeurons[a2].setWeight(a1,weightDoubleArray[a2 * 40 + a1 + 31360]);
                 }
             }
         }
@@ -114,7 +114,6 @@ public class NetworkController {
             Debug.log("Die Zahl " +iDebug + " ist zu folgendem Prozentsatz richtig: " + 100 * (double)timesSuccesful[iDebug] / (double)timesTried[iDebug]);
             WeightSaver.initialize();
             saveWeightsToFile();
-            WeightSaver.writeArrayToFile();
         }
         if (i1 % 50 == 0) Debug.log("Bild " + i1 + " abgechlossen.");
         //ab hier faengt das eigentliche lernen an.
@@ -149,6 +148,7 @@ public class NetworkController {
         for(OutputNeuron outputNeuron: outputNeurons){
             outputNeuron.saveWeightsToFile();
         }
+        WeightSaver.writeArrayToFile();
     }
 
     private void distributeWeightsFromFile(){
