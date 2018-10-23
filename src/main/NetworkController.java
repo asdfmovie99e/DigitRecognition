@@ -130,7 +130,7 @@ public class NetworkController {
                     triedGes += tried;
                 }
                 highestWorstRate = worstRate;
-                WeightSaver.initialize((int) highestWorstRate, (int) (succGes / triedGes));
+                WeightSaver.initialize((int) highestWorstRate, (int) (100 * succGes / triedGes));
                 saveWeightsToFile();
         }
         if (i1 % 50 == 0) Debug.log("Bild " + i1 + " abgechlossen.");

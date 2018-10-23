@@ -33,6 +33,7 @@ public class Main extends Application {
         //launch(args);
         MathHelper.start();
         WeightSaver.initialize(0, 0);
+        WeightSaver.chooseFile();
         NetworkController.initializeNetwork();
         NetworkController.startLearning();
 

@@ -21,17 +21,13 @@ public class WeightSaver {
     private static FileOutputStream fos;
     private static File file;
     private static String timeString = ZonedDateTime.now().toLocalTime().truncatedTo(ChronoUnit.SECONDS).toString().replace(":", "");
-    private static boolean openFileDialogFinished = false;
     private static boolean fileChoosen = false;
     private static double[]  weightDoubleArray = new double[31760];
 
     public static void initialize(int worstRate, int averageRate) {
         new File(System.getenv("APPDATA") + "\\mnist\\temp\\").mkdirs();
         file = new File(System.getenv("APPDATA") + "\\mnist\\temp\\" + timeString + "_" + worstRate + "_" + averageRate + ".weight");
-        if(!openFileDialogFinished) {
-            chooseFile();
-            openFileDialogFinished = true;
-        }
+
 
         try {
             fos = new FileOutputStream(file.getAbsoluteFile());
@@ -93,7 +89,7 @@ public class WeightSaver {
         return weightDoubleArray;
     }
 
-    private static void chooseFile() {
+    public static void chooseFile() {
         JFileChooser chooser = new JFileChooser(System.getenv("APPDATA") + "\\mnist");
         // Dialog zum Oeffnen von Dateien anzeigen
         int rueckgabeWert = chooser.showOpenDialog(null);
