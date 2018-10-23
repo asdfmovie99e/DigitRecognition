@@ -43,11 +43,18 @@ public class NetworkController {
             hiddenNeuron.setOutputNeurons(outputNeurons);
         }
         Debug.log("Netzwerk initialisiert");
-        byte[] weightByteArray = WeightSaver.getWeightArray();
+
         if(WeightSaver.getFileChoosen()){
+            WeightSaver.generateDoubleArray();
+            double[] weightDoubleArray = WeightSaver.getWeightDoubleArray();
             for(int a1 = 0; a1 < 784; a1++){
                 for(int a2 = 0; a2 < 40; a2++){
-                    hiddenNeurons[a1].setWeight(a2, );
+                    hiddenNeurons[a2].setWeight(a1,weightDoubleArray[a2*784 + a1]);
+                }
+            }
+            for(int a1 = 0; a1 < 40; a1++){
+                for(int a2 = 0; a2 < 10; a2++){
+                    outputNeurons[a2].setWeight(a1,weightDoubleArray[a2 * 40 + a1]);
                 }
             }
         }

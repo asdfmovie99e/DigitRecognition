@@ -75,10 +75,10 @@ public class WeightSaver {
         return ByteBuffer.wrap(bytes).getDouble();
     }
 
-    private static void generateDoubleArray(){
+    public static void generateDoubleArray(){
         for(int i = 0; i < 31760; i++){
             byte[] tempArray = new byte[8];
-            for(int i1= 0 ; i1< 8; i++){
+            for(int i1= 0 ; i1< 8; i1++){
                 tempArray[i1] = weightArray[i * 8 + i1];
             }
             weightDoubleArray[i] = toDouble(tempArray);
@@ -89,8 +89,12 @@ public class WeightSaver {
         return weightArray;
     }
 
+    public static double[] getWeightDoubleArray(){
+        return weightDoubleArray;
+    }
+
     private static void chooseFile() {
-        JFileChooser chooser = new JFileChooser();
+        JFileChooser chooser = new JFileChooser(System.getenv("APPDATA") + "\\mnist");
         // Dialog zum Oeffnen von Dateien anzeigen
         int rueckgabeWert = chooser.showOpenDialog(null);
 
