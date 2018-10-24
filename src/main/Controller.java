@@ -113,6 +113,8 @@ public class Controller {
         pb7.setProgress(0);
         pb8.setProgress(0);
         pb9.setProgress(0);
+
+        textausgabe.setText("");
     }
 
     @FXML
