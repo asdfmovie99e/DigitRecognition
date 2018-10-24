@@ -63,6 +63,8 @@ public class Controller {
     private TextField textausgabe;
 
 
+
+
     @FXML
     void onAuswertenClicked(ActionEvent event) {
        try {
@@ -101,7 +103,8 @@ public class Controller {
     }
 
 
-    public double [] pbarray = new double [10];
+
+
 
 
 
@@ -110,18 +113,19 @@ public class Controller {
         GraphicsContext gc = canvas.getGraphicsContext2D();
         gc.clearRect(0, 0, canvas.getWidth(),canvas.getHeight());
 
-        pb0.setProgress(pbarray[0]);
-        pb1.setProgress(pbarray[1]);
-        pb2.setProgress(pbarray[2]);
-        pb3.setProgress(pbarray[3]);
-        pb4.setProgress(pbarray[4]);
-        pb5.setProgress(pbarray[5]);
-        pb6.setProgress(pbarray[6]);
-        pb7.setProgress(pbarray[7]);
-        pb8.setProgress(pbarray[8]);
-        pb9.setProgress(pbarray[9]);
 
-        textausgabe.setText("2");
+        pb0.setProgress(0);
+        pb1.setProgress(0);
+        pb2.setProgress(0);
+        pb3.setProgress(0);
+        pb4.setProgress(0);
+        pb5.setProgress(0);
+        pb6.setProgress(0);
+        pb7.setProgress(0);
+        pb8.setProgress(0);
+        pb9.setProgress(0);
+
+        textausgabe.setText("");
     }
 
     @FXML
@@ -162,17 +166,21 @@ public class Controller {
     }
 
 
+    double [] pbarray = new double [10];
+
+
     private void showpb()
     {
-        pb0.setProgress(0.2);
-        pb1.setProgress(0.8);
-        pb2.setProgress(0.1);
-        pb3.setProgress(0.2);
-        pb4.setProgress(0.2);
-        pb5.setProgress(0.2);
-        pb6.setProgress(0.2);
-        pb7.setProgress(0.2);
-        pb8.setProgress(0.2);
-        pb9.setProgress(0.2);
+
+        pb0.setProgress(pbarray[0]);
+        pb1.setProgress(pbarray[1]);
+        pb2.setProgress(pbarray[2]);
+        pb3.setProgress(pbarray[3]);
+        pb4.setProgress(pbarray[4]);
+        pb5.setProgress(pbarray[5]);
+        pb6.setProgress(pbarray[6]);
+        pb7.setProgress(pbarray[7]);
+        pb8.setProgress(pbarray[8]);
+        pb9.setProgress(pbarray[9]);
     }
 }
