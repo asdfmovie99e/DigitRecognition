@@ -1,9 +1,6 @@
 package main;
 
-import java.awt.*;
-import java.awt.image.BufferedImage;
 import java.io.File;
-import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -13,11 +10,10 @@ import javafx.fxml.FXML;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.ProgressBar;
+import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
-import javafx.scene.paint.Color;
 
 import javax.imageio.ImageIO;
-import javax.swing.*;
 
 public class Controller {
 
@@ -61,6 +57,9 @@ public class Controller {
     @FXML
     private ProgressBar pb9;
 
+    @FXML
+    private TextField textausgabe;
+
 
     @FXML
     void onAuswertenClicked(ActionEvent event) {
@@ -68,8 +67,11 @@ public class Controller {
             Image snapshot = canvas.snapshot(null,null);
            ImageIO.write(SwingFXUtils.fromFXImage(snapshot,null), "png", new File("paint.png"));
            showpb(); //Anzeigen der Balken
+           shownumber();//Anzeigen des Ergebnisses
+
         }   catch (Exception e) {
-           System.out.println("Failed to save Image: " + e);
+           System.out.println("Es ist ein Fehler Aufgetreten");
+
        }
 
        /*try {
@@ -100,6 +102,17 @@ public class Controller {
     void onDeleteAction(ActionEvent event) {
         GraphicsContext gc = canvas.getGraphicsContext2D();
         gc.clearRect(0, 0, canvas.getWidth(),canvas.getHeight());
+
+        pb0.setProgress(0);
+        pb1.setProgress(0);
+        pb2.setProgress(0);
+        pb3.setProgress(0);
+        pb4.setProgress(0);
+        pb5.setProgress(0);
+        pb6.setProgress(0);
+        pb7.setProgress(0);
+        pb8.setProgress(0);
+        pb9.setProgress(0);
     }
 
     @FXML
@@ -129,7 +142,14 @@ public class Controller {
 
     }
 
-    void showpb()
+
+    private void shownumber()
+    {
+       textausgabe.setText("2");
+    }
+
+
+    private void showpb()
     {
         pb0.setProgress(0.2);
         pb1.setProgress(0.8);
