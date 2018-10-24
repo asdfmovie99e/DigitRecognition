@@ -103,6 +103,18 @@ public class Controller {
     }
 
     @FXML
+    void onGewichteladenclicked(ActionEvent event) {
+
+    }
+
+    @FXML
+    void onlernenclicked(ActionEvent event) {
+
+    }
+
+
+
+    @FXML
     void initialize() {
         GraphicsContext g = canvas.getGraphicsContext2D();
         canvas.setOnMouseDragged(event ->{
