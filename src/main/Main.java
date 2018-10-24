@@ -21,21 +21,21 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("../res/sample.fxml"));
-        primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root, 300, 275));
+        Parent root = FXMLLoader.load(getClass().getResource("GUI.fxml"));
+        primaryStage.setTitle("Zahlenerkennung");
+        primaryStage.setScene(new Scene(root, 800, 500));
         primaryStage.show();
     }
 
 
     public static void main(String[] args) {
         Debug.log("Program started");
-        //launch(args);
-        MathHelper.start();
-        WeightSaver.initialize(0, 0);
-        WeightSaver.chooseFile();
-        NetworkController.initializeNetwork();
-        NetworkController.startLearning();
+        launch(args);
+        //MathHelper.start();
+        //WeightSaver.initialize(0, 0);
+        //WeightSaver.chooseFile();
+        //NetworkController.initializeNetwork();
+        //NetworkController.startLearning();
 
         Debug.log("Program finished");
         Debug.flush();
