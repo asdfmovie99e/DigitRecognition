@@ -4,6 +4,8 @@ import java.io.File;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import helper.MathHelper;
+import helper.WeightSaver;
 import javafx.embed.swing.SwingFXUtils;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -123,8 +125,12 @@ public class Controller {
     }
 
     @FXML
-    void onlernenclicked(ActionEvent event) {
-
+    void onLernenClicked(ActionEvent event) {
+        MathHelper.start();
+        WeightSaver.initialize(0, 0);
+        WeightSaver.chooseFile();
+        NetworkController.initializeNetwork();
+        NetworkController.startLearning();
     }
 
 

@@ -40,7 +40,7 @@
                 <Cursor fx:constant="DEFAULT" />
             </cursor>
         </Canvas>
-        <Button layoutX="352.0" layoutY="313.0" mnemonicParsing="false" onAction="#onlernenclicked" text="lernen" />
+        <Button layoutX="352.0" layoutY="313.0" mnemonicParsing="false" onAction="#onLernenClicked" text="lernen" />
         <Button layoutX="456.0" layoutY="313.0" mnemonicParsing="false" onAction="#onGewichteladenclicked" text="Gewichte laden" />
       <TextField fx:id="textausgabe" alignment="CENTER" layoutX="352.0" layoutY="87.0" maxHeight="196.0" maxWidth="196.0" prefHeight="196.0" prefWidth="196.0">
          <font>
