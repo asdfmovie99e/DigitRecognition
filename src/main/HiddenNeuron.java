@@ -79,7 +79,7 @@ public class HiddenNeuron {
         for(int i = 0; i < 10; i++){
             smallDelta += outputNeurons[i].getSmallDelta() * outputNeurons[i].getWeight(getIdentNummer());
         }
-        double epsilon = 0.015f; // vollkommen experimentell. keine ahnung wie der wert gewählt werden soll
+        double epsilon = 0.012f; // vollkommen experimentell. keine ahnung wie der wert gewählt werden soll
         for(int i = 0; i < 748; i++){
             double input = inputMap.get(i);
             double ableitung = MathHelper.sigmoidApprox(inputMap.get(i)) * (1 - MathHelper.sigmoidApprox(inputMap.get(i)));

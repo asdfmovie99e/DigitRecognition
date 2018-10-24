@@ -30,12 +30,12 @@ public class Main extends Application {
 
     public static void main(String[] args) {
         Debug.log("Program started");
-        //launch(args);
-        MathHelper.start();
-        WeightSaver.initialize(0, 0);
-        WeightSaver.chooseFile();
-        NetworkController.initializeNetwork();
-        NetworkController.startLearning();
+        launch(args);
+        //MathHelper.start();
+        //WeightSaver.initialize(0, 0);
+        //WeightSaver.chooseFile();
+        //NetworkController.initializeNetwork();
+        //NetworkController.startLearning();
 
         Debug.log("Program finished");
         Debug.flush();
