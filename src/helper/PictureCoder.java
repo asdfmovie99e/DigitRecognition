@@ -13,6 +13,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.time.LocalDateTime;
+import java.util.HashMap;
 
 public class PictureCoder {
     private static File mnistFolder = new File(Paths.get("").toAbsolutePath().toString() + "\\src\\mnist");
@@ -109,6 +110,55 @@ public class PictureCoder {
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
+            }
+        }
+
+        public static void shrinkImage(){
+        //verkleinert das bild aus der gui von 196*196 auf 28*28 pixel
+            BufferedImage img = null;
+            try {
+                img = ImageIO.read(new File("src\\helper\\paint.png"));
+            } catch (IOException e) {
+            }
+            HashMap<Integer,Integer> hMap= new HashMap<Integer, Integer>();
+            for(int i1 = 0; i1 < 196; i1++) {
+                for (int i2 = 0; i2 < 196; i2++) {
+                    Integer colorInt = null;
+                    if (img.getRGB(i1, i2) > -2) { // minus 2 weil weiss = -1 und schwarz gleich minus ganz viel
+                        colorInt = 0;
+                    } else {
+                        colorInt = 1;
+                    }
+                    hMap.put(i1 + 196 * i2, colorInt);
+                }
+            }
+            BufferedImage shrunkImage = new BufferedImage(28, 28, BufferedImage.TYPE_INT_RGB); // hoehe auf 28x28 festgelegt, da nur mit dem mnist datensatz gearbeitet wird
+            for(int i1 = 0; i1 < 28; i1++){
+                for(int i2 = 0; i2 < 28; i2++){
+                    int currentBlackSum = 0;
+                        for(int i3 = 0; i3 < 7; i3++){ // x sub cood
+                            for(int i4 = 0; i4 < 7; i4++){ //y sub cood
+                                int currentPixel = i1 * 7 + i2 * 1372 + i3 + 196 * i4;
+                                if(hMap.get(currentPixel) == 1){
+                                    currentBlackSum++;
+                                }
+                            }
+                        }
+                        Integer colorInt  = null;
+                        if(currentBlackSum < 25){
+                            colorInt = 255;
+                        } else {
+                            colorInt = 0;
+                        }
+                        int pixel = (colorInt << 24 | colorInt << 16 | colorInt << 8 | colorInt);
+                        shrunkImage.setRGB(i1, i2, pixel);
+                }
+            }
+            File file = new File("src\\helper\\shrunk.png");
+            try {
+                ImageIO.write(shrunkImage, "png", file);
+            } catch (IOException e) {
+                e.printStackTrace();
             }
         }
     }

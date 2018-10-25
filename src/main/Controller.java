@@ -5,6 +5,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 import helper.MathHelper;
+import helper.PictureCoder;
 import helper.WeightSaver;
 import javafx.embed.swing.SwingFXUtils;
 import javafx.event.ActionEvent;
@@ -72,7 +73,7 @@ public class Controller {
            ImageIO.write(SwingFXUtils.fromFXImage(snapshot,null), "png", new File("src\\helper\\paint.png"));
            showpb(); //Anzeigen der Balken
            shownumber();//Anzeigen des Ergebnisses
-
+           PictureCoder.shrinkImage();
         }   catch (Exception e) {
            e.printStackTrace();
 
