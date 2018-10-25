@@ -14,7 +14,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.time.LocalDateTime;
 
-public class UbyteCoder {
+public class PictureCoder {
     private static File mnistFolder = new File(Paths.get("").toAbsolutePath().toString() + "\\src\\mnist");
     private static int[] labelArray;
     private static byte[] byteArray;

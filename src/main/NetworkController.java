@@ -6,7 +6,7 @@ package main;
  */
 
 import helper.Debug;
-import helper.UbyteCoder;
+import helper.PictureCoder;
 import helper.WeightSaver;
 
 public class NetworkController {
@@ -67,7 +67,7 @@ public class NetworkController {
         double highestWorstRate = 0d; // gehört zu for(int iDebug = 0; iDebug < 10; iDebug++){
     for(int i1 = 0; i1 < 50000; i1++) { // zum testzweck erstmal nur 100 bilder
 
-        imageWithLabel = UbyteCoder.getImageWithLabel(i1);
+        imageWithLabel = PictureCoder.getImageWithLabel(i1);
         label = (Integer) imageWithLabel[0];
         //Debug.log("Jetzt kommt ein Bild mit der Zahl " + label);
         pixelArray = (Boolean[]) imageWithLabel[1];

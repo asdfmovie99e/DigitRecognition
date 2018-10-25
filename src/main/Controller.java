@@ -69,12 +69,12 @@ public class Controller {
     void onAuswertenClicked(ActionEvent event) {
        try {
             Image snapshot = canvas.snapshot(null,null);
-           ImageIO.write(SwingFXUtils.fromFXImage(snapshot,null), "png", new File("paint.png"));
+           ImageIO.write(SwingFXUtils.fromFXImage(snapshot,null), "png", new File("src\\helper\\paint.png"));
            showpb(); //Anzeigen der Balken
            shownumber();//Anzeigen des Ergebnisses
 
         }   catch (Exception e) {
-           System.out.println("Es ist ein Fehler Aufgetreten");
+           e.printStackTrace();
 
        }
 
@@ -135,6 +135,7 @@ public class Controller {
 
     @FXML
     void onLernenClicked(ActionEvent event) {
+        Main.closeStage();
         MathHelper.start();
         WeightSaver.initialize(0, 0);
         WeightSaver.chooseFile();

@@ -7,9 +7,6 @@ package main;
 
 
 import helper.Debug;
-import helper.MathHelper;
-import helper.UbyteCoder;
-import helper.WeightSaver;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -17,7 +14,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class Main extends Application {
-
+private static Stage primaryStage = null;
 
     @Override
     public void start(Stage primaryStage) throws Exception{
@@ -25,8 +22,12 @@ public class Main extends Application {
         primaryStage.setTitle("Zahlenerkennung");
         primaryStage.setScene(new Scene(root, 800, 500));
         primaryStage.show();
+        this.primaryStage = primaryStage;
     }
 
+    public static void closeStage(){
+        primaryStage.close();
+    }
 
     public static void main(String[] args) {
         Debug.log("Program started");

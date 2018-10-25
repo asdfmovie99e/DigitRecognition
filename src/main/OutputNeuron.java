@@ -67,7 +67,7 @@ public class OutputNeuron {
         for(int i = 0; i < 40; i++){
             double input = inputMap.get(i);
             double ableitung = MathHelper.sigmoidApprox(inputMap.get(i)) * (1 - MathHelper.sigmoidApprox(inputMap.get(i)));
-            double bigDelta = epsilon * smallDelta * input * ableitung * NetworkController.getCustomFactor();
+            double bigDelta = epsilon * smallDelta * input * ableitung;
             double oldWeight = weightMap.get(i);
             weightMap.remove(i);
             weightMap.put(i, oldWeight + bigDelta);
