@@ -161,5 +161,25 @@ public class PictureCoder {
                 e.printStackTrace();
             }
         }
+
+        public static boolean[] getShrunkImage(){
+        boolean[] resultArray = new boolean[784];
+        BufferedImage img = null;
+            try {
+                img = ImageIO.read(new File("src\\helper\\paint.png"));
+            } catch (IOException e) {
+            }
+
+            for(int i1 = 0 ; i1 < 28; i1++){ // x coords
+                for(int i2 = 0; i2 < 28; i2++){ // y coords
+                    if(img.getRGB(i1,i2) <  -2) { // if white else schwarz
+                        resultArray[i1 + i2 * 28] = false; // weiss
+                    } else {
+                        resultArray[i1 + i2 * 28] = true;//schwarz
+                    }
+                }
+            }
+            return resultArray;
+        }
     }
 
