@@ -74,6 +74,8 @@ public class NetworkController {
         for (int i = 0; i < pixelArray.length; i++) {
             //aus dem grade geholten pixelarray werden die daten an die Inputneuronen verteilt
             inputNeurons[i].setOutputValue(pixelArray[i]);
+            if(i % 28 == 0) System.out.print("\n"); // DAS UND DARUNTER WEGMACHEN
+            System.out.print(Integer.toString(inputNeurons[i].getOutputValue()));
 
         }
 
@@ -165,6 +167,9 @@ public class NetworkController {
         for (int i = 0; i < shrunkPixelArray.length; i++) {
             //aus dem grade geholten pixelarray werden die daten an die Inputneuronen verteilt
             inputNeurons[i].setOutputValue(shrunkPixelArray[i]);
+            if(i % 28 == 0) System.out.print("\n");
+            System.out.print(Integer.toString(inputNeurons[i].getOutputValue()));
+
         }
         for (InputNeuron inputNeuron : inputNeurons) {
 

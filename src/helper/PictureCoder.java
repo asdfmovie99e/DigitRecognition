@@ -174,9 +174,9 @@ public class PictureCoder {
                 for(int i2 = 0; i2 < 28; i2++){ // y coords
                    int pixelValue = img.getRGB(i1,i2);
                     if(pixelValue <  -2) { // if white else schwarz
-                        resultArray[i1 + i2 * 28] = false; // weiss
+                        resultArray[i1 + i2 * 28] = true; // weiss
                     } else {
-                        resultArray[i1 + i2 * 28] = true;//schwarz
+                        resultArray[i1 + i2 * 28] = false;//schwarz
                     }
                 }
             }
