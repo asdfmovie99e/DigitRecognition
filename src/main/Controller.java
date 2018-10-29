@@ -74,6 +74,7 @@ public class Controller {
            showpb(); //Anzeigen der Balken
            shownumber();//Anzeigen des Ergebnisses
            PictureCoder.shrinkImage();
+           Thread.sleep(3000);
            NetworkController.analyzeShrunkImage();
         }   catch (Exception e) {
            e.printStackTrace();
@@ -133,9 +134,9 @@ public class Controller {
     @FXML
     void onGewichteladenclicked(ActionEvent event) {
         MathHelper.start();
-        NetworkController.initializeNetwork();
         WeightSaver.initialize(0, 0);
         WeightSaver.chooseFile();
+        NetworkController.initializeNetwork();
     }
 
     @FXML

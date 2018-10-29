@@ -136,7 +136,6 @@ public class NetworkController {
         if (i1 % 50 == 0) Debug.log("Bild " + i1 + " abgechlossen.");
         //ab hier faengt das eigentliche lernen an.
         // Zuerst werden die gewichte zu den outputneuronen geaendert
-        if( worstNeuron[0] == (double)label) setCustomFactor(1.5); else setCustomFactor(1);
         for (OutputNeuron outputNeuron : outputNeurons) {
             if (outputNeuron.getIdentNummer() == label) {
                 outputNeuron.modWeight(1);
@@ -148,14 +147,6 @@ public class NetworkController {
             hiddenNeuron.modWeight();
         }
     }
-    }
-
-    public static double getCustomFactor(){
-        return  customFactor;
-    }
-
-    private static void setCustomFactor(double ff){
-        customFactor = ff;
     }
 
 
