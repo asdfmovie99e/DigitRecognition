@@ -169,6 +169,30 @@ public class NetworkController {
         WeightSaver.writeArrayToFile();
     }
 
+    public static void analyzeShrunkImage() {
+        boolean[] shrunkPixelArray = PictureCoder.getShrunkImage();
+        for (int i = 0; i < shrunkPixelArray.length; i++) {
+            //aus dem grade geholten pixelarray werden die daten an die Inputneuronen verteilt
+            inputNeurons[i].setOutputValue(shrunkPixelArray[i]);
+        }
+        for (InputNeuron inputNeuron : inputNeurons) {
+
+            inputNeuron.sendOutputToNextLayer();
+        }
+        for (HiddenNeuron hiddenNeuron : hiddenNeurons) {
+
+            hiddenNeuron.sendOutputToNextLayer();
+        }
+        OutputNeuron biggestNeuron = null;
+        for (OutputNeuron outputNeuron : outputNeurons) {
+            System.out.println(outputNeuron.getIdentNummer() + "   " + outputNeuron.getOutputValue());
+            if(biggestNeuron == null || biggestNeuron.getOutputValue() < outputNeuron.getOutputValue()) biggestNeuron = outputNeuron;
+
+        }
+        System.out.println(biggestNeuron.getIdentNummer());
+
+    }
+
     private void distributeWeightsFromFile(){
 
     }

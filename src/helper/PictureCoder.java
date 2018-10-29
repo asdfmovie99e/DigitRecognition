@@ -166,16 +166,18 @@ public class PictureCoder {
         boolean[] resultArray = new boolean[784];
         BufferedImage img = null;
             try {
-                img = ImageIO.read(new File("src\\helper\\paint.png"));
-            } catch (IOException e) {
+                Thread.sleep(3000);
+                img = ImageIO.read(new File("src\\helper\\shrunk.png"));
+            } catch (Exception e) {
             }
 
             for(int i1 = 0 ; i1 < 28; i1++){ // x coords
                 for(int i2 = 0; i2 < 28; i2++){ // y coords
-                    if(img.getRGB(i1,i2) <  -2) { // if white else schwarz
-                        resultArray[i1 + i2 * 28] = false; // weiss
-                    } else {
-                        resultArray[i1 + i2 * 28] = true;//schwarz
+                   int pixelValue = img.getRGB(i1,i2);
+                    if(pixelValue <  -2) { // if white else schwarz
+                        resultArray[i1 + i2 * 28] = true; // weiss
+                    } else { // TRUE UND FALSE ZUM TEST GETAUSCHT 1308 2910
+                        resultArray[i1 + i2 * 28] = false;//schwarz
                     }
                 }
             }
