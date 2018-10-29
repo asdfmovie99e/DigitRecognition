@@ -71,8 +71,7 @@ public class Controller {
        try {
             Image snapshot = canvas.snapshot(null,null);
            ImageIO.write(SwingFXUtils.fromFXImage(snapshot,null), "png", new File("src\\helper\\paint.png"));
-           showpb(); //Anzeigen der Balken
-           shownumber();//Anzeigen des Ergebnisses
+
            PictureCoder.shrinkImage();
            Thread.sleep(3000);
            NetworkController.analyzeShrunkImage();
@@ -189,5 +188,8 @@ public class Controller {
         pb7.setProgress(pbarray[7]);
         pb8.setProgress(pbarray[8]);
         pb9.setProgress(pbarray[9]);
+    }
+    public void setTextausgabe(String s){
+        textausgabe.setText(s);
     }
 }

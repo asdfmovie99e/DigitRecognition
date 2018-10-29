@@ -186,7 +186,7 @@ public class NetworkController {
 
         }
         System.out.println(biggestNeuron.getIdentNummer());
-
+        Controller.setText(biggestNeuron.getIdentNummer() + "");
     }
 
     private void distributeWeightsFromFile(){
