@@ -74,8 +74,6 @@ public class NetworkController {
         for (int i = 0; i < pixelArray.length; i++) {
             //aus dem grade geholten pixelarray werden die daten an die Inputneuronen verteilt
             inputNeurons[i].setOutputValue(pixelArray[i]);
-            if(i % 28 == 0) System.out.print("\n"); // DAS UND DARUNTER WEGMACHEN
-            System.out.print(Integer.toString(inputNeurons[i].getOutputValue()));
 
         }
 
@@ -162,13 +160,12 @@ public class NetworkController {
         WeightSaver.writeArrayToFile();
     }
 
-    public static void analyzeShrunkImage() {
+    public static double[] analyzeShrunkImage() {
         boolean[] shrunkPixelArray = PictureCoder.getShrunkImage();
         for (int i = 0; i < shrunkPixelArray.length; i++) {
             //aus dem grade geholten pixelarray werden die daten an die Inputneuronen verteilt
             inputNeurons[i].setOutputValue(shrunkPixelArray[i]);
-            if(i % 28 == 0) System.out.print("\n");
-            System.out.print(Integer.toString(inputNeurons[i].getOutputValue()));
+
 
         }
         for (InputNeuron inputNeuron : inputNeurons) {
@@ -180,13 +177,16 @@ public class NetworkController {
             hiddenNeuron.sendOutputToNextLayer();
         }
         OutputNeuron biggestNeuron = null;
+        double[] resultArray = new double[11];
         for (OutputNeuron outputNeuron : outputNeurons) {
+            resultArray[outputNeuron.getIdentNummer()] = outputNeuron.getOutputValue();
             System.out.println(outputNeuron.getIdentNummer() + "   " + outputNeuron.getOutputValue());
             if(biggestNeuron == null || biggestNeuron.getOutputValue() < outputNeuron.getOutputValue()) biggestNeuron = outputNeuron;
 
         }
+        resultArray[10] = biggestNeuron.getIdentNummer();
         System.out.println(biggestNeuron.getIdentNummer());
-        Controller.setText(biggestNeuron.getIdentNummer() + "");
+        return resultArray;
     }
 
     private void distributeWeightsFromFile(){

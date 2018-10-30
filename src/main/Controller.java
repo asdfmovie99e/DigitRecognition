@@ -74,7 +74,8 @@ public class Controller {
 
            PictureCoder.shrinkImage();
            Thread.sleep(3000);
-           NetworkController.analyzeShrunkImage();
+           double[] resultArray = NetworkController.analyzeShrunkImage();
+           textausgabe.setText(Double.toString(resultArray[10]));
         }   catch (Exception e) {
            e.printStackTrace();
 
@@ -154,7 +155,7 @@ public class Controller {
     void initialize() {
         GraphicsContext g = canvas.getGraphicsContext2D();
         canvas.setOnMouseDragged(event ->{
-            double size = 20 ;
+            double size = 15 ;
             double x = event.getX() - size / 2;
             double y = event.getY() - size / 2;
             g.fill();
@@ -172,10 +173,10 @@ public class Controller {
     }
 
 
-    double [] pbarray = new double [10];
 
 
-    private void showpb()
+
+    private void showpb(double[] pbarray)
     {
 
         pb0.setProgress(pbarray[0]);
@@ -190,6 +191,6 @@ public class Controller {
         pb9.setProgress(pbarray[9]);
     }
     public void setTextausgabe(String s){
-        textausgabe.setText(s);
+       // textausgabe.setText(s);
     }
 }
