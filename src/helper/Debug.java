@@ -50,7 +50,7 @@ public class Debug {
     private static boolean createLogFile(){
         //Erstellt die Log Datei und den OutputStream. Muss normalerweise nur einmal aufgerufen werden am Anfang.
         try{
-            String path = new File("src/Helper/Output.log").getAbsolutePath();
+            String path = new File(System.getenv("APPDATA") + "\\mnist\\" + "Output.log").getAbsolutePath();
             logFile = new File(path);
             logFile.createNewFile();
             stream = new BufferedOutputStream(

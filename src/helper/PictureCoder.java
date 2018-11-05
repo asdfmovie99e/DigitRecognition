@@ -117,7 +117,7 @@ public class PictureCoder {
         //verkleinert das bild aus der gui von 196*196 auf 28*28 pixel
             BufferedImage img = null;
             try {
-                img = ImageIO.read(new File("src\\helper\\paint.png"));
+                img = ImageIO.read(new File(System.getenv("APPDATA") + "\\mnist\\" + "paint.png"));
             } catch (IOException e) {
             }
             HashMap<Integer,Integer> hMap= new HashMap<Integer, Integer>();
@@ -154,7 +154,7 @@ public class PictureCoder {
                         shrunkImage.setRGB(i1, i2, pixel);
                 }
             }
-            File file = new File("src\\helper\\shrunk.png");
+            File file = new File(System.getenv("APPDATA") + "\\mnist\\" + "shrunk.png");
             try {
                 ImageIO.write(shrunkImage, "png", file);
             } catch (IOException e) {
@@ -166,7 +166,7 @@ public class PictureCoder {
         boolean[] resultArray = new boolean[784];
         BufferedImage img = null;
             try {
-                img = ImageIO.read(new File("src\\helper\\shrunk.png"));
+                img = ImageIO.read(new File(System.getenv("APPDATA") + "\\mnist\\" + "shrunk.png"));
             } catch (Exception e) {
             }
 

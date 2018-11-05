@@ -70,7 +70,7 @@ public class Controller {
     void onAuswertenClicked(ActionEvent event) {
        try {
             Image snapshot = canvas.snapshot(null,null);
-           ImageIO.write(SwingFXUtils.fromFXImage(snapshot,null), "png", new File("src\\helper\\paint.png"));
+           ImageIO.write(SwingFXUtils.fromFXImage(snapshot,null), "png", new File(System.getenv("APPDATA") + "\\mnist\\" + "paint.png"));
 
            PictureCoder.shrinkImage();
            Thread.sleep(3000);
