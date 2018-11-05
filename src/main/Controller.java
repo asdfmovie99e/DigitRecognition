@@ -76,6 +76,19 @@ public class Controller {
            Thread.sleep(3000);
            double[] resultArray = NetworkController.analyzeShrunkImage();
            textausgabe.setText(Double.toString(resultArray[10]));
+           double smallest = Double.MAX_VALUE;
+           double biggest = Double.MIN_VALUE;
+           for(int i = 0 ; i < 10; i++){
+               if(resultArray[i] < smallest) smallest = resultArray[i];
+               if(resultArray[i] > biggest) biggest = resultArray[i];
+           }
+           double range = biggest - smallest;
+           double[] modifiedArray = new double[10];
+           for (int i = 0 ; i < 10; i++){
+               modifiedArray[i] = (resultArray[i] - smallest) / range;
+           }
+           showpb(modifiedArray);
+
         }   catch (Exception e) {
            e.printStackTrace();
 
