@@ -6,10 +6,8 @@ package main;
  */
 
 
-import helper.Debug;
 import helper.MathHelper;
 import helper.WeightSaver;
-import sun.nio.ch.Net;
 
 import java.util.HashMap;
 
@@ -49,7 +47,7 @@ public class HiddenNeuron {
         for(int i = 0; i < 748;i++){
             inputSum += inputMap.get(i) * weightMap.get(i);
         }
-        inputSum += 0.2d; //BIAS TEST
+      //  inputSum += 0.2d; //BIAS TEST
         outputSum = MathHelper.sigmoidApprox(inputSum);
     }
 
@@ -86,11 +84,12 @@ public class HiddenNeuron {
             double bigDelta = epsilon * smallDelta * input * ableitung;
             double oldWeight = weightMap.get(i);
             //if(oldWeight + bigDelta > 1 || oldWeight + bigDelta < -1) return; // NUR TEST
-            weightMap.remove(i);
-            weightMap.put(i, oldWeight + bigDelta);
+            setWeight(i, oldWeight + bigDelta);
         }
         //ab hier debug purposes
         //Debug.log("Der Unterschied von HiddenNeuron " + getIdentNummer() + " ist " + (getOutputValue() - oldValue));
+
+       //new HiddenLearnThread().start();
     }
 
 
@@ -103,5 +102,21 @@ public class HiddenNeuron {
     public void setWeight(int ident, double weight){
         if (weightMap.get(ident) != null) weightMap.remove(ident);
         weightMap.put(ident,weight);
+    }
+
+    public void setWeightMap(HashMap<Integer, Double> weightMap){
+        this.weightMap = weightMap;
+    }
+
+    public HashMap<Integer, Double> getWeightMap(){
+        return weightMap;
+    }
+
+    public HashMap<Integer, Double> getInputMap(){
+        return inputMap;
+    }
+
+    public OutputNeuron[] getOutputNeurons(){
+        return outputNeurons;
     }
 }

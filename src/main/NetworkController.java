@@ -16,7 +16,7 @@ public class NetworkController {
     private static OutputNeuron[] outputNeurons = new OutputNeuron[10];
     private static  Object[] imageWithLabel;
     private static Integer label;
-    private static Boolean[] pixelArray;
+    private static Double[] pixelArray;
     private static double customFactor = 1d;
 
     static void  initializeNetwork()
@@ -70,7 +70,7 @@ public class NetworkController {
         imageWithLabel = PictureCoder.getImageWithLabel(i1);
         label = (Integer) imageWithLabel[0];
         //Debug.log("Jetzt kommt ein Bild mit der Zahl " + label);
-        pixelArray = (Boolean[]) imageWithLabel[1];
+        pixelArray = (Double[]) imageWithLabel[1];
         for (int i = 0; i < pixelArray.length; i++) {
             //aus dem grade geholten pixelarray werden die daten an die Inputneuronen verteilt
             inputNeurons[i].setOutputValue(pixelArray[i]);
@@ -130,9 +130,11 @@ public class NetworkController {
                     triedGes += tried;
                 }
                 highestWorstRate = worstRate;
-                WeightSaver.initialize((int) highestWorstRate, (int) (100 * succGes / triedGes));
-                saveWeightsToFile();
+//                WeightSaver.initialize((int) highestWorstRate, (int) (100 * succGes / triedGes));
+//                saveWeightsToFile();
         }
+                        WeightSaver.initialize(555,555);
+                       saveWeightsToFile();
         if (i1 % 50 == 0) Debug.log("Bild " + i1 + " abgechlossen.");
         //ab hier faengt das eigentliche lernen an.
         // Zuerst werden die gewichte zu den outputneuronen geaendert
@@ -144,8 +146,10 @@ public class NetworkController {
             }
         }
         for (HiddenNeuron hiddenNeuron : hiddenNeurons) {
-            hiddenNeuron.modWeight();
+           hiddenNeuron.modWeight();
         }
+
+
     }
     }
 
@@ -159,7 +163,7 @@ public class NetworkController {
         }
         WeightSaver.writeArrayToFile();
     }
-
+/*
     public static double[] analyzeShrunkImage() {
         boolean[] shrunkPixelArray = PictureCoder.getShrunkImage();
         for (int i = 0; i < shrunkPixelArray.length; i++) {
@@ -188,7 +192,7 @@ public class NetworkController {
         System.out.println(biggestNeuron.getIdentNummer());
         return resultArray;
     }
-
+*/
     private void distributeWeightsFromFile(){
 
     }
