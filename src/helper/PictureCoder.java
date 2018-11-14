@@ -52,7 +52,9 @@ public class PictureCoder {
             pixelArray = new double[byteArray.length - 16];
             for (int i = 0; i <= pixelArray.length - 1; i++) {
                 pixelArray[i] =(1/256) * ((byte) (byteArray[i + 16] - (byte) 0x80)) + 0.5d; // minus x80 damit weiss -127 ist und nicht 0 weil sonst ganz schwarz als xFF -127 wäre
+                if(i  >47039000 )System.out.println(i);
             }
+            int ddsgdfgs;
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -61,8 +63,8 @@ public class PictureCoder {
     public static Object[] getImageWithLabel(int imageNumber) { //das erste bild hat imageNumber = 0
         // gibt ein Array zurück. auf dem 0. platz ist das label, das angibt welche zahl es wirklich ist
         // auf dem 1. platz ist ein weiteres Array vom Typ Boolean[]. hier wird das bild gespeichert. true ist schwarz und false ist weiss
-        scanLabels();
-        scanImages();
+        if (labelArray == null) scanLabels();
+        if (pixelArray == null)scanImages();
         Object[] resultArray = new Object[2];
         resultArray[0] = labelArray[imageNumber];
         Double[] pixelPartArray = new Double[784];
