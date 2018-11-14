@@ -10,7 +10,8 @@ import helper.PictureCoder;
 import helper.WeightSaver;
 
 public class NetworkController {
-    public static final int hiddenNeuronOneNumber = 40;
+    public static final int hiddenNeuronOneNumber = 1000;
+    public static final int getHiddenNeuronTwoNumber = 500;
     private static InputNeuron[] inputNeurons = new InputNeuron[784];
     private static HiddenNeuron[] hiddenNeurons = new HiddenNeuron[hiddenNeuronOneNumber]; // noch nicht sicher ob hier auch 784 gewählt werden sollte bzw was besser ist
     private static OutputNeuron[] outputNeurons = new OutputNeuron[10];
@@ -18,7 +19,7 @@ public class NetworkController {
     private static Integer label;
     private static Double[] pixelArray;
     private static double customFactor = 1d;
-
+    private static HiddenLearnThread[] threadList = new HiddenLearnThread[hiddenNeuronOneNumber];
     static void  initializeNetwork()
             //erstellt alle Neuronen und Verbindungen und verbindet sie
     {
@@ -30,7 +31,11 @@ public class NetworkController {
             hiddenNeurons[i] = new HiddenNeuron();
             hiddenNeurons[i].setIdentNummer(i);
             hiddenNeurons[i].generateNewWeightMap();
+            threadList[hiddenNeurons[i].getIdentNummer()] = new HiddenLearnThread();
+            threadList[hiddenNeurons[i].getIdentNummer()].start();
         }
+
+
         for(int i = 0; i < 10; i++){
             outputNeurons[i] = new OutputNeuron();
             outputNeurons[i].setIdentNummer(i);
@@ -65,6 +70,7 @@ public class NetworkController {
         int[] timesTried = new int[10];
         int[] timesSuccesful = new int[10];
         double highestWorstRate = 0d; // gehört zu for(int iDebug = 0; iDebug < 10; iDebug++){
+
     for(int i1 = 0; i1 < 50000; i1++) { // zum testzweck erstmal nur 100 bilder
 
         imageWithLabel = PictureCoder.getImageWithLabel(i1);
@@ -84,15 +90,16 @@ public class NetworkController {
             }
         }
         timesTried[label]++;
-
+        Debug.log("Started sending input to next layer", false);
         for (InputNeuron inputNeuron : inputNeurons) {
-
             inputNeuron.sendOutputToNextLayer();
         }
+        Debug.log("finished sending input to next layer", false);
+        Debug.log("Started sending hidden to next layer", false);
         for (HiddenNeuron hiddenNeuron : hiddenNeurons) {
-
             hiddenNeuron.sendOutputToNextLayer();
         }
+        Debug.log("finished sending hidden to next layer", false);
         OutputNeuron biggestNeuron = null;
         for (OutputNeuron outputNeuron : outputNeurons) {
             if(biggestNeuron == null || biggestNeuron.getOutputValue() < outputNeuron.getOutputValue()) biggestNeuron = outputNeuron;
@@ -138,6 +145,7 @@ public class NetworkController {
         if (i1 % 50 == 0) Debug.log("Bild " + i1 + " abgechlossen.");
         //ab hier faengt das eigentliche lernen an.
         // Zuerst werden die gewichte zu den outputneuronen geaendert
+        Debug.log("Started modding output", false);
         for (OutputNeuron outputNeuron : outputNeurons) {
             if (outputNeuron.getIdentNummer() == label) {
                 outputNeuron.modWeight(1);
@@ -145,10 +153,23 @@ public class NetworkController {
                 outputNeuron.modWeight(0);
             }
         }
-        for (HiddenNeuron hiddenNeuron : hiddenNeurons) {
-           hiddenNeuron.modWeight();
-        }
+        Debug.log("Finished modding output", false);
 
+        Debug.log("Started modding hidden"  , false);
+        for (HiddenNeuron hiddenNeuron : hiddenNeurons) {
+           //hiddenNeuron.modWeight();
+            threadList[hiddenNeuron.getIdentNummer()].setHn(hiddenNeuron);
+            threadList[hiddenNeuron.getIdentNummer()].calc();
+        }
+        Debug.log("All threads started", false );
+      /*  for(HiddenLearnThread hft: threadList){
+            try {
+                hft.join();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }*/
+        Debug.log("hidden mod und threads fertig", false);
 
     }
     }

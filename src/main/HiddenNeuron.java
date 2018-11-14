@@ -70,7 +70,7 @@ public class HiddenNeuron {
         return identNummer;
     }
 
-    public void modWeight(){
+    public void modWeight(){/*
         //die Variablen wie z.B. smallDelta beziehen sich auf die Delta Lernregel. Die Formel ist im Internet leicht zu finden.
         double oldValue = getOutputValue(); //debug purpose
         double smallDelta = 0;
@@ -88,7 +88,7 @@ public class HiddenNeuron {
         }
         //ab hier debug purposes
         //Debug.log("Der Unterschied von HiddenNeuron " + getIdentNummer() + " ist " + (getOutputValue() - oldValue));
-
+*/
        //new HiddenLearnThread().start();
     }
 
