@@ -29,7 +29,7 @@ public class OutputNeuron {
 
     public void generateNewWeightMap(){
         //generiert eine neue HashMap in der die Gewichte die eingehenden Verbindungen gespeichert sind.
-        for(int i = 0; i < 40; i++){
+        for(int i = 0; i < NetworkController.hiddenNeuronOneNumber; i++){
             weightMap.put(i,(Math.random() - 0.5d)); // so liegt das ergebnis ungefähr um 0 KEINE AHNUNG VON DEM GEWICHT. MAL SEHEN
         }
     }
@@ -42,7 +42,7 @@ public class OutputNeuron {
     private void calcOutput(){
         //berechnet den output mithilfe der sigmoid funktion
         inputSum = 0;
-        for(int i = 0; i < 40;i++){
+        for(int i = 0; i < NetworkController.hiddenNeuronOneNumber;i++){
            inputSum += inputMap.get(i) * weightMap.get(i);
         }
         outputSum = MathHelper.sigmoidApprox(inputSum);
@@ -63,8 +63,8 @@ public class OutputNeuron {
         //die Variablen wie z.B. smallDelta beziehen sich auf die Delta Lernregel. Die Formel ist im Internet leicht zu finden.
         double oldValue = getOutputValue(); //debug purpose
         smallDelta = targetWeight - getOutputValue();
-        double epsilon = 0.03f; // vollkommen experimentell. keine ahnung wie der wert gewählt werden soll
-        for(int i = 0; i < 40; i++){
+        double epsilon = 0.01f; // vollkommen experimentell. keine ahnung wie der wert gewählt werden soll
+        for(int i = 0; i < NetworkController.hiddenNeuronOneNumber; i++){
             double input = inputMap.get(i);
             double ableitung = MathHelper.sigmoidApprox(inputMap.get(i)) * (1 - MathHelper.sigmoidApprox(inputMap.get(i)));
             double bigDelta = epsilon * smallDelta * input * ableitung;
@@ -86,8 +86,8 @@ public class OutputNeuron {
     }
 
     public void saveWeightsToFile(){
-        for(int i = 0; i < 40; i++){
-            WeightSaver.receiveWeight(weightMap.get(i), 784 * 40 * 8+ i * 8 + 8 * 40 * this.getIdentNummer());
+        for(int i = 0; i < NetworkController.hiddenNeuronOneNumber; i++){
+            WeightSaver.receiveWeight(weightMap.get(i), 784 * NetworkController.hiddenNeuronOneNumber * 8+ i * 8 + 8 * NetworkController.hiddenNeuronOneNumber * this.getIdentNummer());
         }
     }
 

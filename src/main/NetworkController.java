@@ -10,9 +10,9 @@ import helper.PictureCoder;
 import helper.WeightSaver;
 
 public class NetworkController {
-
+    public static final int hiddenNeuronOneNumber = 40;
     private static InputNeuron[] inputNeurons = new InputNeuron[784];
-    private static HiddenNeuron[] hiddenNeurons = new HiddenNeuron[40]; // noch nicht sicher ob hier auch 784 gewählt werden sollte bzw was besser ist
+    private static HiddenNeuron[] hiddenNeurons = new HiddenNeuron[hiddenNeuronOneNumber]; // noch nicht sicher ob hier auch 784 gewählt werden sollte bzw was besser ist
     private static OutputNeuron[] outputNeurons = new OutputNeuron[10];
     private static  Object[] imageWithLabel;
     private static Integer label;
@@ -26,7 +26,7 @@ public class NetworkController {
             inputNeurons[i] = new InputNeuron();
             inputNeurons[i].setIdentNummer(i);
         }
-        for (int i = 0; i < 40; i++){
+        for (int i = 0; i < hiddenNeuronOneNumber; i++){
             hiddenNeurons[i] = new HiddenNeuron();
             hiddenNeurons[i].setIdentNummer(i);
             hiddenNeurons[i].generateNewWeightMap();
@@ -48,13 +48,13 @@ public class NetworkController {
             WeightSaver.generateDoubleArray();
             double[] weightDoubleArray = WeightSaver.getWeightDoubleArray();
             for(int a1 = 0; a1 < 784; a1++){
-                for(int a2 = 0; a2 < 40; a2++){
+                for(int a2 = 0; a2 < hiddenNeuronOneNumber; a2++){
                     hiddenNeurons[a2].setWeight(a1,weightDoubleArray[a2*784 + a1]);
                 }
             }
-            for(int a1 = 0; a1 < 40; a1++){
+            for(int a1 = 0; a1 < hiddenNeuronOneNumber; a1++){
                 for(int a2 = 0; a2 < 10; a2++){
-                    outputNeurons[a2].setWeight(a1,weightDoubleArray[a2 * 40 + a1 + 31360]);
+                    outputNeurons[a2].setWeight(a1,weightDoubleArray[a2 * hiddenNeuronOneNumber + a1 + 31360]);
                 }
             }
         }

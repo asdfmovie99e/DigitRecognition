@@ -51,10 +51,8 @@ public class PictureCoder {
             byteArray = Files.readAllBytes(new File(mnistFolder.getAbsolutePath() + "\\train-images.idx3-ubyte").toPath());
             pixelArray = new double[byteArray.length - 16];
             for (int i = 0; i <= pixelArray.length - 1; i++) {
-                pixelArray[i] =(1/256) * ((byte) (byteArray[i + 16] - (byte) 0x80)) + 0.5d; // minus x80 damit weiss -127 ist und nicht 0 weil sonst ganz schwarz als xFF -127 wäre
-                if(i  >47039000 )System.out.println(i);
+                pixelArray[i] = (0.00390625d *  ((double)(int)(byte)/*hoffentlich sieht das keiner*/ (byteArray[i + 16] - 128)))  + 0.5d;
             }
-            int ddsgdfgs;
         } catch (IOException e) {
             e.printStackTrace();
         }
