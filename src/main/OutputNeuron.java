@@ -63,8 +63,8 @@ public class OutputNeuron {
         //die Variablen wie z.B. smallDelta beziehen sich auf die Delta Lernregel. Die Formel ist im Internet leicht zu finden.
         double oldValue = getOutputValue(); //debug purpose
         smallDelta = targetWeight - getOutputValue();
-        double epsilon = 0.01f; // vollkommen experimentell. keine ahnung wie der wert gewählt werden soll
-        for(int i = 0; i < NetworkController.hiddenNeuronOneNumber; i++){
+        double epsilon = 0.1f; // vollkommen experimentell. keine ahnung wie der wert gewählt werden soll
+        for(int i = 0; i < NetworkController.hiddenNeuronTwoNumber; i++){
             double input = inputMap.get(i);
             double ableitung = MathHelper.sigmoidApprox(inputMap.get(i)) * (1 - MathHelper.sigmoidApprox(inputMap.get(i)));
             double bigDelta = epsilon * smallDelta * input * ableitung;

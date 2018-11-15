@@ -33,7 +33,7 @@ public class HiddenLearnThread extends Thread{
         for(int i = 0; i < 10; i++){
             smallDelta += hn.getOutputNeurons()[i].getSmallDelta() * hn.getOutputNeurons()[i].getWeight(hn.getIdentNummer());
         }
-        double epsilon = 0.01f; // vollkommen experimentell. keine ahnung wie der wert gewählt werden soll
+        double epsilon = 0.1f; // vollkommen experimentell. keine ahnung wie der wert gewählt werden soll
         for(int i = 0; i < 748; i++){
             double input = inputMap.get(i);
             double ableitung = MathHelper.sigmoidApprox(inputMap.get(i)) * (1 - MathHelper.sigmoidApprox(inputMap.get(i)));
