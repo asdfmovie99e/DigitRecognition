@@ -18,16 +18,29 @@ public class HiddenNeuron {
     private HashMap<Integer, Double> inputMap = new HashMap<Integer, Double>();
     private double inputSum = 0;
     private double outputSum = 0;
-    private OutputNeuron[] outputNeurons;
+    private double smallDelta = 0;
+    private HiddenNeuronTwo[] hiddenNeuronsTwos;
+
+    public void setSmallDelta(double smallDelta) {
+        this.smallDelta = smallDelta;
+    }
+
+
+
+    public double getSmallDelta() {
+        return smallDelta;
+    }
+
+
 
     public void setIdentNummer(int identNummer){
         // setzt die Identifikationsnummer des Neurons
         this.identNummer = identNummer;
     }
 
-    public void setOutputNeurons(OutputNeuron[] outputNeurons){
+    public void setHiddenNeuronsTwo(HiddenNeuronTwo[] hiddenNeuronsTwos){
         //füllt das Array outPutNeurons mit den Neuronen der nächsten schicht
-        this.outputNeurons = outputNeurons;
+        this.hiddenNeuronsTwos = hiddenNeuronsTwos;
     }
 
     public void generateNewWeightMap(){
@@ -54,8 +67,8 @@ public class HiddenNeuron {
     public void sendOutputToNextLayer(){
         //sendet den Outputwert an die nächste schicht. diese empfängt ihn mit der receive methode
         calcOutput();
-        for(OutputNeuron outputNeuron: outputNeurons){
-            outputNeuron.receive(identNummer, outputSum);
+        for(HiddenNeuronTwo hiddenNeuronTwo: hiddenNeuronsTwos){
+            hiddenNeuronTwo.receive(identNummer, outputSum);
         }
     }
 
@@ -116,7 +129,7 @@ public class HiddenNeuron {
         return inputMap;
     }
 
-    public OutputNeuron[] getOutputNeurons(){
-        return outputNeurons;
+    public HiddenNeuronTwo[] getOutputNeurons(){
+        return hiddenNeuronsTwos;
     }
 }

@@ -29,7 +29,7 @@ public class OutputNeuron {
 
     public void generateNewWeightMap(){
         //generiert eine neue HashMap in der die Gewichte die eingehenden Verbindungen gespeichert sind.
-        for(int i = 0; i < NetworkController.hiddenNeuronOneNumber; i++){
+        for(int i = 0; i < NetworkController.hiddenNeuronTwoNumber; i++){
             weightMap.put(i,(Math.random() - 0.5d)); // so liegt das ergebnis ungefähr um 0 KEINE AHNUNG VON DEM GEWICHT. MAL SEHEN
         }
     }
@@ -42,7 +42,7 @@ public class OutputNeuron {
     private void calcOutput(){
         //berechnet den output mithilfe der sigmoid funktion
         inputSum = 0;
-        for(int i = 0; i < NetworkController.hiddenNeuronOneNumber;i++){
+        for(int i = 0; i < NetworkController.hiddenNeuronTwoNumber;i++){
            inputSum += inputMap.get(i) * weightMap.get(i);
         }
         outputSum = MathHelper.sigmoidApprox(inputSum);
@@ -86,8 +86,8 @@ public class OutputNeuron {
     }
 
     public void saveWeightsToFile(){
-        for(int i = 0; i < NetworkController.hiddenNeuronOneNumber; i++){
-            WeightSaver.receiveWeight(weightMap.get(i), 784 * NetworkController.hiddenNeuronOneNumber * 8+ i * 8 + 8 * NetworkController.hiddenNeuronOneNumber * this.getIdentNummer());
+        for(int i = 0; i < NetworkController.hiddenNeuronTwoNumber; i++){
+            WeightSaver.receiveWeight(weightMap.get(i), 784 * NetworkController.hiddenNeuronOneNumber * 8+ i * 8 + 8 * NetworkController.hiddenNeuronOneNumber * NetworkController.hiddenNeuronTwoNumber);
         }
     }
 

@@ -17,7 +17,7 @@ import java.time.temporal.ChronoUnit;
 
 public class WeightSaver {
     private static int debugPurposeInt = (784 * NetworkController.hiddenNeuronOneNumber + NetworkController.hiddenNeuronOneNumber * 10) * 8;
-    private static byte[] weightArray = new byte[(784 * NetworkController.hiddenNeuronOneNumber + NetworkController.hiddenNeuronOneNumber * 10) * 8];
+    private static byte[] weightArray = new byte[(784 * NetworkController.hiddenNeuronOneNumber + NetworkController.hiddenNeuronOneNumber * NetworkController.hiddenNeuronTwoNumber + NetworkController.hiddenNeuronTwoNumber * 10) * 8  ];
     private static FileOutputStream fos;
     private static File file;
     private static String timeString = ZonedDateTime.now().toLocalTime().truncatedTo(ChronoUnit.SECONDS).toString().replace(":", "");

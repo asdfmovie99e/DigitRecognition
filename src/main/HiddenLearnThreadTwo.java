@@ -4,21 +4,21 @@ import helper.MathHelper;
 
 import java.util.HashMap;
 
-public class HiddenLearnThread extends Thread{
+public class HiddenLearnThreadTwo extends Thread{
 
-    HiddenNeuron hn = null;
+    HiddenNeuronTwo hn = null;
 
 
 
-    public void setHn(HiddenNeuron hn){
+    public void setHn(HiddenNeuronTwo hn){
         this.hn = hn;
     }
 
     public void run(){
         try {
-       while(true){
-               Thread.sleep(50);
-       }
+            while(true){
+                Thread.sleep(50);
+            }
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

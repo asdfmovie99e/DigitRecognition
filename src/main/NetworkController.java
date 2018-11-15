@@ -11,15 +11,17 @@ import helper.WeightSaver;
 
 public class NetworkController {
     public static final int hiddenNeuronOneNumber = 1000;
-    public static final int getHiddenNeuronTwoNumber = 500;
+    public static final int hiddenNeuronTwoNumber = 500;
     private static InputNeuron[] inputNeurons = new InputNeuron[784];
-    private static HiddenNeuron[] hiddenNeurons = new HiddenNeuron[hiddenNeuronOneNumber]; // noch nicht sicher ob hier auch 784 gewählt werden sollte bzw was besser ist
+    private static HiddenNeuron[] hiddenNeurons = new HiddenNeuron[hiddenNeuronOneNumber];
+    private static HiddenNeuronTwo[] hiddenNeuronsTwo = new HiddenNeuronTwo[hiddenNeuronTwoNumber];
     private static OutputNeuron[] outputNeurons = new OutputNeuron[10];
     private static  Object[] imageWithLabel;
     private static Integer label;
     private static Double[] pixelArray;
     private static double customFactor = 1d;
-    private static HiddenLearnThread[] threadList = new HiddenLearnThread[hiddenNeuronOneNumber];
+    private static HiddenLearnThread[] threadListOne = new HiddenLearnThread[hiddenNeuronOneNumber];
+    private static HiddenLearnThreadTwo[] threadListTwo = new HiddenLearnThreadTwo[hiddenNeuronTwoNumber];
     static void  initializeNetwork()
             //erstellt alle Neuronen und Verbindungen und verbindet sie
     {
@@ -31,8 +33,16 @@ public class NetworkController {
             hiddenNeurons[i] = new HiddenNeuron();
             hiddenNeurons[i].setIdentNummer(i);
             hiddenNeurons[i].generateNewWeightMap();
-            threadList[hiddenNeurons[i].getIdentNummer()] = new HiddenLearnThread();
-            threadList[hiddenNeurons[i].getIdentNummer()].start();
+            threadListOne[hiddenNeurons[i].getIdentNummer()] = new HiddenLearnThread();
+            threadListOne[hiddenNeurons[i].getIdentNummer()].start();
+        }
+        for (int i = 0; i < hiddenNeuronTwoNumber; i++){
+            hiddenNeuronsTwo[i] = new HiddenNeuronTwo();
+            hiddenNeuronsTwo[i].setIdentNummer(i);
+            hiddenNeuronsTwo[i].generateNewWeightMap();
+            threadListTwo[hiddenNeuronsTwo[i].getIdentNummer()] = new HiddenLearnThreadTwo();
+            threadListTwo[hiddenNeuronsTwo[i].getIdentNummer()].start();
+            //new HiddenLearnThreadTwo().start();
         }
 
 
@@ -45,7 +55,10 @@ public class NetworkController {
             inputNeuron.setHiddenNeurons(hiddenNeurons);
         }
         for(HiddenNeuron hiddenNeuron: hiddenNeurons){
-            hiddenNeuron.setOutputNeurons(outputNeurons);
+            hiddenNeuron.setHiddenNeuronsTwo(hiddenNeuronsTwo);
+        }
+        for(HiddenNeuronTwo hiddenNeuronTwos: hiddenNeuronsTwo){
+            hiddenNeuronTwos.setOutputNeurons(outputNeurons);
         }
         Debug.log("Netzwerk initialisiert");
 
@@ -59,7 +72,12 @@ public class NetworkController {
             }
             for(int a1 = 0; a1 < hiddenNeuronOneNumber; a1++){
                 for(int a2 = 0; a2 < 10; a2++){
-                    outputNeurons[a2].setWeight(a1,weightDoubleArray[a2 * hiddenNeuronOneNumber + a1 + 31360]);
+                    hiddenNeuronsTwo[a2].setWeight(a1,weightDoubleArray[a2 * hiddenNeuronOneNumber + a1 + 784 * hiddenNeuronOneNumber]);
+                }
+            }
+            for(int a1 = 0; a1 < hiddenNeuronTwoNumber; a1++){
+                for(int a2 = 0; a2 < 10; a2++){
+                    outputNeurons[a2].setWeight(a1,weightDoubleArray[a2 * hiddenNeuronTwoNumber + 784 * hiddenNeuronOneNumber + hiddenNeuronOneNumber * hiddenNeuronTwoNumber]);
                 }
             }
         }
@@ -98,6 +116,9 @@ public class NetworkController {
         Debug.log("Started sending hidden to next layer", false);
         for (HiddenNeuron hiddenNeuron : hiddenNeurons) {
             hiddenNeuron.sendOutputToNextLayer();
+        }
+        for (HiddenNeuronTwo hiddenNeuronTwo : hiddenNeuronsTwo) {
+            hiddenNeuronTwo.sendOutputToNextLayer();
         }
         Debug.log("finished sending hidden to next layer", false);
         OutputNeuron biggestNeuron = null;
@@ -143,7 +164,7 @@ public class NetworkController {
                         WeightSaver.initialize(555,555);
                        saveWeightsToFile();
         if (i1 % 50 == 0) Debug.log("Bild " + i1 + " abgechlossen.");
-        //ab hier faengt das eigentliche lernen an.
+        //ab hier faengt das eigentliche lernen an. !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         // Zuerst werden die gewichte zu den outputneuronen geaendert
         Debug.log("Started modding output", false);
         for (OutputNeuron outputNeuron : outputNeurons) {
@@ -158,17 +179,16 @@ public class NetworkController {
         Debug.log("Started modding hidden"  , false);
         for (HiddenNeuron hiddenNeuron : hiddenNeurons) {
            //hiddenNeuron.modWeight();
-            threadList[hiddenNeuron.getIdentNummer()].setHn(hiddenNeuron);
-            threadList[hiddenNeuron.getIdentNummer()].calc();
+            threadListOne[hiddenNeuron.getIdentNummer()].setHn(hiddenNeuron);
+            threadListOne[hiddenNeuron.getIdentNummer()].calc();
+        }
+        for (HiddenNeuronTwo hiddenNeuronTwo : hiddenNeuronsTwo) {
+            //hiddenNeuron.modWeight();
+            threadListTwo[hiddenNeuronTwo.getIdentNummer()].setHn(hiddenNeuronTwo);
+            threadListTwo[hiddenNeuronTwo.getIdentNummer()].calc();
         }
         Debug.log("All threads started", false );
-      /*  for(HiddenLearnThread hft: threadList){
-            try {
-                hft.join();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }*/
+
         Debug.log("hidden mod und threads fertig", false);
 
     }
