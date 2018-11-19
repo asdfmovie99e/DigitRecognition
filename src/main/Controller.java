@@ -68,7 +68,6 @@ public class Controller {
 
     @FXML
     void onAuswertenClicked(ActionEvent event) {
-        /*
        try {
             Image snapshot = canvas.snapshot(null,null);
            ImageIO.write(SwingFXUtils.fromFXImage(snapshot,null), "png", new File(System.getenv("APPDATA") + "\\mnist\\" + "paint.png"));
@@ -95,9 +94,29 @@ public class Controller {
 
        }
 
-*/
-    }
+       /*try {
+                java.awt.Image img = new ImageIcon(ImageIO.read(new File("paint.png")))
+                        .getImage();
+                System.out.println(img.getWidth(null));
+                System.out.println(img.getHeight(null));
 
+                int wNew = 28, hNew = 28;
+
+                Image scaledImage = img.getScaledInstance(wNew, hNew, Image.); //Ergänzen
+
+                BufferedImage outImg = new BufferedImage(wNew, hNew,
+                        BufferedImage.TYPE_INT_RGB);
+                Graphics g = outImg.getGraphics();
+                g.drawImage(scaledImage, 0, 0, null);
+                g.dispose();
+
+                ImageIO.write(outImg, "png", new File("paint2.png"));
+
+            } catch (IOException e) {
+                e.printStackTrace();}
+        */
+
+    }
 
 
 

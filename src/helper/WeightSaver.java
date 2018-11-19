@@ -16,8 +16,8 @@ import java.time.ZonedDateTime;
 import java.time.temporal.ChronoUnit;
 
 public class WeightSaver {
-    private static int debugPurposeInt = (784 * NetworkController.hiddenNeuronOneNumber + NetworkController.hiddenNeuronOneNumber * 10) * 8;
-    private static byte[] weightArray = new byte[(784 * NetworkController.hiddenNeuronOneNumber + NetworkController.hiddenNeuronOneNumber * NetworkController.hiddenNeuronTwoNumber + NetworkController.hiddenNeuronTwoNumber * 10) * 8  ];
+
+    private static byte[] weightArray = new byte[254080]; // die datei wird 254080 Byte groß
     private static FileOutputStream fos;
     private static File file;
     private static String timeString = ZonedDateTime.now().toLocalTime().truncatedTo(ChronoUnit.SECONDS).toString().replace(":", "");
@@ -72,7 +72,7 @@ public class WeightSaver {
     }
 
     public static void generateDoubleArray(){
-        for(int i = 0; i < 748 * NetworkController.hiddenNeuronOneNumber + NetworkController.hiddenNeuronOneNumber * 10; i++){
+        for(int i = 0; i < 31760; i++){
             byte[] tempArray = new byte[8];
             for(int i1= 0 ; i1< 8; i1++){
                 tempArray[i1] = weightArray[i * 8 + i1];

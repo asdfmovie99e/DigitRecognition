@@ -6,8 +6,10 @@ package main;
  */
 
 
+import helper.Debug;
 import helper.MathHelper;
 import helper.WeightSaver;
+import sun.nio.ch.Net;
 
 import java.util.HashMap;
 
@@ -18,29 +20,16 @@ public class HiddenNeuron {
     private HashMap<Integer, Double> inputMap = new HashMap<Integer, Double>();
     private double inputSum = 0;
     private double outputSum = 0;
-    private double smallDelta = 0;
-    private HiddenNeuronTwo[] hiddenNeuronsTwos;
-
-    public void setSmallDelta(double smallDelta) {
-        this.smallDelta = smallDelta;
-    }
-
-
-
-    public double getSmallDelta() {
-        return smallDelta;
-    }
-
-
+    private OutputNeuron[] outputNeurons;
 
     public void setIdentNummer(int identNummer){
         // setzt die Identifikationsnummer des Neurons
         this.identNummer = identNummer;
     }
 
-    public void setHiddenNeuronsTwo(HiddenNeuronTwo[] hiddenNeuronsTwos){
+    public void setOutputNeurons(OutputNeuron[] outputNeurons){
         //füllt das Array outPutNeurons mit den Neuronen der nächsten schicht
-        this.hiddenNeuronsTwos = hiddenNeuronsTwos;
+        this.outputNeurons = outputNeurons;
     }
 
     public void generateNewWeightMap(){
@@ -60,15 +49,15 @@ public class HiddenNeuron {
         for(int i = 0; i < 748;i++){
             inputSum += inputMap.get(i) * weightMap.get(i);
         }
-      //  inputSum += 0.2d; //BIAS TEST
+        inputSum += 0.2d; //BIAS TEST
         outputSum = MathHelper.sigmoidApprox(inputSum);
     }
 
     public void sendOutputToNextLayer(){
         //sendet den Outputwert an die nächste schicht. diese empfängt ihn mit der receive methode
         calcOutput();
-        for(HiddenNeuronTwo hiddenNeuronTwo: hiddenNeuronsTwos){
-            hiddenNeuronTwo.receive(identNummer, outputSum);
+        for(OutputNeuron outputNeuron: outputNeurons){
+            outputNeuron.receive(identNummer, outputSum);
         }
     }
 
@@ -83,26 +72,25 @@ public class HiddenNeuron {
         return identNummer;
     }
 
-    public void modWeight(){/*
+    public void modWeight(){
         //die Variablen wie z.B. smallDelta beziehen sich auf die Delta Lernregel. Die Formel ist im Internet leicht zu finden.
         double oldValue = getOutputValue(); //debug purpose
         double smallDelta = 0;
         for(int i = 0; i < 10; i++){
             smallDelta += outputNeurons[i].getSmallDelta() * outputNeurons[i].getWeight(getIdentNummer());
         }
-        double epsilon = 0.003f; // vollkommen experimentell. keine ahnung wie der wert gewählt werden soll
+        double epsilon = 0.01f; // vollkommen experimentell. keine ahnung wie der wert gewählt werden soll
         for(int i = 0; i < 748; i++){
             double input = inputMap.get(i);
             double ableitung = MathHelper.sigmoidApprox(inputMap.get(i)) * (1 - MathHelper.sigmoidApprox(inputMap.get(i)));
             double bigDelta = epsilon * smallDelta * input * ableitung;
             double oldWeight = weightMap.get(i);
             //if(oldWeight + bigDelta > 1 || oldWeight + bigDelta < -1) return; // NUR TEST
-            setWeight(i, oldWeight + bigDelta);
+            weightMap.remove(i);
+            weightMap.put(i, oldWeight + bigDelta);
         }
         //ab hier debug purposes
         //Debug.log("Der Unterschied von HiddenNeuron " + getIdentNummer() + " ist " + (getOutputValue() - oldValue));
-*/
-       //new HiddenLearnThread().start();
     }
 
 
@@ -115,21 +103,5 @@ public class HiddenNeuron {
     public void setWeight(int ident, double weight){
         if (weightMap.get(ident) != null) weightMap.remove(ident);
         weightMap.put(ident,weight);
-    }
-
-    public void setWeightMap(HashMap<Integer, Double> weightMap){
-        this.weightMap = weightMap;
-    }
-
-    public HashMap<Integer, Double> getWeightMap(){
-        return weightMap;
-    }
-
-    public HashMap<Integer, Double> getInputMap(){
-        return inputMap;
-    }
-
-    public HiddenNeuronTwo[] getOutputNeurons(){
-        return hiddenNeuronsTwos;
     }
 }

@@ -10,18 +10,15 @@ import helper.PictureCoder;
 import helper.WeightSaver;
 
 public class NetworkController {
-    public static final int hiddenNeuronOneNumber = 1000;
-    public static final int hiddenNeuronTwoNumber = 500;
+
     private static InputNeuron[] inputNeurons = new InputNeuron[784];
-    private static HiddenNeuron[] hiddenNeurons = new HiddenNeuron[hiddenNeuronOneNumber];
-    private static HiddenNeuronTwo[] hiddenNeuronsTwo = new HiddenNeuronTwo[hiddenNeuronTwoNumber];
+    private static HiddenNeuron[] hiddenNeurons = new HiddenNeuron[40]; // noch nicht sicher ob hier auch 784 gewählt werden sollte bzw was besser ist
     private static OutputNeuron[] outputNeurons = new OutputNeuron[10];
     private static  Object[] imageWithLabel;
     private static Integer label;
-    private static Double[] pixelArray;
+    private static Boolean[] pixelArray;
     private static double customFactor = 1d;
-    private static HiddenLearnThread[] threadListOne = new HiddenLearnThread[hiddenNeuronOneNumber];
-    private static HiddenLearnThreadTwo[] threadListTwo = new HiddenLearnThreadTwo[hiddenNeuronTwoNumber];
+
     static void  initializeNetwork()
             //erstellt alle Neuronen und Verbindungen und verbindet sie
     {
@@ -29,23 +26,11 @@ public class NetworkController {
             inputNeurons[i] = new InputNeuron();
             inputNeurons[i].setIdentNummer(i);
         }
-        for (int i = 0; i < hiddenNeuronOneNumber; i++){
+        for (int i = 0; i < 40; i++){
             hiddenNeurons[i] = new HiddenNeuron();
             hiddenNeurons[i].setIdentNummer(i);
             hiddenNeurons[i].generateNewWeightMap();
-            threadListOne[hiddenNeurons[i].getIdentNummer()] = new HiddenLearnThread();
-            threadListOne[hiddenNeurons[i].getIdentNummer()].start();
         }
-        for (int i = 0; i < hiddenNeuronTwoNumber; i++){
-            hiddenNeuronsTwo[i] = new HiddenNeuronTwo();
-            hiddenNeuronsTwo[i].setIdentNummer(i);
-            hiddenNeuronsTwo[i].generateNewWeightMap();
-            threadListTwo[hiddenNeuronsTwo[i].getIdentNummer()] = new HiddenLearnThreadTwo();
-            threadListTwo[hiddenNeuronsTwo[i].getIdentNummer()].start();
-            //new HiddenLearnThreadTwo().start();
-        }
-
-
         for(int i = 0; i < 10; i++){
             outputNeurons[i] = new OutputNeuron();
             outputNeurons[i].setIdentNummer(i);
@@ -55,10 +40,7 @@ public class NetworkController {
             inputNeuron.setHiddenNeurons(hiddenNeurons);
         }
         for(HiddenNeuron hiddenNeuron: hiddenNeurons){
-            hiddenNeuron.setHiddenNeuronsTwo(hiddenNeuronsTwo);
-        }
-        for(HiddenNeuronTwo hiddenNeuronTwos: hiddenNeuronsTwo){
-            hiddenNeuronTwos.setOutputNeurons(outputNeurons);
+            hiddenNeuron.setOutputNeurons(outputNeurons);
         }
         Debug.log("Netzwerk initialisiert");
 
@@ -66,18 +48,13 @@ public class NetworkController {
             WeightSaver.generateDoubleArray();
             double[] weightDoubleArray = WeightSaver.getWeightDoubleArray();
             for(int a1 = 0; a1 < 784; a1++){
-                for(int a2 = 0; a2 < hiddenNeuronOneNumber; a2++){
+                for(int a2 = 0; a2 < 40; a2++){
                     hiddenNeurons[a2].setWeight(a1,weightDoubleArray[a2*784 + a1]);
                 }
             }
-            for(int a1 = 0; a1 < hiddenNeuronOneNumber; a1++){
+            for(int a1 = 0; a1 < 40; a1++){
                 for(int a2 = 0; a2 < 10; a2++){
-                    hiddenNeuronsTwo[a2].setWeight(a1,weightDoubleArray[a2 * hiddenNeuronOneNumber + a1 + 784 * hiddenNeuronOneNumber]);
-                }
-            }
-            for(int a1 = 0; a1 < hiddenNeuronTwoNumber; a1++){
-                for(int a2 = 0; a2 < 10; a2++){
-                    outputNeurons[a2].setWeight(a1,weightDoubleArray[a2 * hiddenNeuronTwoNumber + 784 * hiddenNeuronOneNumber + hiddenNeuronOneNumber * hiddenNeuronTwoNumber]);
+                    outputNeurons[a2].setWeight(a1,weightDoubleArray[a2 * 40 + a1 + 31360]);
                 }
             }
         }
@@ -88,13 +65,12 @@ public class NetworkController {
         int[] timesTried = new int[10];
         int[] timesSuccesful = new int[10];
         double highestWorstRate = 0d; // gehört zu for(int iDebug = 0; iDebug < 10; iDebug++){
-
     for(int i1 = 0; i1 < 50000; i1++) { // zum testzweck erstmal nur 100 bilder
 
         imageWithLabel = PictureCoder.getImageWithLabel(i1);
         label = (Integer) imageWithLabel[0];
         //Debug.log("Jetzt kommt ein Bild mit der Zahl " + label);
-        pixelArray = (Double[]) imageWithLabel[1];
+        pixelArray = (Boolean[]) imageWithLabel[1];
         for (int i = 0; i < pixelArray.length; i++) {
             //aus dem grade geholten pixelarray werden die daten an die Inputneuronen verteilt
             inputNeurons[i].setOutputValue(pixelArray[i]);
@@ -108,19 +84,15 @@ public class NetworkController {
             }
         }
         timesTried[label]++;
-        Debug.log("Started sending input to next layer", false);
+
         for (InputNeuron inputNeuron : inputNeurons) {
+
             inputNeuron.sendOutputToNextLayer();
         }
-        Debug.log("finished sending input to next layer", false);
-        Debug.log("Started sending hidden to next layer", false);
         for (HiddenNeuron hiddenNeuron : hiddenNeurons) {
+
             hiddenNeuron.sendOutputToNextLayer();
         }
-        for (HiddenNeuronTwo hiddenNeuronTwo : hiddenNeuronsTwo) {
-            hiddenNeuronTwo.sendOutputToNextLayer();
-        }
-        Debug.log("finished sending hidden to next layer", false);
         OutputNeuron biggestNeuron = null;
         for (OutputNeuron outputNeuron : outputNeurons) {
             if(biggestNeuron == null || biggestNeuron.getOutputValue() < outputNeuron.getOutputValue()) biggestNeuron = outputNeuron;
@@ -164,9 +136,8 @@ public class NetworkController {
                         WeightSaver.initialize(555,555);
                        saveWeightsToFile();
         if (i1 % 50 == 0) Debug.log("Bild " + i1 + " abgechlossen.");
-        //ab hier faengt das eigentliche lernen an. !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        //ab hier faengt das eigentliche lernen an.
         // Zuerst werden die gewichte zu den outputneuronen geaendert
-        Debug.log("Started modding output", false);
         for (OutputNeuron outputNeuron : outputNeurons) {
             if (outputNeuron.getIdentNummer() == label) {
                 outputNeuron.modWeight(1);
@@ -174,23 +145,9 @@ public class NetworkController {
                 outputNeuron.modWeight(0);
             }
         }
-        Debug.log("Finished modding output", false);
-
-        Debug.log("Started modding hidden"  , false);
         for (HiddenNeuron hiddenNeuron : hiddenNeurons) {
-           //hiddenNeuron.modWeight();
-            threadListOne[hiddenNeuron.getIdentNummer()].setHn(hiddenNeuron);
-            threadListOne[hiddenNeuron.getIdentNummer()].calc();
+            hiddenNeuron.modWeight();
         }
-        for (HiddenNeuronTwo hiddenNeuronTwo : hiddenNeuronsTwo) {
-            //hiddenNeuron.modWeight();
-            threadListTwo[hiddenNeuronTwo.getIdentNummer()].setHn(hiddenNeuronTwo);
-            threadListTwo[hiddenNeuronTwo.getIdentNummer()].calc();
-        }
-        Debug.log("All threads started", false );
-
-        Debug.log("hidden mod und threads fertig", false);
-
     }
     }
 
@@ -204,7 +161,7 @@ public class NetworkController {
         }
         WeightSaver.writeArrayToFile();
     }
-/*
+
     public static double[] analyzeShrunkImage() {
         boolean[] shrunkPixelArray = PictureCoder.getShrunkImage();
         for (int i = 0; i < shrunkPixelArray.length; i++) {
@@ -233,7 +190,7 @@ public class NetworkController {
         System.out.println(biggestNeuron.getIdentNummer());
         return resultArray;
     }
-*/
+
     private void distributeWeightsFromFile(){
 
     }

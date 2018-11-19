@@ -8,7 +8,7 @@ package main;
 
 public class InputNeuron {
 
-    private double outputValue;
+    private int outputValue;
     private HiddenNeuron[] hiddenNeurons;
     private Integer identNummer = null;
 
@@ -22,9 +22,14 @@ public class InputNeuron {
         this.identNummer = identNummer;
     }
 
-    public void setOutputValue(Double outputValue){
-    this.outputValue = outputValue;
-    int wfasfasdfsadfsdf;
+    public void setOutputValue(boolean outputBool){
+        // setzt den Output Value dieses Neurons. true = 1 ; false = 0
+        if (outputBool){
+            outputValue = 1;
+        } else
+        {
+            outputValue = 0;
+        }
     }
 
     public void sendOutputToNextLayer(){
@@ -34,7 +39,7 @@ public class InputNeuron {
         }
     }
 
-    public double getOutputValue(){
+    public int getOutputValue(){
         //wird eigentlich nie benutzt. nur fuer debug zwecke
         return outputValue;
     }

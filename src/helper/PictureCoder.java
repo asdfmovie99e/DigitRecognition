@@ -14,13 +14,12 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.time.LocalDateTime;
 import java.util.HashMap;
-//ES MUSS NOCH BEI DEM SELBST EINGEGEBENEN BILD KOMPLETT AUF GRAUSKALA UMGESTELLT WERDEN
 
 public class PictureCoder {
     private static File mnistFolder = new File(Paths.get("").toAbsolutePath().toString() + "\\src\\mnist");
     private static int[] labelArray;
     private static byte[] byteArray;
-    private static double[] pixelArray;
+    private static boolean[] pixelArray;
 
 
     public static void decode() {
@@ -49,9 +48,9 @@ public class PictureCoder {
         byteArray = new byte[0];
         try {
             byteArray = Files.readAllBytes(new File(mnistFolder.getAbsolutePath() + "\\train-images.idx3-ubyte").toPath());
-            pixelArray = new double[byteArray.length - 16];
+            pixelArray = new boolean[byteArray.length - 16];
             for (int i = 0; i <= pixelArray.length - 1; i++) {
-                pixelArray[i] = (0.00390625d *  ((double)(int)(byte)/*hoffentlich sieht das keiner*/ (byteArray[i + 16] - 128)))  + 0.5d;
+                pixelArray[i] = (byteArray[i + 16] != 0);
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -61,11 +60,11 @@ public class PictureCoder {
     public static Object[] getImageWithLabel(int imageNumber) { //das erste bild hat imageNumber = 0
         // gibt ein Array zurück. auf dem 0. platz ist das label, das angibt welche zahl es wirklich ist
         // auf dem 1. platz ist ein weiteres Array vom Typ Boolean[]. hier wird das bild gespeichert. true ist schwarz und false ist weiss
-        if (labelArray == null) scanLabels();
-        if (pixelArray == null)scanImages();
+        scanLabels();
+        scanImages();
         Object[] resultArray = new Object[2];
         resultArray[0] = labelArray[imageNumber];
-        Double[] pixelPartArray = new Double[784];
+        Boolean[] pixelPartArray = new Boolean[784];
         for (int i = 0; i < 784; i++) {
             pixelPartArray[i] = pixelArray[i + (784 * imageNumber)];
         }
@@ -94,7 +93,11 @@ public class PictureCoder {
                 BufferedImage bufferedImage = new BufferedImage(28, 28, BufferedImage.TYPE_INT_RGB); // hoehe auf 28x28 festgelegt, da nur mit dem mnist datensatz gearbeitet wird
                 for (int iy = 0; iy <= 27; iy++) {
                     for (int ix = 0; ix <= 27; ix++) {
-                        colorInt = (int)pixelArray[ix + (iy * 28) + (ip * 28 * 28)]; // das hier muss noch komplett neu gemacht werden !!!!!!!!!!!!!!!!!!!!!!
+                        if (pixelArray[ix + (iy * 28) + (ip * 28 * 28)] == true) {
+                            colorInt = 0;
+                        } else {
+                            colorInt = 255;
+                        }
                         int pixel = (colorInt << 24 | colorInt << 16 | colorInt << 8 | colorInt); // bit shifting um den standards zu entsprchen. red green und blue sind immer 0
                         bufferedImage.setRGB(ix, iy, pixel);
                     }
