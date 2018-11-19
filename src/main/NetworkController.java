@@ -130,9 +130,11 @@ public class NetworkController {
                     triedGes += tried;
                 }
                 highestWorstRate = worstRate;
-                WeightSaver.initialize((int) highestWorstRate, (int) (100 * succGes / triedGes));
-                saveWeightsToFile();
+//                WeightSaver.initialize((int) highestWorstRate, (int) (100 * succGes / triedGes));
+//                saveWeightsToFile();
         }
+                        WeightSaver.initialize(555,555);
+                       saveWeightsToFile();
         if (i1 % 50 == 0) Debug.log("Bild " + i1 + " abgechlossen.");
         //ab hier faengt das eigentliche lernen an.
         // Zuerst werden die gewichte zu den outputneuronen geaendert

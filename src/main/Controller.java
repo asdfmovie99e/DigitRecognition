@@ -73,7 +73,7 @@ public class Controller {
            ImageIO.write(SwingFXUtils.fromFXImage(snapshot,null), "png", new File(System.getenv("APPDATA") + "\\mnist\\" + "paint.png"));
 
            PictureCoder.shrinkImage();
-           Thread.sleep(3000);
+           Thread.sleep(2000);
            double[] resultArray = NetworkController.analyzeShrunkImage();
            textausgabe.setText(Double.toString(resultArray[10]));
            double smallest = Double.MAX_VALUE;
