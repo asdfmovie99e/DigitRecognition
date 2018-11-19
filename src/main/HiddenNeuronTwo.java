@@ -1,25 +1,19 @@
 package main;
 
- /*
- @author Jens Krueger
- @version 1.0
- */
-
-
 import helper.MathHelper;
 import helper.WeightSaver;
 
 import java.util.HashMap;
 
-public class HiddenNeuron {
+public class HiddenNeuronTwo {
 
     private Integer identNummer = null;
     private HashMap<Integer, Double> weightMap = new HashMap<Integer, Double>();
     private HashMap<Integer, Double> inputMap = new HashMap<Integer, Double>();
     private double inputSum = 0;
     private double outputSum = 0;
+    private OutputNeuron[] outputNeurons;
     private double smallDelta = 0;
-    private HiddenNeuronTwo[] hiddenNeuronsTwos;
 
     public void setSmallDelta(double smallDelta) {
         this.smallDelta = smallDelta;
@@ -31,21 +25,23 @@ public class HiddenNeuron {
         return smallDelta;
     }
 
-
-
     public void setIdentNummer(int identNummer){
         // setzt die Identifikationsnummer des Neurons
         this.identNummer = identNummer;
     }
 
-    public void setHiddenNeuronsTwo(HiddenNeuronTwo[] hiddenNeuronsTwos){
+    public double getWeight(int ident){
+        return weightMap.get(ident);
+    }
+
+    public void setOutputNeurons(OutputNeuron[] outputNeurons){
         //füllt das Array outPutNeurons mit den Neuronen der nächsten schicht
-        this.hiddenNeuronsTwos = hiddenNeuronsTwos;
+        this.outputNeurons = outputNeurons;
     }
 
     public void generateNewWeightMap(){
         //generiert eine neue HashMap in der die Gewichte die eingehenden Verbindungen gespeichert sind.
-        for(int i = 0; i < 784; i++){
+        for(int i = 0; i < NetworkController.hiddenNeuronOneNumber; i++){
             weightMap.put(i,(Math.random() - 0.5d)); // so liegt das ergebnis ungefähr um 0 //GAAAANZ UNSICHER MIT GETEILT DURCH 100
         }
     }
@@ -60,15 +56,15 @@ public class HiddenNeuron {
         for(int i = 0; i < 748;i++){
             inputSum += inputMap.get(i) * weightMap.get(i);
         }
-      //  inputSum += 0.2d; //BIAS TEST
+        //  inputSum += 0.2d; //BIAS TEST
         outputSum = MathHelper.sigmoidApprox(inputSum);
     }
 
     public void sendOutputToNextLayer(){
         //sendet den Outputwert an die nächste schicht. diese empfängt ihn mit der receive methode
         calcOutput();
-        for(HiddenNeuronTwo hiddenNeuronTwo: hiddenNeuronsTwos){
-            hiddenNeuronTwo.receive(identNummer, outputSum);
+        for(OutputNeuron outputNeuron: outputNeurons){
+            outputNeuron.receive(identNummer, outputSum);
         }
     }
 
@@ -102,7 +98,7 @@ public class HiddenNeuron {
         //ab hier debug purposes
         //Debug.log("Der Unterschied von HiddenNeuron " + getIdentNummer() + " ist " + (getOutputValue() - oldValue));
 */
-       //new HiddenLearnThread().start();
+        //new HiddenLearnThread().start();
     }
 
 
@@ -129,7 +125,7 @@ public class HiddenNeuron {
         return inputMap;
     }
 
-    public HiddenNeuronTwo[] getOutputNeurons(){
-        return hiddenNeuronsTwos;
+    public OutputNeuron[] getOutputNeurons(){
+        return outputNeurons;
     }
 }
